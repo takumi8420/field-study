@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></span><span>›</span><span>機体の技術と物理的制約</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></li><li><a class="" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></li><li><a class="" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></li><li><a class="" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></li><li><a class="on" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="on" href="01_機体の技術と物理的制約.html">機体の技術と物理的制約</a></li><li><a class="" href="02_事業として成立するのか.html">事業として成立するのか</a></li><li><a class="" href="03_型式証明と制度.html">型式証明と制度</a></li><li><a class="" href="04_直近トピック_2026.html">直近トピック_2026</a></li></ul></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">空飛ぶクルマ</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">14語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="electric Vertical Take-Off and Landing。電動垂直離着陸機。この業界の正式な呼び名" aria-label="eVTOL：electric Vertical Take-Off and Landing。電動垂直離着陸機。この業界の正式な呼び名">eVTOL</span><span class="term-chip has-tip" tabindex="0" data-tooltip="飛行機でもヘリでもない第3の航空機分類。米FAAはこの枠でeVTOLを扱う" aria-label="Powered-Lift（動力揚力機）：飛行機でもヘリでもない第3の航空機分類。米FAAはこの枠でeVTOLを扱う">Powered-Lift（動力揚力機）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="Advanced Air Mobility（次世代空モビリティ）／Urban Air Mobility（都市型）。政策文書での呼称" aria-label="AAM／UAM：Advanced Air Mobility（次世代空モビリティ）／Urban Air Mobility（都市型）。政策文書での呼称">AAM／UAM</span><span class="term-chip has-tip" tabindex="0" data-tooltip="プロペラが掃く面積1m²あたりが支える重量[kg/m²]。小さいほどホバリング効率が良い" aria-label="ディスク荷重：プロペラが掃く面積1m²あたりが支える重量[kg/m²]。小さいほどホバリング効率が良い">ディスク荷重</span><span class="term-chip has-tip" tabindex="0" data-tooltip="空中静止。翼の助けなしに推力だけで自重を支える、最もエネルギーを食う飛行状態" aria-label="ホバリング：空中静止。翼の助けなしに推力だけで自重を支える、最もエネルギーを食う飛行状態">ホバリング</span><span class="term-chip has-tip" tabindex="0" data-tooltip="揚力÷抗力。翼の効率。旅客機は15〜20、eVTOLは8〜12程度" aria-label="揚抗比（L/D）：揚力÷抗力。翼の効率。旅客機は15〜20、eVTOLは8〜12程度">揚抗比（L/D）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="垂直飛行から水平飛行へ移る過程。制御が最も難しく、事故が起きやすい局面" aria-label="トランジション（遷移）：垂直飛行から水平飛行へ移る過程。制御が最も難しく、事故が起きやすい局面">トランジション（遷移）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="多数の小型モータに推力を分散し、数基が止まっても飛べるようにする冗長設計" aria-label="分散電動推進（DEP）：多数の小型モータに推力を分散し、数基が止まっても飛べるようにする冗長設計">分散電動推進（DEP）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ヘリがエンジン停止時、上昇気流でローターを回して降下する緊急手順。eVTOLでは使えない" aria-label="オートローテーション：ヘリがエンジン停止時、上昇気流でローターを回して降下する緊急手順。eVTOLでは使えない">オートローテーション</span><span class="term-chip has-tip" tabindex="0" data-tooltip="Maximum Take-Off Weight。最大離陸重量。機体の規模を表す基本指標" aria-label="MTOW：Maximum Take-Off Weight。最大離陸重量。機体の規模を表す基本指標">MTOW</span><span class="term-chip has-tip" tabindex="0" data-tooltip="State of Charge。電池の充電率。航空用途では下限を大きく残すため、実際に使える容量は8割程度" aria-label="SOC：State of Charge。電池の充電率。航空用途では下限を大きく残すため、実際に使える容量は8割程度">SOC</span><span class="term-chip has-tip" tabindex="0" data-tooltip="炭素繊維強化プラスチック。軽くて強いが高価で、成形と検査に手間がかかる" aria-label="CFRP：炭素繊維強化プラスチック。軽くて強いが高価で、成形と検査に手間がかかる">CFRP</span><span class="term-chip has-tip" tabindex="0" data-tooltip="航空機の搭載ソフト／電子ハードウェアの開発保証規格。認証コストの主因の1つ" aria-label="DO-178C / DO-254：航空機の搭載ソフト／電子ハードウェアの開発保証規格。認証コストの主因の1つ">DO-178C / DO-254</span><span class="term-chip has-tip" tabindex="0" data-tooltip="技術基準承認品。航空機に搭載してよいと認められた部品" aria-label="TSO品：技術基準承認品。航空機に搭載してよいと認められた部品">TSO品</span></div></details><p>このノートで分かること：<strong>「空飛ぶクルマ」は道路を走らない。実体は電動の小型航空機（eVTOL）である</strong>。<br>その性能は制度でも設計の巧拙でもなく、<strong>電池のエネルギー密度と、ホバリングという行為のエネルギー効率</strong>でほぼ決まっている。<br>どこに天井があるかを、実際の算数で確かめる。</p>
+<p><strong>結論から</strong>：主要機の公称航続は <strong>100〜160km、乗客4名前後</strong>。実運用ではさらに短く、<strong>数十km圏の点と点を結ぶ乗り物</strong>になる。<br>これは「まだ技術が未熟だから」ではなく、リチウムイオン電池のエネルギー密度が<strong>航空燃料の40分の1以下</strong>だから。<br>電池を積めば重くなり、重ければ浮かせる電力が増える。<strong>この循環の外には出られない</strong>。<br>だから業界の絵は「郊外から都心へ毎日通勤」ではなく、「<strong>空港と都心を15分で結ぶ</strong>」に収束していく。</p>
+<h2 id="s1">1. まず誤解を潰す：「クルマ」ではない</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>一般イメージ</th>
+<th>実体</th>
+</tr></thead><tbody>
+<tr><td>道路も走れて空も飛べる車</td><td><strong>道路は走らない</strong>。ナンバープレートも取らない</td></tr>
+<tr><td>自動車メーカーが作る</td><td>作るのは航空機メーカーとスタートアップ。自動車メーカーは出資・量産受託の立場</td></tr>
+<tr><td>自動車の型式認証で売れる</td><td><strong>航空機の型式証明（TC）</strong>が要る。自動車とは桁違いに重い → <a href="03_型式証明と制度.html">03_型式証明と制度</a></td></tr>
+<tr><td>免許があれば誰でも乗れる</td><td>当面は<strong>事業用操縦士が操縦する</strong>。乗客は乗るだけ</td></tr>
+<tr><td>小型ヘリコプターの置き換え</td><td>用途は近いが、<strong>航続はヘリよりずっと短い</strong>。静かさと整備性で勝負する</td></tr>
+</tbody></table></div>
+<p>正式な呼び名は <strong>eVTOL</strong>（electric Vertical Take-Off and Landing＝電動垂直離着陸機）、<br>制度上の分類は <strong>Powered-Lift（動力揚力機）</strong>。政策文書では <strong>AAM</strong>（Advanced Air Mobility＝次世代空モビリティ）と呼ばれる。<br>「空飛ぶクルマ」は日本の経産省・国交省が使い始めた通称であって、技術用語ではない。</p>
+<blockquote><p>ポイント：<strong>この業界を読むときは、頭の中で「空飛ぶクルマ」を「電動の小型飛行機」に置き換える</strong>。<br>そうすると、型式証明に何年もかかることも、離着陸場が必要なことも、当たり前の話として腑に落ちる。</p></blockquote>
+<p>道路も走る「本物の空飛ぶクルマ」（ロードアブル機）も一部に存在するが、<br><strong>自動車基準と航空機基準の両方を満たすため、どちらとしても中途半端になる</strong>。産業の主流ではない。</p>
+<h2 id="s2">2. 機体方式は3つしかない</h2>
+<p>eVTOLは「垂直に浮く仕組み」と「前に進む仕組み」をどう両立させるかで3つに分かれる。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>方式</th>
+<th>仕組み</th>
+<th>代表機</th>
+<th>長所</th>
+<th>短所</th>
+</tr></thead><tbody>
+<tr><td><strong>マルチロータ</strong>（回転翼多数）</td><td>固定した多数のプロペラの推力だけで浮き、傾けて進む。翼を持たない</td><td>EHang EH216-S（中）16基、SkyDrive SKYDRIVE（日）12基、Volocopter VoloCity（独）18基</td><td>構造が単純、可動部が少なく<strong>認証しやすい</strong>。故障時に冗長性を取りやすい</td><td><strong>翼がないので巡航効率が最悪</strong>。航続は20〜40km級にとどまる</td></tr>
+<tr><td><strong>リフト＋クルーズ</strong></td><td>揚力用ローターと推進用プロペラを<strong>別々に持つ</strong>。離着陸後、揚力ローターは止めて翼で飛ぶ</td><td>BETA ALIA（米）</td><td>機構が単純なまま巡航効率を得られる</td><td>巡航中も揚力ローターが空気抵抗になる。積む発動機の数が増えて重い</td></tr>
+<tr><td><strong>ベクタードスラスト</strong>（推力偏向）</td><td><strong>同じプロペラを傾けて</strong>、離陸時は上向き・巡航時は前向きに使う</td><td>Joby S4（米）6基チルト、Archer Midnight（米、チルト＋固定の折衷）、Lilium Jet（独、ダクテッドファン30基・破綻）</td><td>全発動機を常に使えるので<strong>最も効率が良い＝航続が伸びる</strong></td><td>チルト機構が重く複雑。遷移（トランジション）時の制御が難しく、<strong>認証が最も重い</strong></td></tr>
+</tbody></table></div>
+<pre><code>  マルチロータ              リフト＋クルーズ            ベクタードスラスト
+   ● ● ● ●                  ● ●   ━━▶●              ●↗   ↗●
+   ●     ●            ━━━━━━━━━━━━━━━         ━━━━━━━━━━━━
+   ● ● ● ●                  ● ●  （翼）                ●↗   ↗●
+  推力だけで浮く            浮く用と進む用が別         同じプロペラを傾ける
+  翼なし → 航続 短          巡航は翼が担う             翼＋全機共用 → 航続 長
+  構造 単純 / 認証 軽       構造 中 / 認証 中          構造 複雑 / 認証 重
+  EH216-S, SKYDRIVE         BETA ALIA                  Joby S4, Archer Midnight
+
+       ┌──────────── 航続距離 ────────────▶ 長い
+       └──────────── 認証の難しさ ────────▶ 高い</code></pre>
+<blockquote><p>ここが業界構図の核心：<strong>「早く認証が取れる方式」と「事業になる航続が出る方式」が逆を向いている</strong>。<br>中国のEHangが世界で最初に型式証明を取れたのは、翼もチルト機構もない<strong>最も単純な方式</strong>を選んだから。<br>逆に、事業性のある100km級を狙ったJoby・Archer・Liliumは、<strong>認証に時間と資金を溶かし続けている</strong>。</p></blockquote>
+<h2 id="s3">3. ホバリングの算数：離着陸が電池を食う</h2>
+<p>ヘリコプターやeVTOLが空中に静止している状態（ホバリング）は、<strong>下向きに空気を押し続けることで自重を支えている</strong>。<br>必要な電力は運動量理論から次で近似できる（<code>W</code>＝重量[N]、<code>A</code>＝プロペラが掃く面積の合計[m²]、<code>ρ</code>＝空気密度1.225、<code>FM</code>＝効率0.6〜0.75）。</p>
+<pre><code>              W^1.5
+  P_hover ≒ ──────────────── ÷ FM
+             √(2 × ρ × A)</code></pre>
+<p>式の形が示すのは、<strong>掃く面積 A が小さいほど電力が跳ね上がる</strong>ということ。<br><code>W ÷ A</code> を<strong>ディスク荷重</strong>（プロペラ1m²あたり何kgを支えているか）と呼ぶ。これが効率を決める一番の指標になる。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>機種</th>
+<th>全備重量の目安</th>
+<th>ロータ掃過面積（概算）</th>
+<th>ディスク荷重</th>
+<th>ホバリング効率</th>
+</tr></thead><tbody>
+<tr><td>産業用ドローン（4kg級）</td><td>4 kg</td><td>約 0.5 m²</td><td>約 8 kg/m²</td><td>◎</td></tr>
+<tr><td>ヘリコプター（Bell 407級）</td><td>約 2,300 kg</td><td>約 90 m²（大径ローター1枚）</td><td>約 25 kg/m²</td><td>○</td></tr>
+<tr><td>eVTOL（Joby S4級）</td><td>約 2,400 kg</td><td>約 40 m²（小径6基）</td><td><strong>約 60 kg/m²</strong></td><td>△</td></tr>
+<tr><td>ジェット機の垂直離陸（F-35B）</td><td>約 20,000 kg</td><td>数 m²（噴流）</td><td>数千 kg/m²</td><td>×（燃料を叩き込む世界）</td></tr>
+</tbody></table></div>
+<p>※ 公表諸元からの<strong>概算・推計</strong>。機体ごとに大きく振れるので、絶対値ではなく<strong>桁の比較</strong>として見る。</p>
+<p>Joby S4級（全備2,400kg、掃過面積40m²）で式に入れると、<strong>ホバリング電力はおよそ500〜600kW</strong>。<br>一方、翼で飛ぶ巡航時の電力は、揚抗比を10・総合効率を0.8とすると</p>
+<pre><code>  P_cruise ≒ 質量 × g × 速度 ÷ (揚抗比 × 効率)
+           = 2,400 × 9.8 × 55 ÷ (10 × 0.8) ≒ 162 kW     （速度55m/s ≒ 200km/h）</code></pre>
+<p><strong>ホバリングは巡航の3〜4倍の電力を食う</strong>。これが機体設計のすべてを支配する。</p>
+<ul>
+<li>電池を100kWh使えるとすると、<strong>ホバリング1分で約9kWh＝全体の1割弱</strong>が消える</li>
+<li>離陸と着陸で合計2〜3分ホバリングすれば、それだけで<strong>電池の2〜3割</strong></li>
+<li>だから eVTOL は「浮いたら即座に前へ倒して翼に乗せる」設計になる。<strong>ホバリングしっぱなしの使い方は成立しない</strong></li>
+</ul>
+<h2 id="s4">4. 電池の壁：なぜ航続が100km級で止まるのか</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>エネルギー源</th>
+<th>重量あたりエネルギー</th>
+<th>備考</th>
+</tr></thead><tbody>
+<tr><td>ジェット燃料（ケロシン）</td><td>約 12,000 Wh/kg</td><td>燃やすほど機体が軽くなるおまけ付き</td></tr>
+<tr><td>水素（燃料電池・タンク込み）</td><td>数百〜1,500 Wh/kg 級</td><td>タンクが重く、システム全体では目減りする</td></tr>
+<tr><td><strong>リチウムイオン電池（パック実効）</strong></td><td><strong>150〜280 Wh/kg</strong></td><td>2026年時点の量産品。航空向けの高出力セルは密度を落として設計する</td></tr>
+<tr><td>全固体電池（開発中）</td><td>400 Wh/kg 級を目標</td><td>実現しても<strong>2倍前後</strong>。桁は変わらない → <a href="../04_蓄電池/README.html">蓄電池</a></td></tr>
+</tbody></table></div>
+<p>差は<strong>40〜80倍</strong>。しかもエンジン効率30%程度を掛けたあとでも、燃料側は4,000Wh/kg級が残る。<br>電池は変換効率が高い（90%以上）が、それでも<strong>桁で負けている</strong>。</p>
+<h3 id="s5">実際に航続距離を計算してみる</h3>
+<p>Joby S4級を想定（全備2,400kg、電池搭載500kg、パック実効250Wh/kg、使用可能SOC80%）。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>項目</th>
+<th>計算</th>
+<th>結果</th>
+</tr></thead><tbody>
+<tr><td>搭載エネルギー</td><td>500kg × 250Wh/kg</td><td>125 kWh</td></tr>
+<tr><td>使用可能（SOC下限を残す）</td><td>125 × 0.8</td><td>100 kWh</td></tr>
+<tr><td>離着陸のホバリング（往復2分）</td><td>550kW × 2/60時間</td><td>−18 kWh</td></tr>
+<tr><td>遷移・上昇・降下のロス</td><td>概算</td><td>−12 kWh</td></tr>
+<tr><td>巡航に使える分</td><td>100 − 18 − 12</td><td><strong>70 kWh</strong></td></tr>
+<tr><td>巡航時間</td><td>70 ÷ 162kW</td><td>約 26 分</td></tr>
+<tr><td>巡航距離（200km/h）</td><td>200 × 26/60</td><td><strong>約 86 km</strong></td></tr>
+<tr><td>航空法上の予備燃料相当（20分の余裕）を引くと</td><td></td><td><strong>実用 40〜60 km</strong></td></tr>
+</tbody></table></div>
+<p>※ 公表諸元をもとにした<strong>筆者による概算</strong>。各社の公称航続（Joby 約160km、Archer 約160km）は<br><strong>理想条件・無風・予備なし</strong>の値であり、実運用の路線長は「20〜50km」と各社自身が説明している。</p>
+<h3 id="s6">電池を増やしても伸びない</h3>
+<p>電池も重量なので、増やせばホバリング電力も巡航電力も増える。飛行時間 <code>t</code> は</p>
+<pre><code>        m_b × e                              m_b：電池重量    e：エネルギー密度
+  t = ──────────────      m_b を増やすと     m_0：それ以外の重量
+      k × (m_0 + m_b)      t は e ÷ k に収束   k  ：単位重量あたり消費電力</code></pre>
+<p>に収束する。<strong>上限は電池の密度 e で決まっており、積載量では動かせない</strong>。<br>しかも航空機は「積めば積むほど重くなる」ことのペナルティが自動車より遥かに重い<br>（浮かせるコストが常にかかるため）。これが<strong>「空飛ぶクルマは電池産業の子会社である」</strong>と言われるゆえん。</p>
+<h3 id="s7">電池のもう1つの問題：寿命と出力</h3>
+<ul>
+<li>離陸時は<strong>数百kWを一気に絞り出す</strong>（放電レート 3〜5C級）。高出力運転は電池を痛める</li>
+<li>eVTOLの電池は、EVの電池よりずっと早く劣化する。<strong>数百〜1,000サイクル程度で交換</strong>が必要と各社は想定する</li>
+<li>1日10便飛ばせば年3,000サイクル。<strong>電池パックは消耗品であり、時間あたりコストに乗る</strong> → <a href="02_事業として成立するのか.html">02_事業として成立するのか</a></li>
+<li>高温・低温で性能が落ちる。夏の駐機・冬の早朝が運航制約になる</li>
+</ul>
+<h2 id="s8">5. 静かさ：eVTOLが売りにしている唯一の性能優位</h2>
+<p>ヘリコプターが都心で使いにくい最大の理由は騒音。eVTOLはここを改善した。</p>
+<div class="table-wrap"><table><thead><tr>
+<th></th>
+<th>ヘリコプター</th>
+<th>eVTOL（各社目標）</th>
+</tr></thead><tbody>
+<tr><td>上空通過時の騒音</td><td>90〜100 dB級</td><td><strong>65 dB前後を目標</strong>（通常会話レベル）</td></tr>
+<tr><td>音の出どころ</td><td>大径ローターの<strong>翼端が音速近くまで回る</strong>ことによる衝撃音、テールローター</td><td>小径プロペラを低回転で多数回す</td></tr>
+<tr><td>音質</td><td>低周波の「バタバタ」音。遠くまで届き、屋内にも侵入する</td><td>高めの「ブーン」音。距離減衰が速い</td></tr>
+</tbody></table></div>
+<p>静かさの正体は<strong>翼端速度を下げたこと</strong>。ただしこれには代償がある。</p>
+<pre><code>  大径・低回転（ヘリ）          小径・高回転（旧世代）        小径・低回転（eVTOL）
+  ディスク荷重 低 → 効率 ◎      ディスク荷重 高 → 効率 ×      ディスク荷重 高 → 効率 △
+  翼端速度 高   → 騒音 ×        翼端速度 高   → 騒音 ×        翼端速度 低   → 騒音 ◎
+                                                              ＝ 静かさのために効率を捨てた</code></pre>
+<p>つまり <strong>eVTOLは「ホバリング効率」を差し出して「静かさ」を買った乗り物</strong>。<br>だから航続が短い。この交換が成立するのは、<strong>都市の真ん中に降りられること自体に価値がある場合だけ</strong>である。</p>
+<p>なお、JAXAの研究では、<strong>多数のプロペラが干渉すると地上で測る騒音は単純合計より大きくなる</strong>ことが指摘されており<br>（2024年、JAXA ECLAIRフォーラム資料）、「65dB」はあくまで各社の目標値として扱うべき数字。</p>
+<h2 id="s9">6. 安全設計：故障しても落ちないという要求</h2>
+<p>旅客を運ぶ航空機には、<strong>「壊滅的な故障の確率が10億飛行時間に1回以下（10⁻⁹/飛行時間）」</strong>という安全目標がかかる。<br>これは大型旅客機と同じ水準で、EASAの SC-VTOL でも同等が求められる。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>ヘリコプター</th>
+<th>eVTOL</th>
+</tr></thead><tbody>
+<tr><td>エンジンが止まっても<strong>オートローテーション</strong>（無動力で回転翼を風車のように回して降りる）で降りられる</td><td><strong>オートローテーションができない</strong>（小径プロペラでは回転エネルギーが足りない）。マルチロータは特に不可</td></tr>
+<tr><td>単発機も認められてきた</td><td><strong>分散電動推進（DEP）</strong>で冗長性を確保する。6〜18基のうち何基か止まっても飛べるよう設計</td></tr>
+<tr><td>機構は複雑（スワッシュプレート等）だが、実績が長い</td><td>可動部は少ないが、<strong>電池・インバータ・ソフトウェアという新しい故障モード</strong>が増えた</td></tr>
+<tr><td>落下時はローターがある程度減速に寄与</td><td>機種によっては<strong>機体パラシュート</strong>を搭載（SkyDriveなど）</td></tr>
+</tbody></table></div>
+<blockquote><p>ここが認証が重い理由：<strong>「落ちても降りられる」という従来の逃げ道がない</strong>ので、<br>「そもそも落ちない」ことを、電池・モータ・制御ソフトの全部について証明しなければならない。<br>ソフトウェアには DO-178C、ハードウェアには DO-254 という開発保証の規格があり、<br><strong>コードの1行ずつに要件との対応づけと検証記録を残す</strong>。ここで開発費が跳ね上がる。</p></blockquote>
+<h2 id="s10">7. 材料と部品：どこから買ってくるか</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>部品</th>
+<th>中身</th>
+<th>供給側</th>
+</tr></thead><tbody>
+<tr><td>機体構造</td><td><strong>炭素繊維複合材（CFRP）</strong>。軽さが命なのでほぼ全機が採用</td><td>東レ、帝人、三菱ケミカル → <a href="../../10_素材・化学/13_炭素・カーボン/README.html">炭素・カーボン</a></td></tr>
+<tr><td>電動モータ</td><td>高出力密度の永久磁石同期モータ。冷却が課題</td><td>内製が多い。日本電産、ヤマハ発動機等も参入 → <a href="../../02_自動車・機械/15_モーター/README.html">モーター</a></td></tr>
+<tr><td>電池セル</td><td>高出力型リチウムイオン。航空認証を通したセルは限られる</td><td>LG、Samsung SDI、EVE、一部は自社設計 → <a href="../../03_電機・電子部品/08_二次電池/README.html">二次電池</a></td></tr>
+<tr><td>インバータ／パワー半導体</td><td>SiC採用で軽量化</td><td>三菱電機、Infineon 他 → <a href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/README.html">半導体（ロジック・メモリ）</a></td></tr>
+<tr><td>飛行制御ソフト</td><td>フライ・バイ・ワイヤ。多重化必須</td><td>内製＋航空系ソフト会社</td></tr>
+<tr><td>航空電子機器（アビオニクス）</td><td>航法、通信、監視。既存航空機の部品が使える</td><td>Garmin、Honeywell、Thales → <a href="../../02_自動車・機械/13_航空機・防衛/README.html">航空機・防衛</a></td></tr>
+</tbody></table></div>
+<p><strong>部品の多くはEVとドローンの技術延長線にある</strong>。ただし「認証された部品（TSO品）」でなければ使えないため、<br>自動車部品をそのまま持ってくることはできない。<strong>同じモータでも、航空認証を通す作業に数年かかる</strong>。</p>
+<h2 id="s11">8. ドローン・ヘリ・小型機との位置関係</h2>
+<pre><code>             重さ →
+   ┌────────────────────────────────────────────────────┐
+   │ 100g        25kg        150kg        600kg      2t以上 │
+   │ ─────────────────────────────────────────────────── │
+   │ ドローン（無人航空機）      │  eVTOL（人が乗る）        │
+   │ 航空法「無人航空機」の章    │  航空法の「航空機」       │
+   │ 機体認証＋操縦ライセンス    │  型式証明＋耐空証明＋      │
+   │ （国家資格・数十万円規模）  │  操縦士の型式限定資格      │
+   │                             │  （認証に数百億〜数千億円）│
+   └────────────────────────────────────────────────────┘
+        ↑ 技術は地続き              ↑ 制度は断絶している
+        [ドローン](../08_ドローン/README.md)          [航空機・防衛](../../02_自動車・機械/13_航空機・防衛/README.md)</code></pre>
+<p><strong>技術は連続しているのに、制度は「人が乗るかどうか」で完全に切れている</strong>。<br>これがドローン業界の実績がそのまま空飛ぶクルマに転用できない理由であり、<br>「ドローンが飛べているのだから空飛ぶクルマもすぐ飛ぶ」という直感が外れる理由でもある。</p>
+<h2 id="s12">用語メモ</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="electric Vertical Take-Off and Landing。電動垂直離着陸機。この業界の正式な呼び名" aria-label="eVTOL：electric Vertical Take-Off and Landing。電動垂直離着陸機。この業界の正式な呼び名"><strong>eVTOL</strong></span>：electric Vertical Take-Off and Landing。電動垂直離着陸機。この業界の正式な呼び名</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="飛行機でもヘリでもない第3の航空機分類。米FAAはこの枠でeVTOLを扱う" aria-label="Powered-Lift（動力揚力機）：飛行機でもヘリでもない第3の航空機分類。米FAAはこの枠でeVTOLを扱う"><strong>Powered-Lift（動力揚力機）</strong></span>：飛行機でもヘリでもない第3の航空機分類。米FAAはこの枠でeVTOLを扱う</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="Advanced Air Mobility（次世代空モビリティ）／Urban Air Mobility（都市型）。政策文書での呼称" aria-label="AAM／UAM：Advanced Air Mobility（次世代空モビリティ）／Urban Air Mobility（都市型）。政策文書での呼称"><strong>AAM／UAM</strong></span>：Advanced Air Mobility（次世代空モビリティ）／Urban Air Mobility（都市型）。政策文書での呼称</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="プロペラが掃く面積1m²あたりが支える重量[kg/m²]。小さいほどホバリング効率が良い" aria-label="ディスク荷重：プロペラが掃く面積1m²あたりが支える重量[kg/m²]。小さいほどホバリング効率が良い"><strong>ディスク荷重</strong></span>：プロペラが掃く面積1m²あたりが支える重量[kg/m²]。小さいほどホバリング効率が良い</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="空中静止。翼の助けなしに推力だけで自重を支える、最もエネルギーを食う飛行状態" aria-label="ホバリング：空中静止。翼の助けなしに推力だけで自重を支える、最もエネルギーを食う飛行状態"><strong>ホバリング</strong></span>：空中静止。翼の助けなしに推力だけで自重を支える、最もエネルギーを食う飛行状態</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="揚力÷抗力。翼の効率。旅客機は15〜20、eVTOLは8〜12程度" aria-label="揚抗比（L/D）：揚力÷抗力。翼の効率。旅客機は15〜20、eVTOLは8〜12程度"><strong>揚抗比（L/D）</strong></span>：揚力÷抗力。翼の効率。旅客機は15〜20、eVTOLは8〜12程度</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="垂直飛行から水平飛行へ移る過程。制御が最も難しく、事故が起きやすい局面" aria-label="トランジション（遷移）：垂直飛行から水平飛行へ移る過程。制御が最も難しく、事故が起きやすい局面"><strong>トランジション（遷移）</strong></span>：垂直飛行から水平飛行へ移る過程。制御が最も難しく、事故が起きやすい局面</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="多数の小型モータに推力を分散し、数基が止まっても飛べるようにする冗長設計" aria-label="分散電動推進（DEP）：多数の小型モータに推力を分散し、数基が止まっても飛べるようにする冗長設計"><strong>分散電動推進（DEP）</strong></span>：多数の小型モータに推力を分散し、数基が止まっても飛べるようにする冗長設計</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="ヘリがエンジン停止時、上昇気流でローターを回して降下する緊急手順。eVTOLでは使えない" aria-label="オートローテーション：ヘリがエンジン停止時、上昇気流でローターを回して降下する緊急手順。eVTOLでは使えない"><strong>オートローテーション</strong></span>：ヘリがエンジン停止時、上昇気流でローターを回して降下する緊急手順。eVTOLでは使えない</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="Maximum Take-Off Weight。最大離陸重量。機体の規模を表す基本指標" aria-label="MTOW：Maximum Take-Off Weight。最大離陸重量。機体の規模を表す基本指標"><strong>MTOW</strong></span>：Maximum Take-Off Weight。最大離陸重量。機体の規模を表す基本指標</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="State of Charge。電池の充電率。航空用途では下限を大きく残すため、実際に使える容量は8割程度" aria-label="SOC：State of Charge。電池の充電率。航空用途では下限を大きく残すため、実際に使える容量は8割程度"><strong>SOC</strong></span>：State of Charge。電池の充電率。航空用途では下限を大きく残すため、実際に使える容量は8割程度</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="炭素繊維強化プラスチック。軽くて強いが高価で、成形と検査に手間がかかる" aria-label="CFRP：炭素繊維強化プラスチック。軽くて強いが高価で、成形と検査に手間がかかる"><strong>CFRP</strong></span>：炭素繊維強化プラスチック。軽くて強いが高価で、成形と検査に手間がかかる</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="航空機の搭載ソフト／電子ハードウェアの開発保証規格。認証コストの主因の1つ" aria-label="DO-178C / DO-254：航空機の搭載ソフト／電子ハードウェアの開発保証規格。認証コストの主因の1つ"><strong>DO-178C / DO-254</strong></span>：航空機の搭載ソフト／電子ハードウェアの開発保証規格。認証コストの主因の1つ</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="技術基準承認品。航空機に搭載してよいと認められた部品" aria-label="TSO品：技術基準承認品。航空機に搭載してよいと認められた部品"><strong>TSO品</strong></span>：技術基準承認品。航空機に搭載してよいと認められた部品</li>
+</ul>
+<hr>
+<p>次に読む：<a href="02_事業として成立するのか.html">02_事業として成立するのか</a>（この物理制約が事業の何を決めるか）／<br><a href="03_型式証明と制度.html">03_型式証明と制度</a>（なぜ認証に10年かかるのか）</p><section class="page-quiz" data-quiz-key="01_注目テーマ/16_空飛ぶクルマ/01_機体の技術と物理的制約.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全9問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：「空飛ぶクルマ」は道路を走らない。実体は電動の小型航空機（eVTOL）である。 その性能は制度でも設計の巧拙でもなく、電池のエネルギー密度と、ホバリングという行為のエネルギー効率でほぼ決まっている。 どこに天井があるかを、実際の算数で確かめる。", "結論から：主要機の公称航続は 100〜160km、乗客4名前後。実運用ではさらに短く、数十km圏の点と点を結ぶ乗り物になる。 これは「まだ技術が未熟だから」ではなく、リチウムイオン電池のエネルギー密度が航空燃料の40分の1以下だから。 電池を積めば重くなり、重ければ浮かせる電力が増える。この循環の外には出られない。 だから業界の絵は「郊外から都心へ毎日通勤」ではなく、「空港と都心を15分で結ぶ」に収束していく。"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「まず誤解を潰す：「クルマ」ではない」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["道路も走れて空も飛べる車：道路は走らない。ナンバープレートも取らない", "自動車メーカーが作る：作るのは航空機メーカーとスタートアップ。自動車メーカーは出資・量産受託の立場", "自動車の型式認証で売れる：航空機の型式証明（TC）が要る。自動車とは桁違いに重い → 03_型式証明と制度", "正式な呼び名は eVTOL（electric Vertical Take-Off and Landing＝電動垂直離着陸機）、 制度上の分類は Powered-Lift（動力揚力機）。政策文書では AAM（Advanced Air Mobility＝次世代空モビリティ）と呼ばれる。 「空飛ぶクルマ」は日本の経産省・国交省が使い始めた通称であって、技術用語ではない。"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「機体方式は3つしかない」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["eVTOLは「垂直に浮く仕組み」と「前に進む仕組み」をどう両立させるかで3つに分かれる。", "マルチロータ（回転翼多数）：固定した多数のプロペラの推力だけで浮き、傾けて進む。翼を持たない：EHang EH216-S（中）16基、SkyDrive SKYDRIVE（日）12基、Volocopter VoloCity（独）18基", "リフト＋クルーズ：揚力用ローターと推進用プロペラを別々に持つ。離着陸後、揚力ローターは止めて翼で飛ぶ：BETA ALIA（米）", "ベクタードスラスト（推力偏向）：同じプロペラを傾けて、離陸時は上向き・巡航時は前向きに使う：Joby S4（米）6基チルト、Archer Midnight（米、チルト＋固定の折衷）、Lilium Jet（独、ダクテッドファン30基・破綻）"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「ホバリングの算数：離着陸が電池を食う」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["ヘリコプターやeVTOLが空中に静止している状態（ホバリング）は、下向きに空気を押し続けることで自重を支えている。 必要な電力は運動量理論から次で近似できる（W＝重量[N]、A＝プロペラが掃く面積の合計[m²]、ρ＝空気密度1.225、FM＝効率0.6〜0.75）。", "式の形が示すのは、掃く面積 A が小さいほど電力が跳ね上がるということ。 W ÷ A をディスク荷重（プロペラ1m²あたり何kgを支えているか）と呼ぶ。これが効率を決める一番の指標になる。", "産業用ドローン（4kg級）：4 kg：約 0.5 m²", "ヘリコプター（Bell 407級）：約 2,300 kg：約 90 m²（大径ローター1枚）"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「電池の壁：なぜ航続が100km級で止まるのか」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["ジェット燃料（ケロシン）：約 12,000 Wh/kg：燃やすほど機体が軽くなるおまけ付き", "水素（燃料電池・タンク込み）：数百〜1,500 Wh/kg 級：タンクが重く、システム全体では目減りする", "リチウムイオン電池（パック実効）：150〜280 Wh/kg：2026年時点の量産品。航空向けの高出力セルは密度を落として設計する", "差は40〜80倍。しかもエンジン効率30%程度を掛けたあとでも、燃料側は4,000Wh/kg級が残る。 電池は変換効率が高い（90%以上）が、それでも桁で負けている。"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「静かさ：eVTOLが売りにしている唯一の性能優位」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["ヘリコプターが都心で使いにくい最大の理由は騒音。eVTOLはここを改善した。", "上空通過時の騒音：90〜100 dB級：65 dB前後を目標（通常会話レベル）", "音の出どころ：大径ローターの翼端が音速近くまで回ることによる衝撃音、テールローター：小径プロペラを低回転で多数回す", "音質：低周波の「バタバタ」音。遠くまで届き、屋内にも侵入する：高めの「ブーン」音。距離減衰が速い"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「安全設計：故障しても落ちないという要求」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["旅客を運ぶ航空機には、「壊滅的な故障の確率が10億飛行時間に1回以下（10⁻⁹/飛行時間）」という安全目標がかかる。 これは大型旅客機と同じ水準で、EASAの SC-VTOL でも同等が求められる。", "エンジンが止まってもオートローテーション（無動力で回転翼を風車のように回して降りる）で降りられる：オートローテーションができない（小径プロペラでは回転エネルギーが足りない）。マルチロータは特に不可", "単発機も認められてきた：分散電動推進（DEP）で冗長性を確保する。6〜18基のうち何基か止まっても飛べるよう設計", "機構は複雑（スワッシュプレート等）だが、実績が長い：可動部は少ないが、電池・インバータ・ソフトウェアという新しい故障モードが増えた"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「材料と部品：どこから買ってくるか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["機体構造：炭素繊維複合材（CFRP）。軽さが命なのでほぼ全機が採用：東レ、帝人、三菱ケミカル → 炭素・カーボン", "電動モータ：高出力密度の永久磁石同期モータ。冷却が課題：内製が多い。日本電産、ヤマハ発動機等も参入 → モーター", "電池セル：高出力型リチウムイオン。航空認証を通したセルは限られる：LG、Samsung SDI、EVE、一部は自社設計 → 二次電池", "部品の多くはEVとドローンの技術延長線にある。ただし「認証された部品（TSO品）」でなければ使えないため、 自動車部品をそのまま持ってくることはできない。同じモータでも、航空認証を通す作業に数年かかる。"]}, {"question": "「空飛ぶクルマ｜機体の技術と物理的制約（なぜ「数十km・数人乗り」から出られないのか）」における「ドローン・ヘリ・小型機との位置関係」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["技術は連続しているのに、制度は「人が乗るかどうか」で完全に切れている。 これがドローン業界の実績がそのまま空飛ぶクルマに転用できない理由であり、 「ドローンが飛べているのだから空飛ぶクルマもすぐ飛ぶ」という直感が外れる理由でもある。"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html"><span class="lbl">← 前</span>空飛ぶクルマ</a><a class="next" href="../../01_注目テーマ/16_空飛ぶクルマ/02_事業として成立するのか.html"><span class="lbl">次 →</span>空飛ぶクルマ｜事業として成立するのか（1席あたりいくらになるか）</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. まず誤解を潰す：「クルマ」ではない</a><a class="lv2" href="#s2">2. 機体方式は3つしかない</a><a class="lv2" href="#s3">3. ホバリングの算数：離着陸が電池を食う</a><a class="lv2" href="#s4">4. 電池の壁：なぜ航続が100km級で止まるのか</a><a class="lv3" href="#s5">実際に航続距離を計算してみる</a><a class="lv3" href="#s6">電池を増やしても伸びない</a><a class="lv3" href="#s7">電池のもう1つの問題：寿命と出力</a><a class="lv2" href="#s8">5. 静かさ：eVTOLが売りにしている唯一の性能優位</a><a class="lv2" href="#s9">6. 安全設計：故障しても落ちないという要求</a><a class="lv2" href="#s10">7. 材料と部品：どこから買ってくるか</a><a class="lv2" href="#s11">8. ドローン・ヘリ・小型機との位置関係</a><a class="lv2" href="#s12">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

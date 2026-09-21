@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></span><span>›</span><span>防御の全体像</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></li><li><a class="on" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="" href="01_攻撃側の経済学.html">攻撃側の経済学</a></li><li><a class="on" href="02_防御の全体像.html">防御の全体像</a></li><li><a class="" href="03_サプライチェーンと組織の実務.html">サプライチェーンと組織の実務</a></li><li><a class="" href="04_規制と制度.html">規制と制度</a></li><li><a class="" href="05_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></li><li><a class="" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></li><li><a class="" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">サイバーセキュリティ</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">17語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="ネットワークを切れば被害は止まるが業務も止まる。" aria-label="止めるか、動かし続けるか：ネットワークを切れば被害は止まるが業務も止まる。">止めるか、動かし続けるか</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ログが残っていなければ「分からない」としか言えない。" aria-label="何が漏れたかの特定：ログが残っていなければ「分からない」としか言えない。">何が漏れたかの特定</span><span class="term-chip has-tip" tabindex="0" data-tooltip="全部同時には戻せない。どの業務から戻すかを事前に決めておく（BCPの領域）。" aria-label="復旧の順番：全部同時には戻せない。どの業務から戻すかを事前に決めておく（BCPの領域）。">復旧の順番</span><span class="term-chip has-tip" tabindex="0" data-tooltip="社内と社外を壁で分け、内側は信用する従来型の設計" aria-label="境界防御（ペリメータ）：社内と社外を壁で分け、内側は信用する従来型の設計">境界防御（ペリメータ）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="社内外で区別せず、アクセスのたびに検証する設計思想。製品名ではない" aria-label="ゼロトラスト：社内外で区別せず、アクセスのたびに検証する設計思想。製品名ではない">ゼロトラスト</span><span class="term-chip has-tip" tabindex="0" data-tooltip="侵入後、社内の別のサーバーや端末へ広がる動き" aria-label="ラテラルムーブメント（横移動）：侵入後、社内の別のサーバーや端末へ広がる動き">ラテラルムーブメント（横移動）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="端末の防御／端末の検知と対応／通信の検知と対応／それらの統合" aria-label="EPP / EDR / NDR / XDR：端末の防御／端末の検知と対応／通信の検知と対応／それらの統合">EPP / EDR / NDR / XDR</span><span class="term-chip has-tip" tabindex="0" data-tooltip="各種ログを1ヶ所に集めて突き合わせ、異常を見つける基盤" aria-label="SIEM：各種ログを1ヶ所に集めて突き合わせ、異常を見つける基盤">SIEM</span><span class="term-chip has-tip" tabindex="0" data-tooltip="検知後の定型対応を自動化する仕組み" aria-label="SOAR：検知後の定型対応を自動化する仕組み">SOAR</span><span class="term-chip has-tip" tabindex="0" data-tooltip="監視を担う組織。MSS（監視のみ外注）とMDR（対応まで外注）がある" aria-label="SOC：監視を担う組織。MSS（監視のみ外注）とMDR（対応まで外注）がある">SOC</span><span class="term-chip has-tip" tabindex="0" data-tooltip="事故対応の司令塔。平時の準備と有事の指揮を担う" aria-label="CSIRT：事故対応の司令塔。平時の準備と有事の指揮を担う">CSIRT</span><span class="term-chip has-tip" tabindex="0" data-tooltip="特権ID管理。管理者権限の貸し出しと記録を厳格にする" aria-label="PAM：特権ID管理。管理者権限の貸し出しと記録を厳格にする">PAM</span><span class="term-chip has-tip" tabindex="0" data-tooltip="クラウドの設定ミスを点検する仕組み" aria-label="CSPM：クラウドの設定ミスを点検する仕組み">CSPM</span><span class="term-chip has-tip" tabindex="0" data-tooltip="データの持ち出しを検知・制限する仕組み" aria-label="DLP：データの持ち出しを検知・制限する仕組み">DLP</span><span class="term-chip has-tip" tabindex="0" data-tooltip="人以外のID（APIキー、サービスアカウント、AIエージェント）" aria-label="NHI：人以外のID（APIキー、サービスアカウント、AIエージェント）">NHI</span><span class="term-chip has-tip" tabindex="0" data-tooltip="米国NISTによるインシデント対応の手引き。国内でも事実上の下敷き" aria-label="NIST SP 800-61：米国NISTによるインシデント対応の手引き。国内でも事実上の下敷き">NIST SP 800-61</span><span class="term-chip has-tip" tabindex="0" data-tooltip="検知までの平均時間／復旧までの平均時間。SOCの成績表にあたる指標" aria-label="MTTD / MTTR：検知までの平均時間／復旧までの平均時間。SOCの成績表にあたる指標">MTTD / MTTR</span></div></details><p><strong>このノートで分かること</strong>：セキュリティ製品のカタログに並ぶ略語が、<br><strong>「どこを守るための道具か」という1枚の地図のどこに置かれるのか</strong>。<br>そして、守りきれなかったときに何が起きるのか（インシデント対応の流れ）。</p>
+<blockquote><p>製品カテゴリごとの市場やベンダーの細かい競争は<br><a href="../../04_情報通信・IT・ネット/14_情報セキュリティ/README.html">情報セキュリティ</a> 側の担当。<br>ここでは<strong>考え方の骨格</strong>に絞る。攻撃側の構造は <a href="01_攻撃側の経済学.html">01_攻撃側の経済学</a>。</p></blockquote>
+<h2 id="s1">1. 結論：守り方の前提が「城壁」から「検問」へ変わった</h2>
+<p>かつての防御は<strong>境界防御</strong>（ペリメータ・セキュリティ）と呼ばれた。<br>社内ネットワークを城壁で囲い、<strong>中に入った人・機器は信用する</strong>という設計である。</p>
+<p>この前提を壊したものが3つある。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>壊したもの</th>
+<th>何が起きたか</th>
+</tr></thead><tbody>
+<tr><td>クラウド／SaaS</td><td>守るべきデータが<strong>城壁の外</strong>（他社のサーバー）に出た</td></tr>
+<tr><td>テレワーク</td><td>社員が城壁の外から仕事をするようになった</td></tr>
+<tr><td>認証情報の窃取</td><td>攻撃者が<strong>正規のIDで正面から入ってくる</strong>ので、城壁が意味をなさない</td></tr>
+</tbody></table></div>
+<p>そこで出てきたのが<strong>ゼロトラスト</strong>。直訳すると「何も信用しない」だが、<br>実際の意味は「<strong>社内か社外かでは判断せず、アクセスのたびに毎回確かめる</strong>」である。<br>製品名ではなく設計思想であり、「ゼロトラスト製品を買えば完成」ではない。</p>
+<pre><code>【境界防御】城壁モデル                    【ゼロトラスト】検問モデル
+
+   インターネット                             インターネット
+        │                                          │
+   ┏━━━━┿━━━━┓ ← ファイアウォール          ┌──────┴──────┐
+   ┃  社内網   ┃                          毎回チェックする関所
+   ┃ 中は信用  ┃                          （誰が／どの端末で／
+   ┃ サーバー  ┃                            どの状態で／何に）
+   ┗━━━━━━━━━┛                              │      │      │
+                                           社内DB  SaaS  クラウド
+ 一度入られたら中は自由に動ける         入った後も、次の一歩ごとに確認</code></pre>
+<blockquote><p>ポイント：ゼロトラストの本質は「<strong>侵入されることを前提に、<br>侵入後の横移動（ラテラルムーブメント）を止める</strong>」こと。入口を強くする話ではない。</p></blockquote>
+<h2 id="s2">2. 多層防御：一枚の壁ではなく、何枚もの網</h2>
+<p>防御は「防ぐ」だけでは足りず、<strong>防ぐ／見つける／対応する／戻す</strong>の4段が要る。<br>これを縦（レイヤー）と横（時間）の両方で重ねるのが多層防御の考え方。</p>
+<pre><code>                 防ぐ        見つける      対応する      戻す
+              (Protect)     (Detect)      (Respond)   (Recover)
+  ───────────────────────────────────────────────────────────
+  人・ID     │ MFA/権限最小  │ 異常ログイン │ アカウント停止 │ 再発行
+  端末       │ 資産管理/更新 │ EDR          │ 端末の隔離    │ 再構築
+  ネットワーク│ FW/セグメント │ NDR/通信監視 │ 通信遮断      │ 経路再設計
+  アプリ/SaaS │ 設定の堅牢化  │ CSPM/監査ログ│ 権限剥奪      │ 設定戻し
+  データ     │ 暗号化/DLP    │ 持ち出し検知 │ 公開差止め対応 │ バックアップ
+  ───────────────────────────────────────────────────────────
+                 ↑ 従来ここに偏っていた    ↑ いま投資が動いているのはここ</code></pre>
+<p><strong>なぜ右側に投資が移ったか</strong>：侵入を100%防ぐことができないと分かったから。<br>「破られない壁」より「破られてから止まるまでの時間」を短くするほうが、<br>被害額（業務停止日数×日商＋情報流出件数）を直接下げる。</p>
+<h2 id="s3">3. 略語の地図：EDR / SIEM / SOC / XDR / SOAR</h2>
+<p>セキュリティの略語は、ほぼ全部が<strong>「どこのログを・誰が・どう見るか」</strong>の違いでしかない。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>略語</th>
+<th>読み下すと</th>
+<th>実際にやること</th>
+<th>誰が使うか</th>
+</tr></thead><tbody>
+<tr><td><strong>EPP</strong>（アンチウイルス）</td><td>端末の防御</td><td>既知の悪いファイルをパターンで止める</td><td>自動</td></tr>
+<tr><td><strong>EDR</strong></td><td>端末の検知と対応</td><td>端末の<strong>挙動</strong>を記録し、怪しい動きを見つけて隔離する</td><td>SOCの担当者</td></tr>
+<tr><td><strong>NDR</strong></td><td>通信の検知と対応</td><td>ネットワークの通信を見て異常を探す</td><td>同上</td></tr>
+<tr><td><strong>SIEM</strong></td><td>ログの集約と相関分析</td><td>機器・サーバー・SaaSのログを<strong>1ヶ所に集めて突き合わせる</strong></td><td>同上</td></tr>
+<tr><td><strong>XDR</strong></td><td>EDR＋NDR＋ログの統合</td><td>端末・通信・クラウドを横断して1本のストーリーにする</td><td>同上</td></tr>
+<tr><td><strong>SOAR</strong></td><td>対応の自動化</td><td>「この検知ならこの手順」を自動実行する</td><td>同上</td></tr>
+<tr><td><strong>SOC</strong></td><td>監視する組織</td><td>上記の道具を使って<strong>24時間365日、人が見る</strong>体制</td><td>自社 or 外部委託（MDR）</td></tr>
+<tr><td><strong>CSPM</strong></td><td>クラウド設定の点検</td><td>クラウドの設定ミス（公開されっぱなし等）を探す</td><td>インフラ／SOC</td></tr>
+<tr><td><strong>IAM / PAM</strong></td><td>ID管理／特権ID管理</td><td>誰が何にアクセスできるかを管理する。特権は特に厳格に</td><td>情シス</td></tr>
+<tr><td><strong>MFA</strong></td><td>多要素認証</td><td>パスワード＋もう1要素。<strong>最も費用対効果が高い基本策</strong></td><td>全社員</td></tr>
+</tbody></table></div>
+<p><strong>EDR</strong>＝Endpoint Detection and Response。ウイルス対策ソフト（EPP）との違いは、<br>EPPが「悪いファイルを止める」のに対し、EDRは「<strong>普通のファイルが普通でない動きをした</strong>」<br>ことを記録から見つける点にある。攻撃側がOS標準ツールを悪用するようになったので、<br>「ファイルの善悪」では判定できなくなった、というのが背景。</p>
+<p><strong>SIEM</strong>＝Security Information and Event Management。<br>ログを集めるだけの箱ではなく、「A機器のこの記録」と「Bサーバーのあの記録」を<br><strong>つなげて初めて意味が出る</strong>ことを扱う道具。ログ量に比例して費用がかかるため、<br><strong>何を集め、何を捨てるか</strong>が設計の勘所であり、コストの主因にもなる。</p>
+<blockquote><p>ポイント：<strong>道具を買っても、見る人がいなければ何も起きない</strong>。<br>EDRのアラートは毎日大量に出る。SOC（監視する人と手順）とセットでなければ、<br>「警報が鳴っていたのに誰も見ていなかった」という典型的な失敗になる。</p></blockquote>
+<h2 id="s4">4. 「見る人」をどう用意するか</h2>
+<p>自社でSOCを持つのは、24時間3交代×複数名が要るため現実的でない組織が多い。<br>そこで3つの選択肢が並ぶ。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>形</th>
+<th>中身</th>
+<th>向く組織</th>
+<th>注意点</th>
+</tr></thead><tbody>
+<tr><td>自社SOC</td><td>人も道具も内製</td><td>金融大手、通信、重要インフラ</td><td>人件費が重い。人材の採用と定着が最大の難所</td></tr>
+<tr><td>外部委託（<strong>MSS</strong>）</td><td>監視だけ外部に出す</td><td>中堅以上</td><td>「アラートを転送されるだけ」だと現場が回らない</td></tr>
+<tr><td><strong>MDR</strong></td><td>監視＋<strong>対応まで</strong>外部が行う</td><td>中堅・中小</td><td>端末隔離まで委託できる。範囲の線引きを契約で詰める必要</td></tr>
+<tr><td><strong>CSIRT</strong></td><td>自社の<strong>司令塔</strong>。平時は訓練、有事は指揮</td><td>全組織（規模に応じた形で）</td><td>監視の外注はできても、<strong>意思決定は外注できない</strong></td></tr>
+</tbody></table></div>
+<p><strong>CSIRT</strong>＝Computer Security Incident Response Team。<br>「事故が起きたときに誰が何を決めるか」をあらかじめ決めておく組織のこと。<br>専任部署でなくてもよく、兼務の指名でも成立する。重要なのは<strong>連絡網と権限</strong>。</p>
+<h2 id="s5">5. インシデント対応の流れ：時計との戦い</h2>
+<p>事故が起きてからの動きは、業界でおおむね次の6段に整理される（NIST SP 800-61 の考え方が下敷き）。</p>
+<pre><code> ①準備        ②検知・分析     ③封じ込め     ④根絶        ⑤復旧        ⑥教訓
+ (Prepare)   (Detect)       (Contain)    (Eradicate)  (Recover)    (Lessons)
+ ──────────────────────────────────────────────────────────────────────────
+ 体制/連絡網   何が起きたか    広がりを      原因を        業務を        再発防止と
+ 訓練/契約     どこまで侵入    止める        取り除く      戻す          開示・報告
+ バックアップ  情報の持出有無  ネット遮断    穴を塞ぐ      段階的に      規制当局対応
+ ──────────────────────────────────────────────────────────────────────────
+   平時           数時間〜数日     数時間      数日〜数週    数週〜数ヶ月   数ヶ月
+      ↑ ここでの準備量が、右側の全所要時間を決める</code></pre>
+<p>実務で必ず詰まるのは次の3点。</p>
+<ol>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="ネットワークを切れば被害は止まるが業務も止まる。" aria-label="止めるか、動かし続けるか：ネットワークを切れば被害は止まるが業務も止まる。"><strong>止めるか、動かし続けるか</strong></span>：ネットワークを切れば被害は止まるが業務も止まる。<br>この判断は技術ではなく<strong>経営判断</strong>で、事前に基準を決めていないと初動で数日溶ける。</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="ログが残っていなければ「分からない」としか言えない。" aria-label="何が漏れたかの特定：ログが残っていなければ「分からない」としか言えない。"><strong>何が漏れたかの特定</strong></span>：ログが残っていなければ「分からない」としか言えない。<br>分からないと<strong>最大件数で開示するしかなくなり</strong>、被害の見え方が膨らむ。</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="全部同時には戻せない。どの業務から戻すかを事前に決めておく（BCPの領域）。" aria-label="復旧の順番：全部同時には戻せない。どの業務から戻すかを事前に決めておく（BCPの領域）。"><strong>復旧の順番</strong></span>：全部同時には戻せない。どの業務から戻すかを事前に決めておく（BCPの領域）。</li>
+</ol>
+<h3 id="s6">実際の所要時間の感覚</h3>
+<p>2025年の国内の大型事例では、<strong>受注・出荷の停止が約2ヶ月に及んだケース</strong>が報じられている<br>（アサヒグループホールディングス、2025年9月末発生／完全復旧は2026年）。<br>EC・物流のように<strong>1日止まると日商がそのまま飛ぶ業態</strong>では、<br>停止1日あたり10億円規模の機会損失という推計も出ている（アスクルの事例、報道ベース）。</p>
+<blockquote><p>ポイント：セキュリティ投資の是非は「事故の確率×被害額」で語られがちだが、<br>実務的には<strong>「止まったとき、1日いくら失うか」を先に出す</strong>ほうが話が早い。<br>この数字が出ると、どこまで投資するかが自動的に決まる。</p></blockquote>
+<h2 id="s7">6. 投資の優先順位：基本が効く</h2>
+<p>派手な製品より、地味な基本のほうが被害率を下げる。IPAの「情報セキュリティ10大脅威 2026」<br>解説書も、副題に「当たり前を確実に、基本の徹底と継続的な見直しで被害の最小化を」を掲げている。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>優先度</th>
+<th>打ち手</th>
+<th>なぜ効くか</th>
+<th>コスト感</th>
+</tr></thead><tbody>
+<tr><td>1</td><td><strong>MFAの全面適用</strong>（特にVPN・管理者・クラウド）</td><td>盗まれた認証情報だけでは入れなくなる。IABの商品を無効化する</td><td>低</td></tr>
+<tr><td>2</td><td><strong>インターネットに面した機器の更新</strong></td><td>侵入経路の最上位。更新が止まった装置は「開いた窓」</td><td>低〜中</td></tr>
+<tr><td>3</td><td><strong>オフライン／改変不能バックアップ</strong>と復旧訓練</td><td>払わずに戻せる。復旧訓練をしていないバックアップは無いのと同じ</td><td>中</td></tr>
+<tr><td>4</td><td><strong>特権IDの管理（PAM）とネットワーク分離</strong></td><td>入られても横に広がれない。被害範囲を1区画に閉じる</td><td>中</td></tr>
+<tr><td>5</td><td><strong>EDR＋監視体制（SOC/MDR）</strong></td><td>潜伏期間を短くする。窃取型に効く</td><td>中〜高</td></tr>
+<tr><td>6</td><td><strong>ログ設計とSIEM</strong></td><td>事後に「何が漏れたか」を説明できる。開示の質が変わる</td><td>高（ログ量次第）</td></tr>
+<tr><td>7</td><td>演習（机上訓練・実地訓練）</td><td>初動の判断が速くなる。効果は地味だが確実</td><td>低〜中</td></tr>
+</tbody></table></div>
+<p>1〜3を済ませずに5〜6を買う組織は少なくない。<br>理由は、1〜3が<strong>運用の手間で、買えば終わりにならないから</strong>である。</p>
+<h2 id="s8">7. AIが両側に効く</h2>
+<p>2025〜2026年の変化として、防御側・攻撃側の双方にAIが入ってきた。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>側</th>
+<th>AIの使われ方</th>
+<th>現時点の評価</th>
+</tr></thead><tbody>
+<tr><td>攻撃</td><td>フィッシング文面の自然化・多言語化、偵察の自動化、攻撃コードの生成支援</td><td><strong>量と速度</strong>が上がった。CrowdStrikeはAI活用攻撃が2025年に前年比89%増と報告</td></tr>
+<tr><td>攻撃</td><td>攻撃者自身がAIエージェントに一連の作業を任せる</td><td>2026年の予測テーマ。トレンドマイクロ等が警戒を表明</td></tr>
+<tr><td>防御</td><td>アラートの一次分類、ログの自然言語照会、対応手順の下書き</td><td>SOCの人手不足を埋める方向で実装が進む</td></tr>
+<tr><td>新しい守備対象</td><td>自社が使うAI・AIエージェント自体（権限を持つ非人間ID＝NHI）</td><td>IPA「10大脅威 2026」で<strong>AIの利用をめぐるサイバーリスクが初の3位</strong></td></tr>
+</tbody></table></div>
+<p><strong>NHI</strong>（Non-Human Identity）＝人ではない主体のID。APIキーやサービスアカウント、<br>そしてAIエージェントが該当する。人よりはるかに多く、<strong>退職も異動もしないので放置されやすい</strong>。<br>従来のID管理が「人」を前提に作られてきたため、ここに空白がある。</p>
+<p>詳細は <a href="../01_生成AI/README.html">生成AI</a> と <a href="05_直近トピック_2026.html">05_直近トピック_2026</a> を参照。</p>
+<h2 id="s9">用語メモ</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="社内と社外を壁で分け、内側は信用する従来型の設計" aria-label="境界防御（ペリメータ）：社内と社外を壁で分け、内側は信用する従来型の設計"><strong>境界防御（ペリメータ）</strong></span>：社内と社外を壁で分け、内側は信用する従来型の設計</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="社内外で区別せず、アクセスのたびに検証する設計思想。製品名ではない" aria-label="ゼロトラスト：社内外で区別せず、アクセスのたびに検証する設計思想。製品名ではない"><strong>ゼロトラスト</strong></span>：社内外で区別せず、アクセスのたびに検証する設計思想。製品名ではない</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="侵入後、社内の別のサーバーや端末へ広がる動き" aria-label="ラテラルムーブメント（横移動）：侵入後、社内の別のサーバーや端末へ広がる動き"><strong>ラテラルムーブメント（横移動）</strong></span>：侵入後、社内の別のサーバーや端末へ広がる動き</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="端末の防御／端末の検知と対応／通信の検知と対応／それらの統合" aria-label="EPP / EDR / NDR / XDR：端末の防御／端末の検知と対応／通信の検知と対応／それらの統合"><strong>EPP / EDR / NDR / XDR</strong></span>：端末の防御／端末の検知と対応／通信の検知と対応／それらの統合</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="各種ログを1ヶ所に集めて突き合わせ、異常を見つける基盤" aria-label="SIEM：各種ログを1ヶ所に集めて突き合わせ、異常を見つける基盤"><strong>SIEM</strong></span>：各種ログを1ヶ所に集めて突き合わせ、異常を見つける基盤</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="検知後の定型対応を自動化する仕組み" aria-label="SOAR：検知後の定型対応を自動化する仕組み"><strong>SOAR</strong></span>：検知後の定型対応を自動化する仕組み</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="監視を担う組織。MSS（監視のみ外注）とMDR（対応まで外注）がある" aria-label="SOC：監視を担う組織。MSS（監視のみ外注）とMDR（対応まで外注）がある"><strong>SOC</strong></span>：監視を担う組織。<strong>MSS</strong>（監視のみ外注）と<strong>MDR</strong>（対応まで外注）がある</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="事故対応の司令塔。平時の準備と有事の指揮を担う" aria-label="CSIRT：事故対応の司令塔。平時の準備と有事の指揮を担う"><strong>CSIRT</strong></span>：事故対応の司令塔。平時の準備と有事の指揮を担う</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="特権ID管理。管理者権限の貸し出しと記録を厳格にする" aria-label="PAM：特権ID管理。管理者権限の貸し出しと記録を厳格にする"><strong>PAM</strong></span>：特権ID管理。管理者権限の貸し出しと記録を厳格にする</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="クラウドの設定ミスを点検する仕組み" aria-label="CSPM：クラウドの設定ミスを点検する仕組み"><strong>CSPM</strong></span>：クラウドの設定ミスを点検する仕組み</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="データの持ち出しを検知・制限する仕組み" aria-label="DLP：データの持ち出しを検知・制限する仕組み"><strong>DLP</strong></span>：データの持ち出しを検知・制限する仕組み</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="人以外のID（APIキー、サービスアカウント、AIエージェント）" aria-label="NHI：人以外のID（APIキー、サービスアカウント、AIエージェント）"><strong>NHI</strong></span>：人以外のID（APIキー、サービスアカウント、AIエージェント）</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="米国NISTによるインシデント対応の手引き。国内でも事実上の下敷き" aria-label="NIST SP 800-61：米国NISTによるインシデント対応の手引き。国内でも事実上の下敷き"><strong>NIST SP 800-61</strong></span>：米国NISTによるインシデント対応の手引き。国内でも事実上の下敷き</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="検知までの平均時間／復旧までの平均時間。SOCの成績表にあたる指標" aria-label="MTTD / MTTR：検知までの平均時間／復旧までの平均時間。SOCの成績表にあたる指標"><strong>MTTD / MTTR</strong></span>：検知までの平均時間／復旧までの平均時間。SOCの成績表にあたる指標</li>
+</ul>
+<hr>
+<ul>
+<li>前：<a href="01_攻撃側の経済学.html">01_攻撃側の経済学</a></li>
+<li>次：<a href="03_サプライチェーンと組織の実務.html">03_サプライチェーンと組織の実務</a></li>
+<li>戻る：<a href="README.html">README</a></li>
+</ul><section class="page-quiz" data-quiz-key="01_注目テーマ/10_サイバーセキュリティ/02_防御の全体像.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全8問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：セキュリティ製品のカタログに並ぶ略語が、 「どこを守るための道具か」という1枚の地図のどこに置かれるのか。 そして、守りきれなかったときに何が起きるのか（インシデント対応の流れ）。", "製品カテゴリごとの市場やベンダーの細かい競争は 情報セキュリティ 側の担当。 ここでは考え方の骨格に絞る。攻撃側の構造は 01_攻撃側の経済学。"]}, {"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」における「結論：守り方の前提が「城壁」から「検問」へ変わった」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["かつての防御は境界防御（ペリメータ・セキュリティ）と呼ばれた。 社内ネットワークを城壁で囲い、中に入った人・機器は信用するという設計である。", "この前提を壊したものが3つある。", "クラウド／SaaS：守るべきデータが城壁の外（他社のサーバー）に出た", "テレワーク：社員が城壁の外から仕事をするようになった"]}, {"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」における「多層防御：一枚の壁ではなく、何枚もの網」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["防御は「防ぐ」だけでは足りず、防ぐ／見つける／対応する／戻すの4段が要る。 これを縦（レイヤー）と横（時間）の両方で重ねるのが多層防御の考え方。", "なぜ右側に投資が移ったか：侵入を100%防ぐことができないと分かったから。 「破られない壁」より「破られてから止まるまでの時間」を短くするほうが、 被害額（業務停止日数×日商＋情報流出件数）を直接下げる。"]}, {"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」における「略語の地図：EDR / SIEM / SOC / XDR / SOAR」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["セキュリティの略語は、ほぼ全部が「どこのログを・誰が・どう見るか」の違いでしかない。", "EPP（アンチウイルス）：端末の防御：既知の悪いファイルをパターンで止める", "EDR：端末の検知と対応：端末の挙動を記録し、怪しい動きを見つけて隔離する", "NDR：通信の検知と対応：ネットワークの通信を見て異常を探す"]}, {"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」における「「見る人」をどう用意するか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["自社でSOCを持つのは、24時間3交代×複数名が要るため現実的でない組織が多い。 そこで3つの選択肢が並ぶ。", "自社SOC：人も道具も内製：金融大手、通信、重要インフラ", "外部委託（MSS）：監視だけ外部に出す：中堅以上", "MDR：監視＋対応まで外部が行う：中堅・中小"]}, {"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」における「インシデント対応の流れ：時計との戦い」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["事故が起きてからの動きは、業界でおおむね次の6段に整理される（NIST SP 800-61 の考え方が下敷き）。", "実務で必ず詰まるのは次の3点。", "止めるか、動かし続けるか：ネットワークを切れば被害は止まるが業務も止まる。 この判断は技術ではなく経営判断で、事前に基準を決めていないと初動で数日溶ける。", "何が漏れたかの特定：ログが残っていなければ「分からない」としか言えない。 分からないと最大件数で開示するしかなくなり、被害の見え方が膨らむ。"]}, {"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」における「投資の優先順位：基本が効く」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["派手な製品より、地味な基本のほうが被害率を下げる。IPAの「情報セキュリティ10大脅威 2026」 解説書も、副題に「当たり前を確実に、基本の徹底と継続的な見直しで被害の最小化を」を掲げている。", "1：MFAの全面適用（特にVPN・管理者・クラウド）：盗まれた認証情報だけでは入れなくなる。IABの商品を無効化する", "2：インターネットに面した機器の更新：侵入経路の最上位。更新が止まった装置は「開いた窓」", "3：オフライン／改変不能バックアップと復旧訓練：払わずに戻せる。復旧訓練をしていないバックアップは無いのと同じ"]}, {"question": "「防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）」における「AIが両側に効く」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["2025〜2026年の変化として、防御側・攻撃側の双方にAIが入ってきた。", "攻撃：フィッシング文面の自然化・多言語化、偵察の自動化、攻撃コードの生成支援：量と速度が上がった。CrowdStrikeはAI活用攻撃が2025年に前年比89%増と報告", "攻撃：攻撃者自身がAIエージェントに一連の作業を任せる：2026年の予測テーマ。トレンドマイクロ等が警戒を表明", "防御：アラートの一次分類、ログの自然言語照会、対応手順の下書き：SOCの人手不足を埋める方向で実装が進む"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/10_サイバーセキュリティ/01_攻撃側の経済学.html"><span class="lbl">← 前</span>攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）</a><a class="next" href="../../01_注目テーマ/10_サイバーセキュリティ/03_サプライチェーンと組織の実務.html"><span class="lbl">次 →</span>サプライチェーン攻撃と組織の実務（取引先・脆弱性管理・SBOM・人材）</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. 結論：守り方の前提が「城壁」から「検問」へ変わった</a><a class="lv2" href="#s2">2. 多層防御：一枚の壁ではなく、何枚もの網</a><a class="lv2" href="#s3">3. 略語の地図：EDR / SIEM / SOC / XDR / SOAR</a><a class="lv2" href="#s4">4. 「見る人」をどう用意するか</a><a class="lv2" href="#s5">5. インシデント対応の流れ：時計との戦い</a><a class="lv3" href="#s6">実際の所要時間の感覚</a><a class="lv2" href="#s7">6. 投資の優先順位：基本が効く</a><a class="lv2" href="#s8">7. AIが両側に効く</a><a class="lv2" href="#s9">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

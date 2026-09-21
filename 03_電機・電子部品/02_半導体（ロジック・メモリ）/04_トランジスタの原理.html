@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>トランジスタの原理</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../03_電機・電子部品/index.html">電機・電子部品</a></span><span>›</span><span><a href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/README.html">半導体（ロジック・メモリ）</a></span><span>›</span><span>トランジスタの原理</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat" href="../../01_注目テーマ/index.html">注目テーマ</a></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat on" href="../../03_電機・電子部品/index.html">電機・電子部品</a><ul class="sub"><li><a class="" href="../../03_電機・電子部品/01_総合電機/README.html">総合電機</a></li><li><a class="on" href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/README.html">半導体（ロジック・メモリ）</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="" href="01_サプライチェーンと業界構造.html">サプライチェーンと業界構造</a></li><li><a class="" href="02_前工程.html">前工程</a></li><li><a class="" href="03_後工程.html">後工程</a></li><li><a class="on" href="04_トランジスタの原理.html">トランジスタの原理</a></li><li><a class="" href="05_用語集.html">用語集</a></li><li><a class="" href="06_ウェハー上にチップができるまで.html">ウェハー上にチップができるまで</a></li><li><a class="" href="07_半導体の種類と役割.html">半導体の種類と役割</a></li></ul></li><li><a class="" href="../../03_電機・電子部品/03_半導体製造装置/README.html">半導体製造装置</a></li><li><a class="" href="../../03_電機・電子部品/04_半導体材料/README.html">半導体材料</a></li><li><a class="" href="../../03_電機・電子部品/05_電子部品/README.html">電子部品</a></li><li><a class="" href="../../03_電機・電子部品/06_コネクタ・プリント基板/README.html">コネクタ・プリント基板</a></li><li><a class="" href="../../03_電機・電子部品/07_ディスプレイ/README.html">ディスプレイ</a></li><li><a class="" href="../../03_電機・電子部品/08_二次電池/README.html">二次電池</a></li><li><a class="" href="../../03_電機・電子部品/09_白物家電/README.html">白物家電</a></li><li><a class="" href="../../03_電機・電子部品/10_AV機器/README.html">AV機器</a></li><li><a class="" href="../../03_電機・電子部品/11_PC・スマートフォン/README.html">PC・スマートフォン</a></li><li><a class="" href="../../03_電機・電子部品/12_事務機器・複合機/README.html">事務機器・複合機</a></li><li><a class="" href="../../03_電機・電子部品/13_計測・分析機器/README.html">計測・分析機器</a></li><li><a class="" href="../../03_電機・電子部品/14_FA・制御機器/README.html">FA・制御機器</a></li><li><a class="" href="../../03_電機・電子部品/15_照明/README.html">照明</a></li></ul></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>トランジスタの原理</h1><div class="chips"><span class="chip">電機・電子部品</span><span class="chip">半導体（ロジック・メモリ）</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">16語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="シリコンに微量の不純物を混ぜて電気的性質を変えること → トランジスタの原理" aria-label="ドーピング：シリコンに微量の不純物を混ぜて電気的性質を変えること → トランジスタの原理">ドーピング</span><span class="term-chip">n型・p型</span><span class="term-chip has-tip" tabindex="0" data-tooltip="電子の空席。プラスの電荷として振る舞う" aria-label="正孔：電子の空席。プラスの電荷として振る舞う">正孔</span><span class="term-chip">ソース・ドレイン・ゲート</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ソース-ドレイン間の電流の通り道" aria-label="チャネル：ソース-ドレイン間の電流の通り道">チャネル</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ゲート電圧で表面に誘起される電子の層。これがチャネルになる" aria-label="反転層：ゲート電圧で表面に誘起される電子の層。これがチャネルになる">反転層</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ONになる境目の電圧" aria-label="しきい値電圧（Vth）：ONになる境目の電圧">しきい値電圧（Vth）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="OFFにしても漏れる電流。微細化の最大の敵" aria-label="リーク電流：OFFにしても漏れる電流。微細化の最大の敵">リーク電流</span><span class="term-chip has-tip" tabindex="0" data-tooltip="チャネルが短すぎてゲートが制御しきれなくなる現象" aria-label="短チャネル効果：チャネルが短すぎてゲートが制御しきれなくなる現象">短チャネル効果</span><span class="term-chip">High-k・メタルゲート</span><span class="term-chip has-tip" tabindex="0" data-tooltip="チャネルをヒレ状に立て3面から囲む構造（2011年〜）" aria-label="FinFET：チャネルをヒレ状に立て3面から囲む構造（2011年〜）">FinFET</span><span class="term-chip">GAA</span><span class="term-chip has-tip" tabindex="0" data-tooltip="nMOSとpMOSを対にした構成。静止時の消費電力がほぼゼロ" aria-label="CMOS：nMOSとpMOSを対にした構成。静止時の消費電力がほぼゼロ">CMOS</span><span class="term-chip has-tip" tabindex="0" data-tooltip="寸法を縮めれば電圧も下げられ、速く省電力になるという経験則。2000年代に崩れた" aria-label="デナード則：寸法を縮めれば電圧も下げられ、速く省電力になるという経験則。2000年代に崩れた">デナード則</span><span class="term-chip has-tip" tabindex="0" data-tooltip="MOSFETで制御しバイポーラで大電流を流す複合素子。パワー用途" aria-label="IGBT：MOSFETで制御しバイポーラで大電流を流す複合素子。パワー用途">IGBT</span><span class="term-chip">SiC・GaN</span></div></details><p>チップの中で何が起きているのか。<strong>トランジスタ＝電気で操作するスイッチ</strong>という一点から積み上げる。<br>製造の手順は <a href="02_前工程.html">前工程</a>、用語の索引は <a href="05_用語集.html">用語集</a>。</p>
+<h2 id="s1">1. 前提：半導体は不純物で性質を変えられる</h2>
+<p>純粋なシリコンはほとんど電気を通さない。そこに微量の不純物を混ぜる（<strong>ドーピング</strong>）と性質が変わる。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>型</th>
+<th>混ぜるもの</th>
+<th>電気を運ぶもの</th>
+</tr></thead><tbody>
+<tr><td><strong>n型</strong></td><td>リン、ヒ素（電子が余る）</td><td><strong>電子</strong>（マイナスの電荷）</td></tr>
+<tr><td><strong>p型</strong></td><td>ホウ素（電子が足りない）</td><td><strong>正孔（ホール）</strong>（電子の空席。プラスとして振る舞う）</td></tr>
+</tbody></table></div>
+<p>前工程の<strong>イオン注入</strong>は、この n / p を狙った場所に打ち分ける工程。</p>
+<h2 id="s2">2. MOSFETの構造</h2>
+<p>現在のICに使われているのはほぼ <strong>MOSFET</strong>（金属-酸化膜-半導体 電界効果トランジスタ）。<br>nチャネル型（nMOS）の断面：</p>
+<pre><code>              ゲート（電極）
+           ┌──────────────┐
+    ═══════│  絶縁膜（1〜2nm）  │═══════
+    ┌──────┴──────────────┴──────┐
+    │ n+ ソース │ ←── チャネル ──→ │ n+ ドレイン │
+    │              p型シリコン（土台）            │
+    └──────────────────────────┘</code></pre>
+<div class="table-wrap"><table><thead><tr>
+<th>部位</th>
+<th>役割</th>
+</tr></thead><tbody>
+<tr><td><strong>ソース</strong></td><td>電子の出口</td></tr>
+<tr><td><strong>ドレイン</strong></td><td>電子の入口</td></tr>
+<tr><td><strong>ゲート</strong></td><td>制御用の電極。<strong>絶縁膜で隔てられ、電流は流れない</strong></td></tr>
+<tr><td><strong>チャネル</strong></td><td>ソース-ドレイン間。普段はp型なので電子は通れない＝<strong>OFF</strong></td></tr>
+</tbody></table></div>
+<h2 id="s3">3. なぜスイッチになるのか</h2>
+<p>ゲートにプラスの電圧をかけると、<strong>絶縁膜越しの電界</strong>が p型シリコン中の電子を表面に引き寄せる。</p>
+<ol>
+<li>電圧が小さいうちは何も起きない（<strong>OFF</strong>）</li>
+<li><strong>しきい値電圧（Vth）</strong> を超えると、表面に電子が集まって薄いn型の層ができる（<strong>反転層＝チャネル</strong>）</li>
+<li>ソースとドレインが電子の通り道でつながり、電流が流れる（<strong>ON</strong>）</li>
+</ol>
+<p>つまり <strong>ゲート電圧で「通り道そのものを作ったり消したりしている」</strong>。<br>蛇口をひねるというより、<strong>橋を架けたり外したりする</strong>イメージが近い。</p>
+<blockquote><p>決定的に重要な点：<strong>ゲートは絶縁されているので、制御に電流をほとんど使わない</strong>。<br>状態の保持に電力が要らない。これがMOSFETが他方式を駆逐した理由。</p></blockquote>
+<h2 id="s4">4. CMOS：2種類を組み合わせる</h2>
+<p>実際の論理回路は nMOS と pMOS を対にした <strong>CMOS</strong> 構造。pMOSは極性が逆で、ゲートを下げるとONになる。</p>
+<pre><code>入力 0 →  pMOS:ON / nMOS:OFF  → 出力は電源側につながる ＝ 1
+入力 1 →  pMOS:OFF / nMOS:ON  → 出力はアース側につながる ＝ 0</code></pre>
+<p>どちらの状態でも<strong>電源からアースへ一直線に電流が流れる経路がない</strong>ので、静止時の消費電力がほぼゼロ。<br>電力を食うのは<strong>状態が切り替わる瞬間だけ</strong>。したがって、</p>
+<pre><code>消費電力 ∝ 容量 × 電圧² × 動作周波数</code></pre>
+<p>電圧が<strong>2乗</strong>で効くので、微細化で電圧を下げられることが省電力に直結した。<br>逆に周波数を上げると発熱が比例して増えるため、2000年代半ば以降は<br>クロック競争からコア数（並列化）競争へ移った。</p>
+<h2 id="s5">5. 微細化すると速くなる理由</h2>
+<ul>
+<li>チャネルが短い＝電子の走る距離が短い → <strong>速い</strong></li>
+<li>電極が小さい＝溜める電荷（容量）が小さい → <strong>切り替えが速く、消費電力も小さい</strong></li>
+</ul>
+<p>これが <strong>デナード則</strong>（寸法を縮めれば電圧も下げられ、速く・省電力になる）の中身。<br>2000年代半ばに崩れた経緯は <a href="../../01_注目テーマ/02_半導体・先端半導体/05_プロセスノード名の正確な意味.html">「2nm」「3nm」の正確な意味</a> を参照。</p>
+<h2 id="s6">6. なぜ構造が3次元化したのか</h2>
+<p>チャネルを短くしすぎると、<strong>ゲートがチャネルを制御しきれなくなる</strong>（<strong>短チャネル効果</strong>）。<br>ドレイン側の電圧の影響が勝ち、OFFにしても電気が漏れる（<strong>リーク電流</strong>）。<br>その対策の歴史が、そのまま先端プロセスの歴史になっている。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>時期</th>
+<th>問題</th>
+<th>対策</th>
+</tr></thead><tbody>
+<tr><td>2007年頃</td><td>絶縁膜が薄すぎてトンネル電流が漏れる</td><td><strong>High-k絶縁膜＋メタルゲート</strong></td></tr>
+<tr><td>2011年〜</td><td>平面構造では制御が足りない</td><td><strong>FinFET</strong>（チャネルをヒレ状に立て3面から囲む）</td></tr>
+<tr><td>2nm世代〜</td><td>さらに強い制御が必要</td><td><strong>GAA / ナノシート</strong>（板状チャネルを全周から囲む）</td></tr>
+</tbody></table></div>
+<p>「2nm世代の主役はGAA」と言われるのは、<strong>ゲートの支配力を取り戻す戦い</strong>が世代交代の本質だから。</p>
+<h2 id="s7">7. MOSFET以外のトランジスタ</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>種類</th>
+<th>原理</th>
+<th>主な用途</th>
+</tr></thead><tbody>
+<tr><td><strong>バイポーラトランジスタ</strong></td><td>ベースに流す<strong>電流</strong>でコレクタ電流を制御（電流制御型）</td><td>アナログ増幅、高速回路</td></tr>
+<tr><td><strong>IGBT</strong></td><td>入口をMOSFETで制御し、大電流はバイポーラで流す複合型</td><td>パワー半導体（産業機器、鉄道、EV）</td></tr>
+<tr><td><strong>SiC / GaN</strong></td><td>材料自体を変え、高電圧・高温・高周波に耐える</td><td>EV、再エネのインバータ、急速充電器</td></tr>
+</tbody></table></div>
+<p>デジタル＝MOSFET、パワー＝IGBT / SiC、と押さえておけば実務上は足りる。</p>
+<h2 id="s8">まとめ</h2>
+<p>トランジスタとは、<strong>絶縁されたゲートに電圧をかけ、電界の力で半導体の中に電流の通り道を作ったり消したりする装置</strong>。<br>それを数百億個並べ、ON/OFFの組み合わせで計算しているのが現在のチップ。</p>
+<h2 id="s9">用語メモ</h2>
+<p>ドーピング／n型・p型／正孔／ソース・ドレイン・ゲート／チャネル／反転層／<br>しきい値電圧（Vth）／リーク電流／短チャネル効果／High-k・メタルゲート／<br>FinFET／GAA／CMOS／デナード則／IGBT／SiC・GaN</p><section class="page-quiz" data-quiz-key="03_電機・電子部品/02_半導体（ロジック・メモリ）/04_トランジスタの原理.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全9問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「トランジスタの原理」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["チップの中で何が起きているのか。トランジスタ＝電気で操作するスイッチという一点から積み上げる。 製造の手順は 前工程、用語の索引は 用語集。"]}, {"question": "「トランジスタの原理」における「前提：半導体は不純物で性質を変えられる」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["純粋なシリコンはほとんど電気を通さない。そこに微量の不純物を混ぜる（ドーピング）と性質が変わる。", "n型：リン、ヒ素（電子が余る）：電子（マイナスの電荷）", "p型：ホウ素（電子が足りない）：正孔（ホール）（電子の空席。プラスとして振る舞う）", "前工程のイオン注入は、この n / p を狙った場所に打ち分ける工程。"]}, {"question": "「トランジスタの原理」における「MOSFETの構造」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["ゲート：制御用の電極。絶縁膜で隔てられ、電流は流れない"]}, {"question": "「トランジスタの原理」における「なぜスイッチになるのか」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["ゲートにプラスの電圧をかけると、絶縁膜越しの電界が p型シリコン中の電子を表面に引き寄せる。", "電圧が小さいうちは何も起きない（OFF）", "しきい値電圧（Vth） を超えると、表面に電子が集まって薄いn型の層ができる（反転層＝チャネル）", "ソースとドレインが電子の通り道でつながり、電流が流れる（ON）"]}, {"question": "「トランジスタの原理」における「CMOS：2種類を組み合わせる」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["実際の論理回路は nMOS と pMOS を対にした CMOS 構造。pMOSは極性が逆で、ゲートを下げるとONになる。", "どちらの状態でも電源からアースへ一直線に電流が流れる経路がないので、静止時の消費電力がほぼゼロ。 電力を食うのは状態が切り替わる瞬間だけ。したがって、", "電圧が2乗で効くので、微細化で電圧を下げられることが省電力に直結した。 逆に周波数を上げると発熱が比例して増えるため、2000年代半ば以降は クロック競争からコア数（並列化）競争へ移った。"]}, {"question": "「トランジスタの原理」における「微細化すると速くなる理由」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["チャネルが短い＝電子の走る距離が短い → 速い", "電極が小さい＝溜める電荷（容量）が小さい → 切り替えが速く、消費電力も小さい", "これが デナード則（寸法を縮めれば電圧も下げられ、速く・省電力になる）の中身。 2000年代半ばに崩れた経緯は 「2nm」「3nm」の正確な意味 を参照。"]}, {"question": "「トランジスタの原理」における「なぜ構造が3次元化したのか」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["チャネルを短くしすぎると、ゲートがチャネルを制御しきれなくなる（短チャネル効果）。 ドレイン側の電圧の影響が勝ち、OFFにしても電気が漏れる（リーク電流）。 その対策の歴史が、そのまま先端プロセスの歴史になっている。", "2007年頃：絶縁膜が薄すぎてトンネル電流が漏れる：High-k絶縁膜＋メタルゲート", "2011年〜：平面構造では制御が足りない：FinFET（チャネルをヒレ状に立て3面から囲む）", "2nm世代〜：さらに強い制御が必要：GAA / ナノシート（板状チャネルを全周から囲む）"]}, {"question": "「トランジスタの原理」における「MOSFET以外のトランジスタ」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["バイポーラトランジスタ：ベースに流す電流でコレクタ電流を制御（電流制御型）：アナログ増幅、高速回路", "IGBT：入口をMOSFETで制御し、大電流はバイポーラで流す複合型：パワー半導体（産業機器、鉄道、EV）", "SiC / GaN：材料自体を変え、高電圧・高温・高周波に耐える：EV、再エネのインバータ、急速充電器", "デジタル＝MOSFET、パワー＝IGBT / SiC、と押さえておけば実務上は足りる。"]}, {"question": "「トランジスタの原理」の章「まとめ」を30秒で要約してください。結論だけでなく、重要な因果関係も含めてください。", "points": ["トランジスタとは、絶縁されたゲートに電圧をかけ、電界の力で半導体の中に電流の通り道を作ったり消したりする装置。 それを数百億個並べ、ON/OFFの組み合わせで計算しているのが現在のチップ。"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/03_後工程.html"><span class="lbl">← 前</span>半導体｜後工程（Back-End / 組立・検査）</a><a class="next" href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/05_用語集.html"><span class="lbl">次 →</span>半導体 用語集</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. 前提：半導体は不純物で性質を変えられる</a><a class="lv2" href="#s2">2. MOSFETの構造</a><a class="lv2" href="#s3">3. なぜスイッチになるのか</a><a class="lv2" href="#s4">4. CMOS：2種類を組み合わせる</a><a class="lv2" href="#s5">5. 微細化すると速くなる理由</a><a class="lv2" href="#s6">6. なぜ構造が3次元化したのか</a><a class="lv2" href="#s7">7. MOSFET以外のトランジスタ</a><a class="lv2" href="#s8">まとめ</a><a class="lv2" href="#s9">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

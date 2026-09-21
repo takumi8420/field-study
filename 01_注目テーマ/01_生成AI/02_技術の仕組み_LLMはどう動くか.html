@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生成AI｜技術の仕組み（LLMはどう動くか）</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></span><span>›</span><span>技術の仕組み_LLMはどう動くか</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="on" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="" href="01_バリューチェーンと業界構造.html">バリューチェーンと業界構造</a></li><li><a class="on" href="02_技術の仕組み_LLMはどう動くか.html">技術の仕組み_LLMはどう動くか</a></li><li><a class="" href="03_ビジネスモデルと経済性.html">ビジネスモデルと経済性</a></li><li><a class="" href="04_企業導入とAIエージェント・規制.html">企業導入とAIエージェント・規制</a></li><li><a class="" href="05_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></li><li><a class="" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></li><li><a class="" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></li><li><a class="" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></li><li><a class="" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>生成AI｜技術の仕組み（LLMはどう動くか）</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">生成AI</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">15語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="学習データが何年何月までかで、それ以降の出来事は知らない" aria-label="カットオフ（knowledge cutoff）：学習データが何年何月までかで、それ以降の出来事は知らない">カットオフ（knowledge cutoff）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="テキストだけでなく画像・音声・動画を同じモデルで扱う。" aria-label="マルチモーダル：テキストだけでなく画像・音声・動画を同じモデルで扱う。">マルチモーダル</span><span class="term-chip has-tip" tabindex="0" data-tooltip="モデルに外部の関数やAPIを呼ばせる仕組み。" aria-label="ツール利用（function calling）：モデルに外部の関数やAPIを呼ばせる仕組み。">ツール利用（function calling）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ツール利用を何回も自律的に繰り返し、目標達成まで自分で手を動かす形態。" aria-label="エージェント：ツール利用を何回も自律的に繰り返し、目標達成まで自分で手を動かす形態。">エージェント</span><span class="term-chip has-tip" tabindex="0" data-tooltip="大規模言語モデル。大量のテキストで学習した「次の語を予測する」巨大モデル" aria-label="LLM：大規模言語モデル。大量のテキストで学習した「次の語を予測する」巨大モデル">LLM</span><span class="term-chip has-tip" tabindex="0" data-tooltip="モデルが扱う文字の最小単位。課金・上限の単位でもある" aria-label="トークン：モデルが扱う文字の最小単位。課金・上限の単位でもある">トークン</span><span class="term-chip has-tip" tabindex="0" data-tooltip="1回のやり取りで参照できるトークン数の上限" aria-label="コンテキストウィンドウ：1回のやり取りで参照できるトークン数の上限">コンテキストウィンドウ</span><span class="term-chip has-tip" tabindex="0" data-tooltip="モデル内部の数値。これが「学習した結果」そのもの" aria-label="パラメータ（重み）：モデル内部の数値。これが「学習した結果」そのもの">パラメータ（重み）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="事実でないことをもっともらしく生成する現象。仕組み上ゼロにはできない" aria-label="ハルシネーション：事実でないことをもっともらしく生成する現象。仕組み上ゼロにはできない">ハルシネーション</span><span class="term-chip has-tip" tabindex="0" data-tooltip="検索拡張生成。関連文書を検索して入力に添え、それを根拠に答えさせる方式" aria-label="RAG：検索拡張生成。関連文書を検索して入力に添え、それを根拠に答えさせる方式">RAG</span><span class="term-chip has-tip" tabindex="0" data-tooltip="既存モデルに追加学習をして振る舞いを変えること" aria-label="ファインチューニング：既存モデルに追加学習をして振る舞いを変えること">ファインチューニング</span><span class="term-chip has-tip" tabindex="0" data-tooltip="データ・パラメータ・計算量を増やすほど性能が伸びるという経験則" aria-label="スケーリング則：データ・パラメータ・計算量を増やすほど性能が伸びるという経験則">スケーリング則</span><span class="term-chip has-tip" tabindex="0" data-tooltip="重みを低精度の数値に置き換え、メモリと計算量を削る技術" aria-label="量子化：重みを低精度の数値に置き換え、メモリと計算量を削る技術">量子化</span><span class="term-chip has-tip" tabindex="0" data-tooltip="モデルを複数の「専門家」に分け、入力ごとに一部だけ動かす構造。総パラメータは巨大でも計算は軽い" aria-label="MoE：モデルを複数の「専門家」に分け、入力ごとに一部だけ動かす構造。総パラメータは巨大でも計算は軽い">MoE</span><span class="term-chip has-tip" tabindex="0" data-tooltip="学習データの収録時点。それ以降の出来事をモデル自身は知らない" aria-label="知識カットオフ：学習データの収録時点。それ以降の出来事をモデル自身は知らない">知識カットオフ</span></div></details><p><strong>このノートで分かること</strong>：大規模言語モデル（LLM）が中で何をしているか。<br><strong>LLMは「次に来る単語を当てる装置」であって、それ以上でも以下でもない</strong>。<br>この一点を押さえると、幻覚（ハルシネーション）もRAGもファインチューニングも、全部同じ理屈で説明できる。</p>
+<h2 id="s1">1. 一言でいうと「次の1語を当てるゲーム」</h2>
+<p>LLM（Large Language Model＝大規模言語モデル）がやっているのは、<br><strong>これまでの文字列を見て、次に来る確率が最も高い断片を1つ選ぶ</strong>こと。<br>それを1個ずつ繰り返して文章になる。</p>
+<pre><code>入力: 「日本の首都は」
+        ↓ モデルが次の候補に確率を付ける
+        「東京」  82%
+        「江戸」   4%
+        「大阪」   2%
+        ...
+        ↓ 1つ選んでつなげる
+出力: 「日本の首都は東京」 → これを入力に戻して次の1語へ → 「です」 → …</code></pre>
+<ul>
+<li>検索して答えているのではない。<strong>学習時に覚えた確率分布から、もっともらしい続きを生成している</strong></li>
+<li>だから「知らないこと」でも、もっともらしい続きを自信満々に作ってしまう。これが<strong>ハルシネーション（幻覚）</strong>の正体</li>
+<li>逆に言えば、<strong>正しい材料を入力側に入れてやれば精度は上がる</strong>。RAG（後述）はこの発想</li>
+</ul>
+<blockquote><p>ポイント：LLMは「知識データベース」ではなく「言語の確率モデル」。<br>事実性が必要な用途では、外から事実を渡す仕組みとセットで使うのが原則になる。</p></blockquote>
+<h2 id="s2">2. トークン：AIにとっての「文字の単位」</h2>
+<p>モデルは文字をそのまま扱わない。<strong>トークン</strong>という単位に切り刻んでから数値に変換する。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>対象</th>
+<th>おおよそのトークン数（目安）</th>
+</tr></thead><tbody>
+<tr><td>英語</td><td>1トークン ≒ 4文字 ≒ 0.75単語</td></tr>
+<tr><td>日本語</td><td>1文字 ≒ 0.7〜1.5トークン（モデルの設計で変わる）</td></tr>
+<tr><td>日本語のA4文書1枚（約1,000字）</td><td>だいたい1,000〜1,500トークン</td></tr>
+<tr><td>本1冊（10万字）</td><td>10万〜15万トークン規模</td></tr>
+</tbody></table></div>
+<p><strong>なぜトークンが重要か</strong>：</p>
+<ol>
+<li><strong>課金の単位がトークン</strong>。API料金は「入力100万トークンあたり◯ドル」で決まる</li>
+<li><strong>処理できる量の上限もトークン</strong>（次節のコンテキスト長）</li>
+<li><strong>日本語は英語よりトークン効率が悪くなりがち</strong>で、同じ内容でも割高・上限に早く当たることがある</li>
+</ol>
+<pre><code>「生成AIは便利です」
+   ↓ トークナイザが分割
+ [&quot;生成&quot;, &quot;AI&quot;, &quot;は&quot;, &quot;便利&quot;, &quot;です&quot;]
+   ↓ 各トークンをID（整数）へ
+ [46132, 4210, 385, 29011, 774]
+   ↓ IDをベクトル（数百〜数千次元の数値列）へ
+ モデル内部の計算へ</code></pre>
+<h2 id="s3">3. コンテキストウィンドウ：一度に見渡せる範囲</h2>
+<p><strong>コンテキストウィンドウ</strong>＝モデルが1回のやり取りで参照できるトークンの上限。<br>入力（指示＋資料＋過去の会話）と出力を合わせてこの枠に収まらなければならない。</p>
+<ul>
+<li>2023年頃は数千〜数万トークンが一般的だったが、2020年代半ばには<strong>数十万トークン級</strong>が実用になった</li>
+<li>長くできる＝賢くなる、ではない。<strong>枠の真ん中の情報を取りこぼす</strong>傾向（lost in the middle）が知られる</li>
+<li>長い入力はそのまま<strong>コストと待ち時間</strong>に跳ね返る。入力トークンが2倍なら課金も概ね2倍</li>
+</ul>
+<blockquote><p>よくある誤解：「コンテキストが長いモデルを使えば社内文書を全部読ませられる」。<br>実際には、毎回すべてを入れるとコストが爆発するうえ精度も落ちる。<br>だから「必要な部分だけ渡す」仕組み＝RAGが要る。</p></blockquote>
+<h2 id="s4">4. 学習（Training）と推論（Inference）の違い</h2>
+<p>生成AIのコストと産業構造は、この2つの区別なしには理解できない。</p>
+<div class="table-wrap"><table><thead><tr>
+<th></th>
+<th>学習（Training）</th>
+<th>推論（Inference）</th>
+</tr></thead><tbody>
+<tr><td>やること</td><td>大量データからモデルの重み（パラメータ）を決める</td><td>完成したモデルに質問して答えを出す</td></tr>
+<tr><td>頻度</td><td>モデルごとに1回（＋追加学習）</td><td><strong>利用のたび毎回</strong></td></tr>
+<tr><td>コストの性格</td><td><strong>先払いの固定費</strong>。数十億〜数千億円規模と推計される</td><td><strong>使うほど増える変動費</strong></td></tr>
+<tr><td>必要な計算資源</td><td>数千〜数万チップを数週間〜数ヶ月連続稼働</td><td>1リクエストは小さいが、件数が莫大</td></tr>
+<tr><td>効くチップ性能</td><td>演算性能、チップ間通信、メモリ容量</td><td><strong>メモリ帯域</strong>、電力効率、単価</td></tr>
+</tbody></table></div>
+<pre><code>【学習】 データ収集 → 事前学習 → 事後学習（指示調整・人間のフィードバック） → 評価 → 公開
+         └──── ここまでが「先払いの固定費」。数ヶ月かかる ────┘
+
+【推論】 ユーザーの入力 → トークン化 → 順伝播計算 → 1トークン出力 → …繰り返し… → 応答
+         └──── 1回ごとに電気とGPU時間を消費する「変動費」 ────┘</code></pre>
+<p><strong>産業としての含意</strong>：<br>モデル事業者は学習費を先に払い、推論の積み上げで回収する。だから<br>「学習で勝つ（＝賢いモデルを出す）」ことと「推論で儲ける（＝安く大量にさばく）」ことは別の競争になる。<br>→ <a href="03_ビジネスモデルと経済性.html">ビジネスモデルと経済性</a></p>
+<h2 id="s5">5. 学習の中身：事前学習と事後学習</h2>
+<h3 id="s6">事前学習（Pre-training）</h3>
+<ul>
+<li>インターネット規模のテキスト等を使い、ひたすら「次のトークン当て」を解かせる</li>
+<li>ここで文法・常識・世界知識が重みに焼き込まれる</li>
+<li>規模（データ量・パラメータ数・計算量）を増やすと性能が伸びる傾向が観測されており、<strong>スケーリング則</strong>と呼ばれる</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="学習データが何年何月までかで、それ以降の出来事は知らない" aria-label="カットオフ（knowledge cutoff）：学習データが何年何月までかで、それ以降の出来事は知らない"><strong>カットオフ（knowledge cutoff）</strong></span>：学習データが何年何月までかで、それ以降の出来事は知らない</li>
+</ul>
+<h3 id="s7">事後学習（Post-training）</h3>
+<div class="table-wrap"><table><thead><tr>
+<th>手法</th>
+<th>やること</th>
+<th>目的</th>
+</tr></thead><tbody>
+<tr><td>指示チューニング（SFT）</td><td>「指示と模範解答」のペアで追加学習</td><td>質問に答える形式を覚えさせる</td></tr>
+<tr><td>人間のフィードバックによる強化学習（RLHF等）</td><td>人が良し悪しを付け、好まれる応答を強化</td><td>有用性・安全性・口調を整える</td></tr>
+<tr><td>推論強化（reasoning）</td><td>途中の思考過程を長く生成させて正答率を上げる学習</td><td>数学・コーディング等の難問対応</td></tr>
+</tbody></table></div>
+<p><strong>推論（reasoning）モデル</strong>は、答える前に内部で長く「考える」ぶん出力トークンが増え、<br><strong>同じ質問でも料金と待ち時間が数倍になる</strong>。賢さとコストが直結する分かりやすい例。</p>
+<h2 id="s8">6. モデルを業務に合わせる4つの手段</h2>
+<p>「自社の情報を使わせたい」ときの選択肢は、軽い順に4つ。ここを混同した議論が非常に多い。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>手段</th>
+<th>何をするか</th>
+<th>コスト</th>
+<th>向いている用途</th>
+</tr></thead><tbody>
+<tr><td><strong>プロンプト設計</strong></td><td>指示文の書き方を工夫する。例を数個入れる</td><td>ほぼゼロ</td><td>まず最初に試すべき。多くはこれで足りる</td></tr>
+<tr><td><strong>RAG（検索拡張生成）</strong></td><td>質問に関係する社内文書を検索し、入力に貼り付けてから答えさせる</td><td>中。検索基盤の構築が要る</td><td><strong>社内文書Q&amp;A、最新情報、出典を示したい場合</strong></td></tr>
+<tr><td><strong>ファインチューニング</strong></td><td>自社データで重みを追加学習し、専用モデルを作る</td><td>高。データ整備と再学習が要る</td><td>口調・出力形式の固定、特殊な専門表現</td></tr>
+<tr><td><strong>事前学習から自作</strong></td><td>ゼロからモデルを作る</td><td>極めて高い</td><td>国家・大企業のソブリンAI等、限られた場合</td></tr>
+</tbody></table></div>
+<blockquote><p>よくある誤解：「社内データを覚えさせたいからファインチューニング」。<br><strong>知識を足す目的にはRAGのほうが適している</strong>ことが多い。<br>ファインチューニングは「振る舞いの型」を教えるのが得意で、事実を正確に覚えさせるのは不得手。<br>情報が更新されたときも、RAGなら文書を差し替えるだけで済む。</p></blockquote>
+<h3 id="s9">RAGの流れ</h3>
+<pre><code>① 事前準備（バッチ）
+   社内文書 → 細かく分割（チャンク化） → ベクトル（数値列）に変換 → ベクトルDBに保存
+
+② 質問が来たとき（リアルタイム）
+   質問 →ベクトル化→ 似た文書を検索（上位5件など）
+                          ↓
+          「以下の資料を参考に答えてください：＜資料＞ 質問：＜質問＞」
+                          ↓
+                       LLM が回答（＋出典を提示できる）</code></pre>
+<p>RAGの利点は3つ：<strong>①最新情報を使える ②出典を示せる ③学習し直さなくていい</strong>。<br>弱点は、検索がうまくいかないと答えも外すこと（＝精度の大半は検索側の作り込みで決まる）。</p>
+<h2 id="s10">7. マルチモーダルとエージェント</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="テキストだけでなく画像・音声・動画を同じモデルで扱う。" aria-label="マルチモーダル：テキストだけでなく画像・音声・動画を同じモデルで扱う。"><strong>マルチモーダル</strong></span>：テキストだけでなく画像・音声・動画を同じモデルで扱う。<br>画像も「トークンの列」に変換して同じ仕組みに流すのが基本的な考え方</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="モデルに外部の関数やAPIを呼ばせる仕組み。" aria-label="ツール利用（function calling）：モデルに外部の関数やAPIを呼ばせる仕組み。"><strong>ツール利用（function calling）</strong></span>：モデルに外部の関数やAPIを呼ばせる仕組み。<br>計算・検索・社内システム操作など、言語モデルが不得意な処理を外に出せる</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="ツール利用を何回も自律的に繰り返し、目標達成まで自分で手を動かす形態。" aria-label="エージェント：ツール利用を何回も自律的に繰り返し、目標達成まで自分で手を動かす形態。"><strong>エージェント</strong></span>：ツール利用を何回も自律的に繰り返し、目標達成まで自分で手を動かす形態。<br>1タスクで数十〜数百回モデルを呼ぶため、<strong>トークン消費が桁違いに増える</strong><br>→ 詳細は <a href="04_企業導入とAIエージェント・規制.html">企業導入・AIエージェントと規制</a></li>
+</ul>
+<h2 id="s11">8. なぜ計算資源がここまで要るのか</h2>
+<p>ハードウェアとつながる部分を最後に押さえておく。</p>
+<ul>
+<li>モデルの実体は<strong>巨大な行列</strong>。推論のたびに重み全体をメモリから読み出して掛け算する</li>
+<li>つまり推論は<strong>演算量よりメモリ帯域で詰まる</strong>（メモリの壁）。ここがHBMが要る理由</li>
+<li>パラメータが多いほど、GPUの搭載メモリに載せるだけで複数枚が必要になる</li>
+<li>対策として、<strong>量子化</strong>（重みを低精度の数値に丸めてメモリを減らす）や<br><strong>MoE</strong>（Mixture of Experts＝毎回モデル全体ではなく一部の専門家だけ動かす構造）が広く使われる</li>
+</ul>
+<p>→ ハード側の詳細は <a href="../02_半導体・先端半導体/02_AI半導体とHBM.html">AI半導体とHBM</a>、<br><a href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/03_後工程.html">半導体｜後工程</a></p>
+<h2 id="s12">用語メモ</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="大規模言語モデル。大量のテキストで学習した「次の語を予測する」巨大モデル" aria-label="LLM：大規模言語モデル。大量のテキストで学習した「次の語を予測する」巨大モデル"><strong>LLM</strong></span>：大規模言語モデル。大量のテキストで学習した「次の語を予測する」巨大モデル</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="モデルが扱う文字の最小単位。課金・上限の単位でもある" aria-label="トークン：モデルが扱う文字の最小単位。課金・上限の単位でもある"><strong>トークン</strong></span>：モデルが扱う文字の最小単位。課金・上限の単位でもある</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="1回のやり取りで参照できるトークン数の上限" aria-label="コンテキストウィンドウ：1回のやり取りで参照できるトークン数の上限"><strong>コンテキストウィンドウ</strong></span>：1回のやり取りで参照できるトークン数の上限</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="モデル内部の数値。これが「学習した結果」そのもの" aria-label="パラメータ（重み）：モデル内部の数値。これが「学習した結果」そのもの"><strong>パラメータ（重み）</strong></span>：モデル内部の数値。これが「学習した結果」そのもの</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="事実でないことをもっともらしく生成する現象。仕組み上ゼロにはできない" aria-label="ハルシネーション：事実でないことをもっともらしく生成する現象。仕組み上ゼロにはできない"><strong>ハルシネーション</strong></span>：事実でないことをもっともらしく生成する現象。仕組み上ゼロにはできない</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="検索拡張生成。関連文書を検索して入力に添え、それを根拠に答えさせる方式" aria-label="RAG：検索拡張生成。関連文書を検索して入力に添え、それを根拠に答えさせる方式"><strong>RAG</strong></span>：検索拡張生成。関連文書を検索して入力に添え、それを根拠に答えさせる方式</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="既存モデルに追加学習をして振る舞いを変えること" aria-label="ファインチューニング：既存モデルに追加学習をして振る舞いを変えること"><strong>ファインチューニング</strong></span>：既存モデルに追加学習をして振る舞いを変えること</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="データ・パラメータ・計算量を増やすほど性能が伸びるという経験則" aria-label="スケーリング則：データ・パラメータ・計算量を増やすほど性能が伸びるという経験則"><strong>スケーリング則</strong></span>：データ・パラメータ・計算量を増やすほど性能が伸びるという経験則</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="重みを低精度の数値に置き換え、メモリと計算量を削る技術" aria-label="量子化：重みを低精度の数値に置き換え、メモリと計算量を削る技術"><strong>量子化</strong></span>：重みを低精度の数値に置き換え、メモリと計算量を削る技術</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="モデルを複数の「専門家」に分け、入力ごとに一部だけ動かす構造。総パラメータは巨大でも計算は軽い" aria-label="MoE：モデルを複数の「専門家」に分け、入力ごとに一部だけ動かす構造。総パラメータは巨大でも計算は軽い"><strong>MoE</strong></span>：モデルを複数の「専門家」に分け、入力ごとに一部だけ動かす構造。総パラメータは巨大でも計算は軽い</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="学習データの収録時点。それ以降の出来事をモデル自身は知らない" aria-label="知識カットオフ：学習データの収録時点。それ以降の出来事をモデル自身は知らない"><strong>知識カットオフ</strong></span>：学習データの収録時点。それ以降の出来事をモデル自身は知らない</li>
+</ul>
+<h2 id="s13">関連ノート</h2>
+<ul>
+<li><a href="01_バリューチェーンと業界構造.html">バリューチェーンと業界構造</a></li>
+<li><a href="03_ビジネスモデルと経済性.html">ビジネスモデルと経済性</a></li>
+<li><a href="../02_半導体・先端半導体/02_AI半導体とHBM.html">AI半導体とHBM</a></li>
+<li><a href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/04_トランジスタの原理.html">トランジスタの原理</a></li>
+</ul><section class="page-quiz" data-quiz-key="01_注目テーマ/01_生成AI/02_技術の仕組み_LLMはどう動くか.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全9問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：大規模言語モデル（LLM）が中で何をしているか。 LLMは「次に来る単語を当てる装置」であって、それ以上でも以下でもない。 この一点を押さえると、幻覚（ハルシネーション）もRAGもファインチューニングも、全部同じ理屈で説明できる。"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」における「一言でいうと「次の1語を当てるゲーム」」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["LLM（Large Language Model＝大規模言語モデル）がやっているのは、 これまでの文字列を見て、次に来る確率が最も高い断片を1つ選ぶこと。 それを1個ずつ繰り返して文章になる。", "検索して答えているのではない。学習時に覚えた確率分布から、もっともらしい続きを生成している", "だから「知らないこと」でも、もっともらしい続きを自信満々に作ってしまう。これがハルシネーション（幻覚）の正体", "逆に言えば、正しい材料を入力側に入れてやれば精度は上がる。RAG（後述）はこの発想"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」における「トークン：AIにとっての「文字の単位」」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["モデルは文字をそのまま扱わない。トークンという単位に切り刻んでから数値に変換する。", "英語：1トークン ≒ 4文字 ≒ 0.75単語", "日本語：1文字 ≒ 0.7〜1.5トークン（モデルの設計で変わる）", "日本語のA4文書1枚（約1,000字）：だいたい1,000〜1,500トークン"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」とは何を指しますか。含まれる製品・技術・企業群を具体的に挙げ、隣接領域との違いも説明してください。", "points": ["コンテキストウィンドウ＝モデルが1回のやり取りで参照できるトークンの上限。 入力（指示＋資料＋過去の会話）と出力を合わせてこの枠に収まらなければならない。", "2023年頃は数千〜数万トークンが一般的だったが、2020年代半ばには数十万トークン級が実用になった", "長くできる＝賢くなる、ではない。枠の真ん中の情報を取りこぼす傾向（lost in the middle）が知られる", "長い入力はそのままコストと待ち時間に跳ね返る。入力トークンが2倍なら課金も概ね2倍"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」における「学習（Training）と推論（Inference）の違い」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["生成AIのコストと産業構造は、この2つの区別なしには理解できない。", "やること：大量データからモデルの重み（パラメータ）を決める：完成したモデルに質問して答えを出す", "頻度：モデルごとに1回（＋追加学習）：利用のたび毎回", "コストの性格：先払いの固定費。数十億〜数千億円規模と推計される：使うほど増える変動費"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」における「学習の中身：事前学習と事後学習」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["事前学習（Pre-training）", "インターネット規模のテキスト等を使い、ひたすら「次のトークン当て」を解かせる", "ここで文法・常識・世界知識が重みに焼き込まれる", "規模（データ量・パラメータ数・計算量）を増やすと性能が伸びる傾向が観測されており、スケーリング則と呼ばれる"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」における「モデルを業務に合わせる4つの手段」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["「自社の情報を使わせたい」ときの選択肢は、軽い順に4つ。ここを混同した議論が非常に多い。", "プロンプト設計：指示文の書き方を工夫する。例を数個入れる：ほぼゼロ", "RAG（検索拡張生成）：質問に関係する社内文書を検索し、入力に貼り付けてから答えさせる：中。検索基盤の構築が要る", "ファインチューニング：自社データで重みを追加学習し、専用モデルを作る：高。データ整備と再学習が要る"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」における「マルチモーダルとエージェント」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["マルチモーダル：テキストだけでなく画像・音声・動画を同じモデルで扱う。 画像も「トークンの列」に変換して同じ仕組みに流すのが基本的な考え方", "ツール利用（function calling）：モデルに外部の関数やAPIを呼ばせる仕組み。 計算・検索・社内システム操作など、言語モデルが不得意な処理を外に出せる", "エージェント：ツール利用を何回も自律的に繰り返し、目標達成まで自分で手を動かす形態。 1タスクで数十〜数百回モデルを呼ぶため、トークン消費が桁違いに増える → 詳細は 企業導入・AIエージェントと規制"]}, {"question": "「生成AI｜技術の仕組み（LLMはどう動くか）」における「なぜ計算資源がここまで要るのか」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["ハードウェアとつながる部分を最後に押さえておく。", "モデルの実体は巨大な行列。推論のたびに重み全体をメモリから読み出して掛け算する", "つまり推論は演算量よりメモリ帯域で詰まる（メモリの壁）。ここがHBMが要る理由", "パラメータが多いほど、GPUの搭載メモリに載せるだけで複数枚が必要になる"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/01_生成AI/01_バリューチェーンと業界構造.html"><span class="lbl">← 前</span>生成AI｜バリューチェーンと業界構造</a><a class="next" href="../../01_注目テーマ/01_生成AI/03_ビジネスモデルと経済性.html"><span class="lbl">次 →</span>生成AI｜ビジネスモデルと経済性</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. 一言でいうと「次の1語を当てるゲーム」</a><a class="lv2" href="#s2">2. トークン：AIにとっての「文字の単位」</a><a class="lv2" href="#s3">3. コンテキストウィンドウ：一度に見渡せる範囲</a><a class="lv2" href="#s4">4. 学習（Training）と推論（Inference）の違い</a><a class="lv2" href="#s5">5. 学習の中身：事前学習と事後学習</a><a class="lv3" href="#s6">事前学習（Pre-training）</a><a class="lv3" href="#s7">事後学習（Post-training）</a><a class="lv2" href="#s8">6. モデルを業務に合わせる4つの手段</a><a class="lv3" href="#s9">RAGの流れ</a><a class="lv2" href="#s10">7. マルチモーダルとエージェント</a><a class="lv2" href="#s11">8. なぜ計算資源がここまで要るのか</a><a class="lv2" href="#s12">用語メモ</a><a class="lv2" href="#s13">関連ノート</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

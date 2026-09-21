@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></span><span>›</span><span>AIとロボットの結合</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="on" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="" href="01_ロボットの分類と構成要素.html">ロボットの分類と構成要素</a></li><li><a class="" href="02_なぜロボットは普及しないのか.html">なぜロボットは普及しないのか</a></li><li><a class="on" href="03_AIとロボットの結合.html">AIとロボットの結合</a></li><li><a class="" href="04_分野別の実装状況.html">分野別の実装状況</a></li><li><a class="" href="05_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></li><li><a class="" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></li><li><a class="" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></li><li><a class="" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">ロボット</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">12語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="人がVRコントローラで操作し、ひたすらデータを取る（人件費がそのままデータ原価になる）" aria-label="テレオペ工場：人がVRコントローラで操作し、ひたすらデータを取る（人件費がそのままデータ原価になる）">テレオペ工場</span><span class="term-chip has-tip" tabindex="0" data-tooltip="すでに現場で動いているロボットからログを集める（先に配備した側が有利）" aria-label="実運用からの回収：すでに現場で動いているロボットからログを集める（先に配備した側が有利）">実運用からの回収</span><span class="term-chip has-tip" tabindex="0" data-tooltip="合成データで水増しする" aria-label="シミュレーション生成：合成データで水増しする">シミュレーション生成</span><span class="term-chip has-tip" tabindex="0" data-tooltip="日本では2025年にAIロボット協会が設立され、" aria-label="共同でデータを持ち寄る：日本では2025年にAIロボット協会が設立され、">共同でデータを持ち寄る</span><span class="term-chip has-tip" tabindex="0" data-tooltip="身体を持ち、物理世界で行動するAIの総称。中国では「具身智能」と呼ばれ国策用語になっている" aria-label="フィジカルAI／具身智能（Embodied AI）：身体を持ち、物理世界で行動するAIの総称。中国では「具身智能」と呼ばれ国策用語になっている">フィジカルAI／具身智能（Embodied AI）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="画像と言語から直接ロボットの動作を出力するモデル" aria-label="VLA（Vision-Language-Action）：画像と言語から直接ロボットの動作を出力するモデル">VLA（Vision-Language-Action）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="人の実演データを教師に動作を学ぶ方法。行動クローニングとも" aria-label="模倣学習（Imitation Learning）：人の実演データを教師に動作を学ぶ方法。行動クローニングとも">模倣学習（Imitation Learning）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="人が遠隔で操作すること。データ収集手段であり、実運用時の「介入」手段でもある" aria-label="テレオペレーション：人が遠隔で操作すること。データ収集手段であり、実運用時の「介入」手段でもある">テレオペレーション</span><span class="term-chip has-tip" tabindex="0" data-tooltip="シミュレータで学んだ動作が実機で通用しない現象" aria-label="sim2real ギャップ：シミュレータで学んだ動作が実機で通用しない現象">sim2real ギャップ</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ロボット学習で広く使われる物理シミュレータ" aria-label="Isaac Sim / MuJoCo：ロボット学習で広く使われる物理シミュレータ">Isaac Sim / MuJoCo</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ある機体で学んだモデルを別形状の機体に移すこと。基盤モデル化の核心" aria-label="エンボディメント転移：ある機体で学んだモデルを別形状の機体に移すこと。基盤モデル化の核心">エンボディメント転移</span><span class="term-chip has-tip" tabindex="0" data-tooltip="産業用ロボットと協働運転の安全規格。人型が現場に入る際の法的な関門" aria-label="ISO 10218 / ISO/TS 15066：産業用ロボットと協働運転の安全規格。人型が現場に入る際の法的な関門">ISO 10218 / ISO/TS 15066</span></div></details><p><strong>このノートで分かること</strong>：ロボットの「脳」がプログラムから学習モデルに置き換わりつつある話の中身と、<br><strong>デモ動画と実運用の間に何段の壁があるか</strong>。</p>
+<p>結論を先に書く。<strong>動きの生成は確かに変わった。しかし2026年時点で、<br>基盤モデルで動くロボットが人の代わりに稼いでいる現場はまだ極めて限られる</strong>。<br>ヒューマノイドは誇張報道が最も多い領域なので、このノートは一貫して「デモ」と「実運用」を分けて書く。</p>
+<h2 id="s1">1. 何が変わったのか：手書きの手順から、学習した動作へ</h2>
+<pre><code>【従来型（〜2020年代前半）】
+ 人が座標を教える ─▶ 決まった順に再生 ─▶ 想定外が来たら止まる
+ ├ 強み：速い、正確、再現性100%、責任の所在が明確
+ └ 弱み：教えていないことは一切できない。段取り替えのたびに再教示
+
+【基盤モデル型（2023年〜）】
+ カメラ画像＋言葉の指示 ─▶ 学習済みモデル ─▶ 関節の動きを直接出力
+ ├ 強み：見たことのない物・位置でもそれなりに動く。言葉で指示できる
+ └ 弱み：遅い、確率的、失敗の理由が説明できない、同じ結果を保証できない</code></pre>
+<p>この2つは対立ではなく<strong>役割分担</strong>になりつつある。<br>精度と安全が要る動きは従来の制御、状況判断と柔軟性が要る部分がAI、という組み合わせが実装の主流。</p>
+<h2 id="s2">2. VLA（Vision-Language-Action）とは</h2>
+<p><strong>VLA</strong>＝画像（Vision）と言葉（Language）を入力に、ロボットの動作（Action）を出力する<br>単一のニューラルネットワーク。言語モデルの仕組みを、出力が文章ではなく関節角になるよう作り変えたもの。</p>
+<pre><code>  カメラ画像 ──┐
+               ├──▶ [ 大規模モデル ] ──▶ 関節の目標値の列（数十Hz）
+  「赤い缶を取って」┘        ↑
+                        ネット上の画像・言語で事前学習
+                        ＋ ロボットの操作データで追加学習</code></pre>
+<div class="table-wrap"><table><thead><tr>
+<th>モデル</th>
+<th>開発元</th>
+<th>位置づけ（2026年時点）</th>
+</tr></thead><tbody>
+<tr><td><strong>π0 / π0.5 系</strong></td><td>Physical Intelligence（米）</td><td>汎用操作の代表格。複数の機体で同じモデルを動かす方向</td></tr>
+<tr><td><strong>Helix</strong></td><td>Figure AI（米）</td><td>自社ヒューマノイド向け。上半身の器用な操作が売り</td></tr>
+<tr><td><strong>Gemini Robotics 系</strong></td><td>Google DeepMind</td><td>2026年7月に次世代版を公開。ロボット上でローカル実行でき、数時間のデータで別形状の機体に適応できると発表</td></tr>
+<tr><td><strong>GR00T 系</strong></td><td>NVIDIA</td><td>ヒューマノイド向けの共通基盤＋シミュレータ（Isaac）をセットで提供</td></tr>
+<tr><td><strong>RT-2 / OpenVLA ほか</strong></td><td>Google／研究コミュニティ</td><td>研究の共通ベースライン</td></tr>
+</tbody></table></div>
+<blockquote><p>注意：ここに並ぶ性能は<strong>論文とデモ動画の数字</strong>であり、工場の稼働率や不良率で検証されたものではない。<br>「成功率85%」は研究では良い数字だが、<strong>産業では7台に1台が失敗する不良設備</strong>を意味する。<br>このギャップが、実装が進まない一番の理由になっている。</p></blockquote>
+<h2 id="s3">3. どうやって学習させるか：3つのルート</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>手法</th>
+<th>やり方</th>
+<th>長所</th>
+<th>短所</th>
+<th>2026年の位置</th>
+</tr></thead><tbody>
+<tr><td><strong>模倣学習</strong></td><td>人が遠隔操作（テレオペ）した動きを大量に記録し、真似させる</td><td>現実のデータなので実機で動きやすい</td><td><strong>データ収集に人手と時間がかかる</strong>。1タスク数百〜数千回</td><td>VLAの主流。π・Helix・Gemini・GR00T はいずれもここが土台</td></tr>
+<tr><td><strong>シミュレーション学習</strong></td><td>物理シミュレータ上で数億回試行させる</td><td>安く速く大量に試せる</td><td><strong>sim2realギャップ</strong>（摩擦・変形・光の違いで実機では動かない）</td><td>移動・歩行・全身制御で有効。接触の多い手作業は苦手</td></tr>
+<tr><td><strong>強化学習</strong></td><td>報酬を与えて試行錯誤で覚えさせる</td><td>人が教えられない動きも獲得できる</td><td>報酬設計が難しく、実機では危険・低速</td><td>2026年に模倣学習の後段として組み合わせる流れが強まる</td></tr>
+</tbody></table></div>
+<p>実務では <strong>「シミュレーションで大枠 → 模倣学習で現実に寄せる → 強化学習で仕上げる」</strong> の3段構えが定石化しつつある。</p>
+<h2 id="s4">4. 本当のボトルネックはデータ</h2>
+<p>言語モデルにはインターネットという既製のデータがあった。<strong>ロボットには、それが無い</strong>。</p>
+<pre><code>  言語モデル ： 人類が書いたテキスト 数兆トークン   → 無料で既にある
+  画像モデル ： ネット上の画像 数十億枚             → 無料で既にある
+  ロボット   ： 「掴んだ」「置いた」の身体データ    → ★誰も持っていない★
+                                                     人が1回ずつ操作して作るしかない</code></pre>
+<p>このため各社が採る手段は次の4つに集約される。</p>
+<ol>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="人がVRコントローラで操作し、ひたすらデータを取る（人件費がそのままデータ原価になる）" aria-label="テレオペ工場：人がVRコントローラで操作し、ひたすらデータを取る（人件費がそのままデータ原価になる）"><strong>テレオペ工場</strong></span>：人がVRコントローラで操作し、ひたすらデータを取る（人件費がそのままデータ原価になる）</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="すでに現場で動いているロボットからログを集める（先に配備した側が有利）" aria-label="実運用からの回収：すでに現場で動いているロボットからログを集める（先に配備した側が有利）"><strong>実運用からの回収</strong></span>：すでに現場で動いているロボットからログを集める（先に配備した側が有利）</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="合成データで水増しする" aria-label="シミュレーション生成：合成データで水増しする"><strong>シミュレーション生成</strong></span>：合成データで水増しする</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="日本では2025年にAIロボット協会が設立され、" aria-label="共同でデータを持ち寄る：日本では2025年にAIロボット協会が設立され、"><strong>共同でデータを持ち寄る</strong></span>：日本では2025年に<strong>AIロボット協会</strong>が設立され、<br>トヨタ自動車、Telexistence などが参画して、ロボットのデータ基盤とVLAの共同構築を進めている</li>
+</ol>
+<blockquote><p>ここが日本の勝負どころ。基盤モデルそのもので米中に勝つのは難しいが、<br><strong>製造・物流・小売の現場という「データの井戸」は日本にある</strong>。<br><a href="../01_生成AI/README.html">生成AI</a> の構図と同じで、モデルではなくデータとアプリ側に勝ち筋が寄る。</p></blockquote>
+<h2 id="s5">5. ヒューマノイドの現在地：デモと実運用を分ける</h2>
+<p>報道で最も混同されるのがここ。成熟度を5段階に分けて読むと誤解が減る。</p>
+<pre><code>  ⑤ 量産・外販         ： 第三者が買って現場で使い、採算が合っている
+     ▲                    → 2026年時点で、汎用ヒューマノイドではほぼ存在しない
+  ④ 限定タスクの実運用  ： 特定作業に絞って、社外の現場で日常稼働
+     ▲                    → 一部（倉庫の搬送、コンビニの陳列など）で到達
+  ③ 社内・パイロット稼働 ： 自社工場や協力先で試験稼働。人の監視付き
+     ▲                    → Tesla、BMW×Figure などがここ
+  ② 制御されたデモ      ： 展示会・動画。環境と手順を整えた一発撮り
+     ▲                    → 報道の大半はここ
+  ① 研究・論文</code></pre>
+<div class="table-wrap"><table><thead><tr>
+<th>主体</th>
+<th>公表されている内容</th>
+<th>どの段階か（筆者整理）</th>
+</tr></thead><tbody>
+<tr><td>Unitree（中国）</td><td>2025年に約5,500台出荷、2026年は約2万台の出荷目標。累計1.8万台超の二足歩行機を製造と報じられる</td><td>出荷台数は多いが、買い手の多くは<strong>研究機関・開発者・デモ用途</strong>。⑤とは言い難い</td></tr>
+<tr><td>Figure AI（米）</td><td>BMW工場での稼働実績を公表。評価額390億ドル規模と報じられる</td><td>③〜④。作業範囲は限定的</td></tr>
+<tr><td>Tesla（Optimus）</td><td>2026年に社内展開1,000〜1,200台規模と報じられる。外部販売は2026年後半以降を目標</td><td>③。2025年Q4決算説明会で経営陣自身が「まだ有用な作業をしているロボットはない」と述べたと報じられる</td></tr>
+<tr><td>Agility Robotics（米）</td><td>GXOの物流拠点でトート搬送の実運用実績</td><td>④。<strong>タスクを1つに絞ったから成立した</strong>典型</td></tr>
+<tr><td>中国全体</td><td>2025年に世界のヒューマノイド出荷の約9割、2026年上期に世界で2.2万台超（中国のみで3万台超との主張もある）</td><td>統計の定義が揺れており、<strong>「ヒューマノイド」に車輪型や上半身のみを含む場合がある</strong></td></tr>
+<tr><td>川崎重工（日）</td><td>Kaleido シリーズを開発、イベントで公開</td><td>②〜③</td></tr>
+<tr><td>トヨタ自動車（日）</td><td>産業用ヒューマノイドに注力を表明、自社工場からの実用化を志向</td><td>②〜③</td></tr>
+<tr><td>Telexistence（日）</td><td>コンビニの飲料補充ロボットをファミリーマート300店舗規模で実稼働と発表</td><td>④。<strong>人型ではなく単腕＋昇降</strong>という割り切りで成立させた例</td></tr>
+</tbody></table></div>
+<blockquote><p>読み方のコツ：<strong>「何台作ったか」ではなく「誰が何の業務に使い、いくら払っているか」を見る</strong>。<br>出荷台数が伸びていても、買い手が研究室と同業他社なら、それは市場ではなく開発投資である。</p></blockquote>
+<h2 id="s6">6. なぜ人型なのか、そして人型でなくてよい理由</h2>
+<p><strong>人型を推す論理</strong></p>
+<ul>
+<li>世界（階段、ドアノブ、什器、工具）が人間の寸法で作られている。<strong>環境を変えずに入れる</strong></li>
+<li>1台で複数の仕事をさせられれば、稼働時間が伸びて回収年数が短くなる（<a href="02_なぜロボットは普及しないのか.html">02_なぜ普及しないのか</a> の算数）</li>
+<li>学習データを人の動作から取りやすい</li>
+</ul>
+<p><strong>人型を疑う論理</strong></p>
+<ul>
+<li>脚は高価で壊れやすく、転倒リスクがある。<strong>床が平らなら車輪のほうが安く速い</strong></li>
+<li>五指ハンドは高価で壊れやすい。<strong>吸着パッド1個で済む作業が現場の大半</strong></li>
+<li>汎用性は「どの仕事も70点」を意味しがちで、専用機の100点に採算で負ける</li>
+<li>人と同じ空間で動く以上、安全規格（ISO 10218、ISO/TS 15066 など）の壁が重い</li>
+</ul>
+<p>実際に④段階へ到達した事例（Agility、Telexistence）は、いずれも<strong>人型を諦めて形をタスクに合わせた</strong>ものである。<br>汎用ヒューマノイドが勝つとすれば、それは「1台が10種類の仕事をこなし、<br>専用機10台より安くなった」瞬間だが、2026年時点でその損益分岐は誰も示せていない。</p>
+<h2 id="s7">7. 報道を読むときのチェックリスト</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>見るポイント</th>
+<th>誇張報道にありがちな書き方</th>
+<th>実運用を示す書き方</th>
+</tr></thead><tbody>
+<tr><td>環境</td><td>「工場で稼働」</td><td>「◯◯社の△△工程で、×時間/日、□ヶ月連続稼働」</td></tr>
+<tr><td>速度</td><td>速度に触れない／早送り動画</td><td>「人の◯%の速度」「タクトタイム◯秒」</td></tr>
+<tr><td>成功率</td><td>「できるようになった」</td><td>「成功率◯%、失敗時は人が介入」</td></tr>
+<tr><td>自律性</td><td>「自律的に」</td><td>遠隔操作の有無、監視者の人数を明記</td></tr>
+<tr><td>台数</td><td>「◯万台出荷」</td><td>誰に、どの用途で、リピート受注はあるか</td></tr>
+<tr><td>経済性</td><td>価格に触れない</td><td>導入総額と回収年数を示している</td></tr>
+</tbody></table></div>
+<blockquote><p>特に注意すべきは<strong>遠隔操作の有無</strong>。テレオペ（人が遠隔で操作）を挟んだ映像が<br>「自律動作」として流通することがあり、これは技術的には全く別の段階である。</p></blockquote>
+<h2 id="s8">8. 産業構造としてどう見るか</h2>
+<p>AIの参入で、ロボット業界の付加価値の置き場所が動き始めている。</p>
+<pre><code>【従来】 本体メーカーが垂直統合（機構＋制御＋ソフト＋サービス）
+         ファナック・安川・ABB・KUKA が一括で提供し、ここに利益が乗っていた
+
+【これから？】 レイヤーが割れる可能性
+   基盤モデル層 ： Google／PI／NVIDIA／中国勢     ← 新しい利益プール
+   ───────────────────────────────────
+   本体・制御層 ： ファナック・安川・UR・中国勢    ← コモディティ化の圧力
+   ───────────────────────────────────
+   部品層       ： ナブテスコ・ハーモニック       ← 需要は増えるが価格圧力も来る</code></pre>
+<p>半導体で起きた「設計と製造の分離」に似た分解が起きるのか、<br>それともロボットは<strong>現場ごとのすり合わせが重すぎて垂直統合が残る</strong>のか。<br>2026年時点では決着していない。これがこの業界の最大の論点である。</p>
+<h2 id="s9">用語メモ</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="身体を持ち、物理世界で行動するAIの総称。中国では「具身智能」と呼ばれ国策用語になっている" aria-label="フィジカルAI／具身智能（Embodied AI）：身体を持ち、物理世界で行動するAIの総称。中国では「具身智能」と呼ばれ国策用語になっている"><strong>フィジカルAI／具身智能（Embodied AI）</strong></span>：身体を持ち、物理世界で行動するAIの総称。中国では「具身智能」と呼ばれ国策用語になっている</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="画像と言語から直接ロボットの動作を出力するモデル" aria-label="VLA（Vision-Language-Action）：画像と言語から直接ロボットの動作を出力するモデル"><strong>VLA（Vision-Language-Action）</strong></span>：画像と言語から直接ロボットの動作を出力するモデル</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="人の実演データを教師に動作を学ぶ方法。行動クローニングとも" aria-label="模倣学習（Imitation Learning）：人の実演データを教師に動作を学ぶ方法。行動クローニングとも"><strong>模倣学習（Imitation Learning）</strong></span>：人の実演データを教師に動作を学ぶ方法。行動クローニングとも</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="人が遠隔で操作すること。データ収集手段であり、実運用時の「介入」手段でもある" aria-label="テレオペレーション：人が遠隔で操作すること。データ収集手段であり、実運用時の「介入」手段でもある"><strong>テレオペレーション</strong></span>：人が遠隔で操作すること。データ収集手段であり、実運用時の「介入」手段でもある</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="シミュレータで学んだ動作が実機で通用しない現象" aria-label="sim2real ギャップ：シミュレータで学んだ動作が実機で通用しない現象"><strong>sim2real ギャップ</strong></span>：シミュレータで学んだ動作が実機で通用しない現象</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="ロボット学習で広く使われる物理シミュレータ" aria-label="Isaac Sim / MuJoCo：ロボット学習で広く使われる物理シミュレータ"><strong>Isaac Sim / MuJoCo</strong></span>：ロボット学習で広く使われる物理シミュレータ</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="ある機体で学んだモデルを別形状の機体に移すこと。基盤モデル化の核心" aria-label="エンボディメント転移：ある機体で学んだモデルを別形状の機体に移すこと。基盤モデル化の核心"><strong>エンボディメント転移</strong></span>：ある機体で学んだモデルを別形状の機体に移すこと。基盤モデル化の核心</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="産業用ロボットと協働運転の安全規格。人型が現場に入る際の法的な関門" aria-label="ISO 10218 / ISO/TS 15066：産業用ロボットと協働運転の安全規格。人型が現場に入る際の法的な関門"><strong>ISO 10218 / ISO/TS 15066</strong></span>：産業用ロボットと協働運転の安全規格。人型が現場に入る際の法的な関門</li>
+</ul>
+<hr>
+<p>前：<a href="02_なぜロボットは普及しないのか.html">02_なぜロボットは普及しないのか</a> ／ 次：<a href="04_分野別の実装状況.html">04_分野別の実装状況</a></p><section class="page-quiz" data-quiz-key="01_注目テーマ/09_ロボット/03_AIとロボットの結合.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全9問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：ロボットの「脳」がプログラムから学習モデルに置き換わりつつある話の中身と、 デモ動画と実運用の間に何段の壁があるか。", "結論を先に書く。動きの生成は確かに変わった。しかし2026年時点で、 基盤モデルで動くロボットが人の代わりに稼いでいる現場はまだ極めて限られる。 ヒューマノイドは誇張報道が最も多い領域なので、このノートは一貫して「デモ」と「実運用」を分けて書く。"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」における「何が変わったのか：手書きの手順から、学習した動作へ」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["この2つは対立ではなく役割分担になりつつある。 精度と安全が要る動きは従来の制御、状況判断と柔軟性が要る部分がAI、という組み合わせが実装の主流。"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」における「VLA（Vision-Language-Action）とは」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["VLA＝画像（Vision）と言葉（Language）を入力に、ロボットの動作（Action）を出力する 単一のニューラルネットワーク。言語モデルの仕組みを、出力が文章ではなく関節角になるよう作り変えたもの。", "π0 / π0.5 系：Physical Intelligence（米）：汎用操作の代表格。複数の機体で同じモデルを動かす方向", "Helix：Figure AI（米）：自社ヒューマノイド向け。上半身の器用な操作が売り", "Gemini Robotics 系：Google DeepMind：2026年7月に次世代版を公開。ロボット上でローカル実行でき、数時間のデータで別形状の機体に適応できると発表"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」における「どうやって学習させるか：3つのルート」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["模倣学習：人が遠隔操作（テレオペ）した動きを大量に記録し、真似させる：現実のデータなので実機で動きやすい", "シミュレーション学習：物理シミュレータ上で数億回試行させる：安く速く大量に試せる", "強化学習：報酬を与えて試行錯誤で覚えさせる：人が教えられない動きも獲得できる", "実務では 「シミュレーションで大枠 → 模倣学習で現実に寄せる → 強化学習で仕上げる」 の3段構えが定石化しつつある。"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」における「本当のボトルネックはデータ」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["言語モデルにはインターネットという既製のデータがあった。ロボットには、それが無い。", "このため各社が採る手段は次の4つに集約される。", "テレオペ工場：人がVRコントローラで操作し、ひたすらデータを取る（人件費がそのままデータ原価になる）", "実運用からの回収：すでに現場で動いているロボットからログを集める（先に配備した側が有利）"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」の「ヒューマノイドの現在地：デモと実運用を分ける」で何が変わっていますか。有利になる企業・不利になる企業と、収益への影響を説明してください。", "points": ["報道で最も混同されるのがここ。成熟度を5段階に分けて読むと誤解が減る。", "Unitree（中国）：2025年に約5,500台出荷、2026年は約2万台の出荷目標。累計1.8万台超の二足歩行機を製造と報じられる：出荷台数は多いが、買い手の多くは研究機関・開発者・デモ用途。⑤とは言い難い", "Figure AI（米）：BMW工場での稼働実績を公表。評価額390億ドル規模と報じられる：③〜④。作業範囲は限定的", "Tesla（Optimus）：2026年に社内展開1,000〜1,200台規模と報じられる。外部販売は2026年後半以降を目標：③。2025年Q4決算説明会で経営陣自身が「まだ有用な作業をしているロボットはない」と述べたと報じられる"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」における「なぜ人型なのか、そして人型でなくてよい理由」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["世界（階段、ドアノブ、什器、工具）が人間の寸法で作られている。環境を変えずに入れる", "1台で複数の仕事をさせられれば、稼働時間が伸びて回収年数が短くなる（02_なぜ普及しないのか の算数）", "学習データを人の動作から取りやすい", "脚は高価で壊れやすく、転倒リスクがある。床が平らなら車輪のほうが安く速い"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」における「報道を読むときのチェックリスト」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["環境：「工場で稼働」：「◯◯社の△△工程で、×時間/日、□ヶ月連続稼働」", "速度：速度に触れない／早送り動画：「人の◯%の速度」「タクトタイム◯秒」", "成功率：「できるようになった」：「成功率◯%、失敗時は人が介入」", "特に注意すべきは遠隔操作の有無。テレオペ（人が遠隔で操作）を挟んだ映像が 「自律動作」として流通することがあり、これは技術的には全く別の段階である。"]}, {"question": "「AIとロボットの結合（基盤モデル・模倣学習・ヒューマノイド）」における「産業構造としてどう見るか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["AIの参入で、ロボット業界の付加価値の置き場所が動き始めている。", "半導体で起きた「設計と製造の分離」に似た分解が起きるのか、 それともロボットは現場ごとのすり合わせが重すぎて垂直統合が残るのか。 2026年時点では決着していない。これがこの業界の最大の論点である。"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/09_ロボット/02_なぜロボットは普及しないのか.html"><span class="lbl">← 前</span>なぜロボットは普及しないのか（導入の経済学）</a><a class="next" href="../../01_注目テーマ/09_ロボット/04_分野別の実装状況.html"><span class="lbl">次 →</span>分野別の実装状況（物流・飲食・介護・清掃・農業・小売）</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. 何が変わったのか：手書きの手順から、学習した動作へ</a><a class="lv2" href="#s2">2. VLA（Vision-Language-Action）とは</a><a class="lv2" href="#s3">3. どうやって学習させるか：3つのルート</a><a class="lv2" href="#s4">4. 本当のボトルネックはデータ</a><a class="lv2" href="#s5">5. ヒューマノイドの現在地：デモと実運用を分ける</a><a class="lv2" href="#s6">6. なぜ人型なのか、そして人型でなくてよい理由</a><a class="lv2" href="#s7">7. 報道を読むときのチェックリスト</a><a class="lv2" href="#s8">8. 産業構造としてどう見るか</a><a class="lv2" href="#s9">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

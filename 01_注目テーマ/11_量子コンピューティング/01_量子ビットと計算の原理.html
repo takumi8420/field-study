@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>量子ビットと計算の原理</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></span><span>›</span><span>量子ビットと計算の原理</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></li><li><a class="" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></li><li><a class="on" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="on" href="01_量子ビットと計算の原理.html">量子ビットと計算の原理</a></li><li><a class="" href="02_方式と現在地.html">方式と現在地</a></li><li><a class="" href="03_何に使えるのか.html">何に使えるのか</a></li><li><a class="" href="04_暗号と産業構造.html">暗号と産業構造</a></li><li><a class="" href="05_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></li><li><a class="" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></li><li><a class="" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>量子ビットと計算の原理</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">量子コンピューティング</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">19語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="古典より遅い。量子ビットは高価で、古典CPUの方が圧倒的に安く速い" aria-label="四則演算・一般的なプログラム：古典より遅い。量子ビットは高価で、古典CPUの方が圧倒的に安く速い">四則演算・一般的なプログラム</span><span class="term-chip has-tip" tabindex="0" data-tooltip="現状、量子機械学習で古典を上回った実用例は確認されていない（2026年時点）" aria-label="AIの学習：現状、量子機械学習で古典を上回った実用例は確認されていない（2026年時点）">AIの学習</span><span class="term-chip has-tip" tabindex="0" data-tooltip="0と1の重ね合わせを取れる情報の単位。振幅は複素数" aria-label="量子ビット（qubit）：0と1の重ね合わせを取れる情報の単位。振幅は複素数">量子ビット（qubit）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="複数の状態に同時に重みを持つこと。「どちらか分からない」ではない" aria-label="重ね合わせ（superposition）：複数の状態に同時に重みを持つこと。「どちらか分からない」ではない">重ね合わせ（superposition）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="各候補に付く複素数の重み。位相の±が干渉を生む" aria-label="振幅・位相：各候補に付く複素数の重み。位相の±が干渉を生む">振幅・位相</span><span class="term-chip has-tip" tabindex="0" data-tooltip="振幅どうしが足し合わさる／打ち消し合うこと。量子加速の正体" aria-label="干渉：振幅どうしが足し合わさる／打ち消し合うこと。量子加速の正体">干渉</span><span class="term-chip has-tip" tabindex="0" data-tooltip="複数の量子ビットが分解できない一体の状態になること" aria-label="もつれ（エンタングルメント）：複数の量子ビットが分解できない一体の状態になること">もつれ（エンタングルメント）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="未知の量子状態はコピーできないという定理。誤り訂正を難しくする原因" aria-label="複製不可能定理：未知の量子状態はコピーできないという定理。誤り訂正を難しくする原因">複製不可能定理</span><span class="term-chip has-tip" tabindex="0" data-tooltip="環境との相互作用で量子性が失われること。最大の敵" aria-label="デコヒーレンス：環境との相互作用で量子性が失われること。最大の敵">デコヒーレンス</span><span class="term-chip has-tip" tabindex="0" data-tooltip="量子状態が保たれる時間。方式ごとに桁が違う" aria-label="コヒーレンス時間（T1/T2）：量子状態が保たれる時間。方式ごとに桁が違う">コヒーレンス時間（T1/T2）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="量子状態への可逆な操作。H、X、Z、CNOTなど" aria-label="量子ゲート：量子状態への可逆な操作。H、X、Z、CNOTなど">量子ゲート</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ゲート操作の正確さ。99.9%＝1000回に1回誤る" aria-label="忠実度（fidelity）：ゲート操作の正確さ。99.9%＝1000回に1回誤る">忠実度（fidelity）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="2つの量子ビットを絡める操作。性能の律速となる" aria-label="2量子ビットゲート：2つの量子ビットを絡める操作。性能の律速となる">2量子ビットゲート</span><span class="term-chip has-tip" tabindex="0" data-tooltip="量子状態を0/1に確定させる操作。重ね合わせは失われる" aria-label="測定：量子状態を0/1に確定させる操作。重ね合わせは失われる">測定</span><span class="term-chip has-tip" tabindex="0" data-tooltip="素因数分解を指数的に速く解く。RSA暗号を破る（→ 04）" aria-label="Shorのアルゴリズム：素因数分解を指数的に速く解く。RSA暗号を破る（→ 04）">Shorのアルゴリズム</span><span class="term-chip has-tip" tabindex="0" data-tooltip="総当たり探索を平方根に短縮する。加速は二次どまり" aria-label="Groverのアルゴリズム：総当たり探索を平方根に短縮する。加速は二次どまり">Groverのアルゴリズム</span><span class="term-chip has-tip" tabindex="0" data-tooltip="行列の固有値を求める。化学・材料計算の中核" aria-label="量子位相推定（QPE）：行列の固有値を求める。化学・材料計算の中核">量子位相推定（QPE）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="もつれを使っても情報を光より速く送れないという定理" aria-label="無信号定理：もつれを使っても情報を光より速く送れないという定理">無信号定理</span><span class="term-chip has-tip" tabindex="0" data-tooltip="古典と量子を往復させる実用的な使い方。現在の標準形" aria-label="ハイブリッド計算：古典と量子を往復させる実用的な使い方。現在の標準形">ハイブリッド計算</span></div></details><p>このノートで分かること：<strong>量子コンピュータがなぜ速いのか、そしてなぜ「何でも速い」わけではないのか</strong>。<br>この分野は誇張が多いので、原理のところで「できること」と「できないこと」の線を先に引いておく。</p>
+<p>結論を先に書く。量子コンピュータは<strong>「すべての組合せを同時に試す並列マシン」ではない</strong>。<br>正しくは、<strong>答えの候補に波のような重みを付け、間違った候補どうしを打ち消し合わせて（干渉させて）、<br>正解だけを残す装置</strong>である。この「打ち消し方」を設計できる問題でしか速くならない。</p>
+<p>ハードの方式や現在の到達点は <a href="02_方式と現在地.html">方式と現在地</a>、<br>用途の切り分けは <a href="03_何に使えるのか.html">何に使えるのか</a> を参照。</p>
+<h2 id="s1">1. 古典ビットと量子ビットは何が違うのか</h2>
+<p>古典コンピュータのビットは 0 か 1 のどちらか。半導体のトランジスタで電流の通り道を作る／消すことで表す<br>（→ <a href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/04_トランジスタの原理.html">トランジスタの原理</a>）。</p>
+<p><strong>量子ビット（qubit）</strong> は、0 と 1 の<strong>中間の状態</strong>を取れる。これを <strong>重ね合わせ（superposition）</strong> という。<br>ただし「0でもあり1でもある」という曖昧な言い方は誤解のもとで、正確には<br><strong>「0の重み」と「1の重み」を持った1本のベクトル</strong>である。重みは実数ではなく<strong>複素数（振幅）</strong>で、<br>プラスとマイナス（正確には位相）を持つ。この<strong>マイナスが取れることが、量子計算の全力の源</strong>になる。</p>
+<pre><code>古典ビット             量子ビット（ブロッホ球で表す）
+                                 |0⟩
+  ┌───┐  ┌───┐                    ●
+  │ 0 │  │ 1 │                 ／ │ ＼      ← 球面上のどこでも取れる
+  └───┘  └───┘               ／   ●  ＼    ← この1点が「状態」
+   2択のどちらか              ｜   状態  ｜
+                              ＼       ／
+                                 ＼   ／
+                                    ●
+                                 |1⟩</code></pre>
+<div class="table-wrap"><table><thead><tr>
+<th>項目</th>
+<th>古典ビット</th>
+<th>量子ビット</th>
+</tr></thead><tbody>
+<tr><td>取りうる状態</td><td>0 または 1</td><td>0と1の重ね合わせ（振幅は複素数）</td></tr>
+<tr><td>物理的な実体</td><td>トランジスタの電荷、磁化</td><td>超伝導回路のエネルギー準位、イオンの電子状態、原子、光子の偏光 など</td></tr>
+<tr><td>読み出し</td><td>何度読んでも同じ</td><td><strong>読んだ瞬間に0か1に確定し、重ね合わせは壊れる</strong></td></tr>
+<tr><td>コピー</td><td>自由にできる</td><td><strong>できない</strong>（複製不可能定理）</td></tr>
+<tr><td>放っておくと</td><td>状態を保つ</td><td><strong>勝手に壊れる</strong>（デコヒーレンス。マイクロ秒〜秒のオーダー）</td></tr>
+</tbody></table></div>
+<h2 id="s2">2. 最大の誤解：「2^n 通りを同時に計算している」</h2>
+<p>n個の量子ビットは 2^n 個の振幅を持つ。300量子ビットあれば 2^300（宇宙の原子数より多い）個の振幅がある。<br>ここから「2^300通りを同時に計算できる」という説明がよく出るが、<strong>これは間違い</strong>である。</p>
+<p>理由は<strong>測定</strong>にある。計算が終わって読み出すと、<strong>得られるのは n ビットの答えが1個だけ</strong>。<br>どの答えが出るかは、その候補の振幅の絶対値の2乗の確率で決まる。<br>つまり、<strong>内部にいくら情報があっても、取り出せるのは1回につき n ビットだけ</strong>。</p>
+<pre><code>【誤ったイメージ】                 【実際の姿】
+全候補を同時計算 → 全部の答えが出る   全候補に振幅を配る
+                                        ↓
+ A → 結果A                         干渉させて、間違った候補の振幅を
+ B → 結果B  ぜんぶ手に入る            打ち消し合わせる（+と−が相殺）
+ C → 結果C                              ↓
+ …                                  正解の候補だけ振幅が大きく残る
+                                        ↓
+                                    測定 → 高い確率で正解が1個出る</code></pre>
+<blockquote><p>ポイント：量子コンピュータの本体は「並列計算」ではなく <strong>「干渉の設計」</strong>。<br><strong>正解以外を打ち消す配線を思いつけた問題しか速くならない</strong>。これが、速くなる問題が限られる根本理由。</p></blockquote>
+<h2 id="s3">3. もつれ（エンタングルメント）</h2>
+<p>2つ以上の量子ビットが、<strong>個別の状態としては書けない一体の状態</strong>になることを<br><strong>もつれ（entanglement）</strong> という。</p>
+<p>例：2量子ビットが「00 と 11 が半々」という状態にあるとき、<br>片方を測って 0 が出れば、<strong>もう片方は必ず 0</strong>（離れていても）。<br>「1つ目が0で、2つ目が…」という形に分解して書くことができない。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>誤解</th>
+<th>実際</th>
+</tr></thead><tbody>
+<tr><td>もつれで情報を瞬時に送れる</td><td><strong>送れない</strong>。測定結果はランダムで、相手に意図した値を届けられない（無信号定理）</td></tr>
+<tr><td>もつれは特別な現象</td><td>量子回路では<strong>ごく普通に発生する</strong>。2量子ビットゲートを1回かければ作れる</td></tr>
+<tr><td>もつれがあれば速い</td><td>もつれ<strong>だけ</strong>では足りない。干渉と組み合わせて初めて加速になる</td></tr>
+</tbody></table></div>
+<p>もつれが効くのは、<strong>n量子ビットの状態空間が 2^n 次元まで広がる</strong>のが、もつれのおかげだから。<br>もつれがなければ、n個の量子ビットは n 個の独立したコマにすぎず、古典計算で簡単に真似できてしまう。</p>
+<h2 id="s4">4. 量子ゲートと量子回路</h2>
+<p>計算は<strong>ゲート</strong>（状態への操作）を順に当てることで進む。古典のAND/ORに当たるものだが、<br><strong>すべての操作は可逆</strong>（入力に戻せる）でなければならない。情報を捨てる操作は熱を出し、状態を壊すからである。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>ゲート</th>
+<th>何をするか</th>
+<th>役割</th>
+</tr></thead><tbody>
+<tr><td><strong>H（アダマール）</strong></td><td>0 を「0と1が半々」にする</td><td>重ね合わせを作る入口</td></tr>
+<tr><td><strong>X</strong></td><td>0↔1 を入れ替える</td><td>古典のNOTに相当</td></tr>
+<tr><td><strong>Z、T、位相ゲート</strong></td><td>振幅の<strong>符号・位相</strong>だけを変える</td><td><strong>干渉を設計する道具。ここが古典にない部分</strong></td></tr>
+<tr><td><strong>CNOT（制御NOT）</strong></td><td>片方が1のときだけ、もう片方を反転</td><td><strong>もつれを作る。2量子ビットゲート</strong></td></tr>
+<tr><td><strong>測定</strong></td><td>0か1に確定させる</td><td>出口。ここで重ね合わせは失われる</td></tr>
+</tbody></table></div>
+<p>実装上いちばん難しいのは <strong>2量子ビットゲート</strong>（CNOTなど）で、<br>ハードウェアの良し悪しはほぼ <strong>2量子ビットゲートの忠実度（fidelity）</strong> で語られる。<br>2026年時点の最高水準はイオントラップ方式の 99.9〜99.99% 台（各社公表値）。<br>一見すると十分に見えるが、<strong>1万回ゲートをかければ誤りはほぼ確実に入る</strong>。</p>
+<pre><code>【2量子ビット忠実度と、誤りなく回せるゲート数のざっくりした目安】
+
+ 忠実度 99%     → 約  100 回で誤りが期待値1
+ 忠実度 99.9%   → 約 1,000 回
+ 忠実度 99.99%  → 約10,000 回
+ 実用的な化学計算に必要なゲート数 → 10億〜1兆回
+ ────────────────────────────────────
+ 桁が7〜8つ足りない。だから誤り訂正が要る（→ 02_方式と現在地.md）</code></pre>
+<h2 id="s5">5. 速くなる問題／ならない問題</h2>
+<p>加速の型は大きく3つ。<strong>「どれに当たるか」で話の重みがまったく違う</strong>ので、ここは必ず分けて読む。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>型</th>
+<th>速さの差</th>
+<th>代表アルゴリズム</th>
+<th>実用上の意味</th>
+</tr></thead><tbody>
+<tr><td><strong>指数的加速</strong></td><td>古典で宇宙年齢 → 量子で数時間</td><td><strong>Shor</strong>（素因数分解）、<strong>量子位相推定</strong>（化学・材料のエネルギー計算）</td><td>ここだけが「ゲームチェンジ」。ただし該当する問題は少ない</td></tr>
+<tr><td><strong>二次（平方根）加速</strong></td><td>1兆回 → 100万回</td><td><strong>Grover</strong>（非構造化探索）、振幅増幅（モンテカルロ）</td><td>理論上は有利でも、<strong>1ゲートが古典より圧倒的に遅い</strong>ため、実利が出るのは問題が巨大な場合だけ</td></tr>
+<tr><td><strong>ヒューリスティック</strong></td><td>証明なし。速いかもしれない</td><td>QAOA、VQE、量子アニーリング</td><td><strong>加速の保証がない</strong>。誇大広告が最も集中する領域</td></tr>
+</tbody></table></div>
+<p>そもそも速くならない代表例も押さえておく。</p>
+<ul>
+<li><strong>データが大量にある処理</strong>（検索、集計、データベース）：<strong>データを量子状態に読み込む時間</strong>がボトルネックになり、加速が消える</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="古典より遅い。量子ビットは高価で、古典CPUの方が圧倒的に安く速い" aria-label="四則演算・一般的なプログラム：古典より遅い。量子ビットは高価で、古典CPUの方が圧倒的に安く速い"><strong>四則演算・一般的なプログラム</strong></span>：古典より遅い。量子ビットは高価で、古典CPUの方が圧倒的に安く速い</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="現状、量子機械学習で古典を上回った実用例は確認されていない（2026年時点）" aria-label="AIの学習：現状、量子機械学習で古典を上回った実用例は確認されていない（2026年時点）"><strong>AIの学習</strong></span>：現状、量子機械学習で古典を上回った実用例は確認されていない（2026年時点）</li>
+</ul>
+<blockquote><p>覚え方：<strong>量子コンピュータは「万能な速いパソコン」ではなく、「特定の数学構造に効く加速器」</strong>。<br>GPUやFPGAと同じ「アクセラレータ」の一種だと考えると、産業的な位置づけを間違えにくい。</p></blockquote>
+<h2 id="s6">6. なぜ難しいのか：デコヒーレンス</h2>
+<p>量子状態は極端に壊れやすい。周囲の熱、電磁ノイズ、宇宙線、装置自身の振動――<br>外の世界とわずかでも相互作用すると、重ね合わせの位相がバラけて<strong>ただの確率的な古典状態に落ちる</strong>。<br>これが <strong>デコヒーレンス</strong>。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>方式</th>
+<th>コヒーレンス時間（状態が保つ時間、2026年時点の代表値）</th>
+<th>ゲート時間</th>
+</tr></thead><tbody>
+<tr><td>超伝導</td><td>100マイクロ秒〜1ミリ秒</td><td>数十ナノ秒（速い）</td></tr>
+<tr><td>イオントラップ</td><td>数秒〜数分</td><td>数十〜数百マイクロ秒（遅い）</td></tr>
+<tr><td>中性原子</td><td>数秒</td><td>数マイクロ秒</td></tr>
+</tbody></table></div>
+<p>「コヒーレンス時間 ÷ ゲート時間」が<strong>誤りなく回せる回数の上限の目安</strong>になる。<br>超伝導は保持が短いがゲートが速い、イオンは保持が長いがゲートが遅い、という<strong>トレードオフになっている</strong>。<br>どちらも「時間内に回せる回数」では桁違いに足りず、そこを埋めるのが誤り訂正である。</p>
+<h2 id="s7">7. 古典コンピュータとの役割分担</h2>
+<p>量子コンピュータが古典コンピュータを置き換えることは、<strong>当面もその先も想定されていない</strong>。<br>実際の使い方は<strong>ハイブリッド</strong>で、量子は「古典が苦手な芯の部分だけ」を担当する。</p>
+<pre><code>       ユーザーの問題（例：新しい触媒を設計したい）
+                    │
+        ┌───────────┴───────────┐
+        │  古典（CPU / GPU / HPC）  │  ← 前処理、問題の切り出し、近似、
+        │                          │     パラメータ調整、結果の後処理
+        └───────────┬───────────┘
+                    │ 小さく切り出した「本質的に量子的な部分」だけ投げる
+                    ▼
+        ┌──────────────────────┐
+        │  量子プロセッサ（QPU）      │  ← 分子のエネルギー計算など
+        │  クラウド経由で数秒〜数分   │
+        └───────────┬───────────┘
+                    │ 測定結果（確率分布）を返す
+                    ▼
+              古典側で集計・判断 → 必要なら再投入（ループ）</code></pre>
+<p>この構図から、産業側の含意が2つ出る。</p>
+<ol>
+<li><strong>量子は「クラウドの一機能」として売られる</strong>（→ <a href="../../04_情報通信・IT・ネット/04_クラウド・IaaS/README.html">クラウド・IaaS</a>）。<br>1台数十億円の装置を各社が買うモデルにはなりにくい</li>
+<li><strong>古典側のHPC・GPUと競合する</strong>。量子が勝つには、古典の最良手法を上回る必要がある。<br>古典アルゴリズムも毎年改良されるため、<strong>「量子優位」の基準線は上がり続ける</strong>（後述の「脱量子化」）</li>
+</ol>
+<h2 id="s8">8. よくある誤解のまとめ</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>よく言われること</th>
+<th>実際</th>
+</tr></thead><tbody>
+<tr><td>すべての計算が速くなる</td><td>特定の数学構造に効くだけ。多くの処理はむしろ遅い</td></tr>
+<tr><td>2^n 通りを同時に計算する</td><td>取り出せる答えは1回に1個。干渉で正解を浮かび上がらせている</td></tr>
+<tr><td>量子ビット数が多いほど高性能</td><td>忠実度と接続性を無視した比較は無意味（→ <a href="02_方式と現在地.html">02_方式と現在地</a>）</td></tr>
+<tr><td>もつれで瞬時通信ができる</td><td>できない。無信号定理</td></tr>
+<tr><td>もう暗号は破られている</td><td>2026年時点でRSA-2048を破った例はない（→ <a href="04_暗号と産業構造.html">04_暗号と産業構造</a>）</td></tr>
+<tr><td>AIが量子で劇的に速くなる</td><td>実証されていない。むしろAIが量子の制御・誤り訂正に使われている</td></tr>
+<tr><td>古典コンピュータを置き換える</td><td>置き換えない。アクセラレータとして併用する</td></tr>
+</tbody></table></div>
+<h2 id="s9">まとめ</h2>
+<p>量子コンピュータとは、<strong>複素数の振幅を持つ状態を操作し、干渉によって間違った答えを打ち消して、<br>正解の確率だけを高める装置</strong>である。並列マシンではない。<br>そして状態は放っておくと壊れるので、<strong>誤り訂正なしには実用的な長さの計算ができない</strong>。<br>このノートの結論は次の1本に直結する ― <a href="02_方式と現在地.html">方式と現在地</a>。</p>
+<h2 id="s10">用語メモ</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>用語</th>
+<th>意味</th>
+</tr></thead><tbody>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="0と1の重ね合わせを取れる情報の単位。振幅は複素数" aria-label="量子ビット（qubit）：0と1の重ね合わせを取れる情報の単位。振幅は複素数"><strong>量子ビット（qubit）</strong></span></td><td>0と1の重ね合わせを取れる情報の単位。振幅は複素数</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="複数の状態に同時に重みを持つこと。「どちらか分からない」ではない" aria-label="重ね合わせ（superposition）：複数の状態に同時に重みを持つこと。「どちらか分からない」ではない"><strong>重ね合わせ（superposition）</strong></span></td><td>複数の状態に同時に重みを持つこと。「どちらか分からない」ではない</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="各候補に付く複素数の重み。位相の±が干渉を生む" aria-label="振幅・位相：各候補に付く複素数の重み。位相の±が干渉を生む"><strong>振幅・位相</strong></span></td><td>各候補に付く複素数の重み。位相の±が干渉を生む</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="振幅どうしが足し合わさる／打ち消し合うこと。量子加速の正体" aria-label="干渉：振幅どうしが足し合わさる／打ち消し合うこと。量子加速の正体"><strong>干渉</strong></span></td><td>振幅どうしが足し合わさる／打ち消し合うこと。<strong>量子加速の正体</strong></td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="複数の量子ビットが分解できない一体の状態になること" aria-label="もつれ（エンタングルメント）：複数の量子ビットが分解できない一体の状態になること"><strong>もつれ（エンタングルメント）</strong></span></td><td>複数の量子ビットが分解できない一体の状態になること</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="未知の量子状態はコピーできないという定理。誤り訂正を難しくする原因" aria-label="複製不可能定理：未知の量子状態はコピーできないという定理。誤り訂正を難しくする原因"><strong>複製不可能定理</strong></span></td><td>未知の量子状態はコピーできないという定理。誤り訂正を難しくする原因</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="環境との相互作用で量子性が失われること。最大の敵" aria-label="デコヒーレンス：環境との相互作用で量子性が失われること。最大の敵"><strong>デコヒーレンス</strong></span></td><td>環境との相互作用で量子性が失われること。最大の敵</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="量子状態が保たれる時間。方式ごとに桁が違う" aria-label="コヒーレンス時間（T1/T2）：量子状態が保たれる時間。方式ごとに桁が違う"><strong>コヒーレンス時間（T1/T2）</strong></span></td><td>量子状態が保たれる時間。方式ごとに桁が違う</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="量子状態への可逆な操作。H、X、Z、CNOTなど" aria-label="量子ゲート：量子状態への可逆な操作。H、X、Z、CNOTなど"><strong>量子ゲート</strong></span></td><td>量子状態への可逆な操作。H、X、Z、CNOTなど</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="ゲート操作の正確さ。99.9%＝1000回に1回誤る" aria-label="忠実度（fidelity）：ゲート操作の正確さ。99.9%＝1000回に1回誤る"><strong>忠実度（fidelity）</strong></span></td><td>ゲート操作の正確さ。99.9%＝1000回に1回誤る</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="2つの量子ビットを絡める操作。性能の律速となる" aria-label="2量子ビットゲート：2つの量子ビットを絡める操作。性能の律速となる"><strong>2量子ビットゲート</strong></span></td><td>2つの量子ビットを絡める操作。性能の律速となる</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="量子状態を0/1に確定させる操作。重ね合わせは失われる" aria-label="測定：量子状態を0/1に確定させる操作。重ね合わせは失われる"><strong>測定</strong></span></td><td>量子状態を0/1に確定させる操作。重ね合わせは失われる</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="素因数分解を指数的に速く解く。RSA暗号を破る（→ 04）" aria-label="Shorのアルゴリズム：素因数分解を指数的に速く解く。RSA暗号を破る（→ 04）"><strong>Shorのアルゴリズム</strong></span></td><td>素因数分解を指数的に速く解く。RSA暗号を破る（→ <a href="04_暗号と産業構造.html">04</a>）</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="総当たり探索を平方根に短縮する。加速は二次どまり" aria-label="Groverのアルゴリズム：総当たり探索を平方根に短縮する。加速は二次どまり"><strong>Groverのアルゴリズム</strong></span></td><td>総当たり探索を平方根に短縮する。加速は二次どまり</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="行列の固有値を求める。化学・材料計算の中核" aria-label="量子位相推定（QPE）：行列の固有値を求める。化学・材料計算の中核"><strong>量子位相推定（QPE）</strong></span></td><td>行列の固有値を求める。化学・材料計算の中核</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="もつれを使っても情報を光より速く送れないという定理" aria-label="無信号定理：もつれを使っても情報を光より速く送れないという定理"><strong>無信号定理</strong></span></td><td>もつれを使っても情報を光より速く送れないという定理</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="古典と量子を往復させる実用的な使い方。現在の標準形" aria-label="ハイブリッド計算：古典と量子を往復させる実用的な使い方。現在の標準形"><strong>ハイブリッド計算</strong></span></td><td>古典と量子を往復させる実用的な使い方。現在の標準形</td></tr>
+</tbody></table></div><section class="page-quiz" data-quiz-key="01_注目テーマ/11_量子コンピューティング/01_量子ビットと計算の原理.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全10問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「量子ビットと計算の原理」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：量子コンピュータがなぜ速いのか、そしてなぜ「何でも速い」わけではないのか。 この分野は誇張が多いので、原理のところで「できること」と「できないこと」の線を先に引いておく。", "結論を先に書く。量子コンピュータは「すべての組合せを同時に試す並列マシン」ではない。 正しくは、答えの候補に波のような重みを付け、間違った候補どうしを打ち消し合わせて（干渉させて）、 正解だけを残す装置である。この「打ち消し方」を設計できる問題でしか速くならない。", "ハードの方式や現在の到達点は 方式と現在地、 用途の切り分けは 何に使えるのか を参照。"]}, {"question": "「量子ビットと計算の原理」における「古典ビットと量子ビットは何が違うのか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["古典コンピュータのビットは 0 か 1 のどちらか。半導体のトランジスタで電流の通り道を作る／消すことで表す （→ トランジスタの原理）。", "量子ビット（qubit） は、0 と 1 の中間の状態を取れる。これを 重ね合わせ（superposition） という。 ただし「0でもあり1でもある」という曖昧な言い方は誤解のもとで、正確には 「0の重み」と「1の重み」を持った1本のベクトルである。重みは実数ではなく複素数（振幅）で、 プラスとマイナス（正確には位相）を持つ。このマイナスが取れることが、量子計算の全力の源になる。", "取りうる状態：0 または 1：0と1の重ね合わせ（振幅は複素数）", "物理的な実体：トランジスタの電荷、磁化：超伝導回路のエネルギー準位、イオンの電子状態、原子、光子の偏光 など"]}, {"question": "「量子ビットと計算の原理」における「最大の誤解：「2^n 通りを同時に計算している」」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["n個の量子ビットは 2^n 個の振幅を持つ。300量子ビットあれば 2^300（宇宙の原子数より多い）個の振幅がある。 ここから「2^300通りを同時に計算できる」という説明がよく出るが、これは間違いである。", "理由は測定にある。計算が終わって読み出すと、得られるのは n ビットの答えが1個だけ。 どの答えが出るかは、その候補の振幅の絶対値の2乗の確率で決まる。 つまり、内部にいくら情報があっても、取り出せるのは1回につき n ビットだけ。", "ポイント：量子コンピュータの本体は「並列計算」ではなく 「干渉の設計」。 正解以外を打ち消す配線を思いつけた問題しか速くならない。これが、速くなる問題が限られる根本理由。"]}, {"question": "「量子ビットと計算の原理」における「もつれ（エンタングルメント）」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["2つ以上の量子ビットが、個別の状態としては書けない一体の状態になることを もつれ（entanglement） という。", "例：2量子ビットが「00 と 11 が半々」という状態にあるとき、 片方を測って 0 が出れば、もう片方は必ず 0（離れていても）。 「1つ目が0で、2つ目が…」という形に分解して書くことができない。", "もつれで情報を瞬時に送れる：送れない。測定結果はランダムで、相手に意図した値を届けられない（無信号定理）", "もつれは特別な現象：量子回路ではごく普通に発生する。2量子ビットゲートを1回かければ作れる"]}, {"question": "「量子ビットと計算の原理」における「量子ゲートと量子回路」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["計算はゲート（状態への操作）を順に当てることで進む。古典のAND/ORに当たるものだが、 すべての操作は可逆（入力に戻せる）でなければならない。情報を捨てる操作は熱を出し、状態を壊すからである。", "H（アダマール）：0 を「0と1が半々」にする：重ね合わせを作る入口", "X：0↔1 を入れ替える：古典のNOTに相当", "Z、T、位相ゲート：振幅の符号・位相だけを変える：干渉を設計する道具。ここが古典にない部分"]}, {"question": "「量子ビットと計算の原理」における「速くなる問題／ならない問題」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["加速の型は大きく3つ。「どれに当たるか」で話の重みがまったく違うので、ここは必ず分けて読む。", "指数的加速：古典で宇宙年齢 → 量子で数時間：Shor（素因数分解）、量子位相推定（化学・材料のエネルギー計算）", "二次（平方根）加速：1兆回 → 100万回：Grover（非構造化探索）、振幅増幅（モンテカルロ）", "ヒューリスティック：証明なし。速いかもしれない：QAOA、VQE、量子アニーリング"]}, {"question": "「量子ビットと計算の原理」における「なぜ難しいのか：デコヒーレンス」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["量子状態は極端に壊れやすい。周囲の熱、電磁ノイズ、宇宙線、装置自身の振動―― 外の世界とわずかでも相互作用すると、重ね合わせの位相がバラけてただの確率的な古典状態に落ちる。 これが デコヒーレンス。", "超伝導：100マイクロ秒〜1ミリ秒：数十ナノ秒（速い）", "イオントラップ：数秒〜数分：数十〜数百マイクロ秒（遅い）", "中性原子：数秒：数マイクロ秒"]}, {"question": "「量子ビットと計算の原理」における「古典コンピュータとの役割分担」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["量子コンピュータが古典コンピュータを置き換えることは、当面もその先も想定されていない。 実際の使い方はハイブリッドで、量子は「古典が苦手な芯の部分だけ」を担当する。", "この構図から、産業側の含意が2つ出る。", "量子は「クラウドの一機能」として売られる（→ クラウド・IaaS）。 1台数十億円の装置を各社が買うモデルにはなりにくい", "古典側のHPC・GPUと競合する。量子が勝つには、古典の最良手法を上回る必要がある。 古典アルゴリズムも毎年改良されるため、「量子優位」の基準線は上がり続ける（後述の「脱量子化」）"]}, {"question": "「量子ビットと計算の原理」の章「よくある誤解のまとめ」を30秒で要約してください。結論だけでなく、重要な因果関係も含めてください。", "points": ["すべての計算が速くなる：特定の数学構造に効くだけ。多くの処理はむしろ遅い", "2^n 通りを同時に計算する：取り出せる答えは1回に1個。干渉で正解を浮かび上がらせている", "量子ビット数が多いほど高性能：忠実度と接続性を無視した比較は無意味（→ 02_方式と現在地）"]}, {"question": "「量子ビットと計算の原理」の章「まとめ」を30秒で要約してください。結論だけでなく、重要な因果関係も含めてください。", "points": ["量子コンピュータとは、複素数の振幅を持つ状態を操作し、干渉によって間違った答えを打ち消して、 正解の確率だけを高める装置である。並列マシンではない。 そして状態は放っておくと壊れるので、誤り訂正なしには実用的な長さの計算ができない。 このノートの結論は次の1本に直結する ― 方式と現在地。"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/11_量子コンピューティング/README.html"><span class="lbl">← 前</span>量子コンピューティング</a><a class="next" href="../../01_注目テーマ/11_量子コンピューティング/02_方式と現在地.html"><span class="lbl">次 →</span>方式と現在地（ハードウェアと誤り訂正）</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. 古典ビットと量子ビットは何が違うのか</a><a class="lv2" href="#s2">2. 最大の誤解：「2^n 通りを同時に計算している」</a><a class="lv2" href="#s3">3. もつれ（エンタングルメント）</a><a class="lv2" href="#s4">4. 量子ゲートと量子回路</a><a class="lv2" href="#s5">5. 速くなる問題／ならない問題</a><a class="lv2" href="#s6">6. なぜ難しいのか：デコヒーレンス</a><a class="lv2" href="#s7">7. 古典コンピュータとの役割分担</a><a class="lv2" href="#s8">8. よくある誤解のまとめ</a><a class="lv2" href="#s9">まとめ</a><a class="lv2" href="#s10">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../05_金融/index.html">金融</a></span><span>›</span><span><a href="../../05_金融/14_暗号資産/README.html">暗号資産</a></span><span>›</span><span>技術の仕組み</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat" href="../../01_注目テーマ/index.html">注目テーマ</a></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat on" href="../../05_金融/index.html">金融</a><ul class="sub"><li><a class="" href="../../05_金融/01_メガバンク/README.html">メガバンク</a></li><li><a class="" href="../../05_金融/02_地方銀行/README.html">地方銀行</a></li><li><a class="" href="../../05_金融/03_信託銀行/README.html">信託銀行</a></li><li><a class="" href="../../05_金融/04_ネット銀行/README.html">ネット銀行</a></li><li><a class="" href="../../05_金融/05_証券/README.html">証券</a></li><li><a class="" href="../../05_金融/06_資産運用/README.html">資産運用</a></li><li><a class="" href="../../05_金融/07_生命保険/README.html">生命保険</a></li><li><a class="" href="../../05_金融/08_損害保険/README.html">損害保険</a></li><li><a class="" href="../../05_金融/09_少額短期保険/README.html">少額短期保険</a></li><li><a class="" href="../../05_金融/10_リース/README.html">リース</a></li><li><a class="" href="../../05_金融/11_クレジットカード・決済/README.html">クレジットカード・決済</a></li><li><a class="" href="../../05_金融/12_消費者金融/README.html">消費者金融</a></li><li><a class="" href="../../05_金融/13_不動産金融・REIT/README.html">不動産金融・REIT</a></li><li><a class="on" href="../../05_金融/14_暗号資産/README.html">暗号資産</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="on" href="01_技術の仕組み.html">技術の仕組み</a></li><li><a class="" href="02_事業としての暗号資産.html">事業としての暗号資産</a></li><li><a class="" href="03_規制と事故の歴史.html">規制と事故の歴史</a></li><li><a class="" href="04_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../05_金融/15_政府系金融/README.html">政府系金融</a></li></ul></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか</h1><div class="chips"><span class="chip">金融</span><span class="chip">暗号資産</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">19語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="誤送金・詐欺送金の巻き戻しは原則できない。振込の組戻しに相当する手段がない" aria-label="取り消せない：誤送金・詐欺送金の巻き戻しは原則できない。振込の組戻しに相当する手段がない">取り消せない</span><span class="term-chip has-tip" tabindex="0" data-tooltip="裏付け資産や利息のない通貨の価格は需給だけで決まり、短期間に数十%動いた例が繰り返しある" aria-label="価格が大きく動く：裏付け資産や利息のない通貨の価格は需給だけで決まり、短期間に数十%動いた例が繰り返しある">価格が大きく動く</span><span class="term-chip has-tip" tabindex="0" data-tooltip="忘却・故障・相続で到達不能になった残高が相当量あるとされる" aria-label="鍵を失えば終わり：忘却・故障・相続で到達不能になった残高が相当量あるとされる">鍵を失えば終わり</span><span class="term-chip has-tip" tabindex="0" data-tooltip="取引所・ブリッジ・個人の端末が主な攻撃面。2025年2月のBybit流出（約14〜15億ドル相当と報道）はその最大級の例" aria-label="周辺が狙われる：取引所・ブリッジ・個人の端末が主な攻撃面。2025年2月のBybit流出（約14〜15億ドル相当と報道）はその最大級の例">周辺が狙われる</span><span class="term-chip has-tip" tabindex="0" data-tooltip="高利回りをうたう案件、偽の取引所やサポート、SNS経由の勧誘が継続的に報告されている" aria-label="詐欺が発生しやすい：高利回りをうたう案件、偽の取引所やサポート、SNS経由の勧誘が継続的に報告されている">詐欺が発生しやすい</span><span class="term-chip has-tip" tabindex="0" data-tooltip="取引をブロックにまとめ、前のブロックの要約でつないだ共有台帳。改ざんすると以降と整合しなくなる" aria-label="ブロックチェーン：取引をブロックにまとめ、前のブロックの要約でつないだ共有台帳。改ざんすると以降と整合しなくなる">ブロックチェーン</span><span class="term-chip has-tip" tabindex="0" data-tooltip="任意のデータから固定長の値を作る一方向の計算。改ざん検知に使う" aria-label="ハッシュ関数：任意のデータから固定長の値を作る一方向の計算。改ざん検知に使う">ハッシュ関数</span><span class="term-chip has-tip" tabindex="0" data-tooltip="同じデジタル資産を2回使おうとする問題。合意形成で解く" aria-label="二重支払い問題：同じデジタル資産を2回使おうとする問題。合意形成で解く">二重支払い問題</span><span class="term-chip has-tip" tabindex="0" data-tooltip="書き込む権利を「計算量」／「預けた通貨」で割り当てる合意形成方式" aria-label="PoW／PoS：書き込む権利を「計算量」／「預けた通貨」で割り当てる合意形成方式">PoW／PoS</span><span class="term-chip has-tip" tabindex="0" data-tooltip="PoWで計算競争に参加し、報酬を得る行為 → 事業としての暗号資産" aria-label="マイニング：PoWで計算競争に参加し、報酬を得る行為 → 事業としての暗号資産">マイニング</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ビットコインの新規発行量が約4年ごとに半分になる仕組み" aria-label="半減期：ビットコインの新規発行量が約4年ごとに半分になる仕組み">半減期</span><span class="term-chip has-tip" tabindex="0" data-tooltip="署名する鍵／検証用の鍵／受取先の文字列。秘密鍵を失うと資産に触れられない" aria-label="秘密鍵／公開鍵／アドレス：署名する鍵／検証用の鍵／受取先の文字列。秘密鍵を失うと資産に触れられない">秘密鍵／公開鍵／アドレス</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ネット接続あり／なしの鍵保管。規制上は顧客資産の原則コールド管理が求められる" aria-label="ホット／コールドウォレット：ネット接続あり／なしの鍵保管。規制上は顧客資産の原則コールド管理が求められる">ホット／コールドウォレット</span><span class="term-chip has-tip" tabindex="0" data-tooltip="取引が確定して覆らなくなること。PoWでは確率的にしか確定しない" aria-label="ファイナリティ：取引が確定して覆らなくなること。PoWでは確率的にしか確定しない">ファイナリティ</span><span class="term-chip has-tip" tabindex="0" data-tooltip="計算力や預け入れの過半を握って台帳を書き換える攻撃" aria-label="51%攻撃：計算力や預け入れの過半を握って台帳を書き換える攻撃">51%攻撃</span><span class="term-chip has-tip" tabindex="0" data-tooltip="条件成立で自動実行される、ブロックチェーン上のプログラム" aria-label="スマートコントラクト：条件成立で自動実行される、ブロックチェーン上のプログラム">スマートコントラクト</span><span class="term-chip has-tip" tabindex="0" data-tooltip="本体のチェーン／その外で処理して結果だけ書き戻す拡張層" aria-label="レイヤー1／レイヤー2：本体のチェーン／その外で処理して結果だけ書き戻す拡張層">レイヤー1／レイヤー2</span><span class="term-chip has-tip" tabindex="0" data-tooltip="現実世界の情報をチェーンに正しく入力できるかという問題。改ざん耐性では解けない" aria-label="オラクル問題：現実世界の情報をチェーンに正しく入力できるかという問題。改ざん耐性では解けない">オラクル問題</span><span class="term-chip has-tip" tabindex="0" data-tooltip="イーサリアム系で取引・プログラム実行に払う手数料" aria-label="ガス代：イーサリアム系で取引・プログラム実行に払う手数料">ガス代</span></div></details><p>このノートで分かること：暗号資産の土台である<strong>ブロックチェーン＝改ざんしにくい共有台帳</strong>が、<br>なぜ銀行のような「信頼できる第三者」なしで動くのか。そして<strong>何は解決していないのか</strong>。</p>
+<blockquote><p>結論を先に：ブロックチェーンは「<strong>誰も管理者がいない状態で、台帳の中身について全員の意見を一致させ続ける</strong>」ための仕組み。<br>高速でも安くでも便利でもない。<strong>管理者を置けない／置きたくない場面でだけ</strong>、そのコストに見合う。</p></blockquote>
+<hr>
+<h2 id="s1">1. そもそも「お金を送る」とは台帳を書き換えることでしかない</h2>
+<p>銀行振込で実際に動いているのは、現金ではなく<strong>帳簿の数字</strong>である。</p>
+<pre><code>【銀行の場合】台帳は1つ。銀行だけが書き込める
+
+   Aさん ──「Bに1万円送って」──▶ ┌──────────────┐
+                                  │  銀行の台帳    │
+                                  │  A: 10万 → 9万 │
+                                  │  B:  3万 → 4万 │
+                                  └──────────────┘
+                                   ↑ 書けるのは銀行だけ
+   信頼の根拠 = 銀行が免許を持ち、規制され、潰れにくいこと</code></pre>
+<p>この方式は極めて効率がよい。書き込む人が1人なので、順番でもめない。<br>ただし<strong>銀行が書き換えを拒否したり、記録を消したり、破綻したりすると終わる</strong>。<br>国境をまたぐと、この「1つの台帳」が存在せず、銀行同士のコルレス契約を数珠つなぎにするため遅く高くなる<br>（→ <a href="../../04_情報通信・IT・ネット/13_フィンテック・キャッシュレス/01_決済はどう流れ誰が取り分を得るか.html">決済はどう流れ誰が取り分を得るか</a>）。</p>
+<p>ブロックチェーンは、ここで<strong>「台帳を全員に配る」</strong>という逆の解き方をした。</p>
+<pre><code>【ブロックチェーンの場合】台帳のコピーを世界中のPCが持つ
+
+   ┌───────┐   ┌───────┐   ┌───────┐   ┌───────┐
+   │ 台帳   │◀─▶│ 台帳   │◀─▶│ 台帳   │◀─▶│ 台帳   │  … 数千〜数万台
+   │ コピー │   │ コピー │   │ コピー │   │ コピー │
+   └───────┘   └───────┘   └───────┘   └───────┘
+        ▲  全員が同じ中身を持つ。1台が嘘をついても多数派が正しい版を維持
+        │
+   取引データはブロックにまとめられ、
+   [ブロック1]←[ブロック2]←[ブロック3]← … と「前のブロックの要約」で鎖状につながる
+   → 途中を書き換えると以降の全ブロックの要約が合わなくなる = 改ざんがバレる</code></pre>
+<p>この「鎖」がブロックチェーンという名前の由来。<br>要約に使うのが<strong>ハッシュ関数</strong>（どんなデータからも固定長の値を作る計算。元に戻せず、1文字変えると値が全く変わる）である。</p>
+<h2 id="s2">2. 「信頼できる第三者なし」を支える3つの部品</h2>
+<p>管理者を置かずに台帳を保つには、次の3つがそろう必要がある。<strong>どれが欠けても成立しない</strong>。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>部品</th>
+<th>解いている問題</th>
+<th>使う技術</th>
+</tr></thead><tbody>
+<tr><td><strong>本人確認</strong></td><td>「その残高を動かす権利が本当にあるか」</td><td>公開鍵暗号（電子署名）</td></tr>
+<tr><td><strong>改ざん検知</strong></td><td>「過去の記録が書き換えられていないか」</td><td>ハッシュ関数による連鎖</td></tr>
+<tr><td><strong>順番の合意</strong></td><td>「同じコインを2回使う取引が2つ来たとき、どちらを正とするか」</td><td>合意形成（PoW／PoS）</td></tr>
+</tbody></table></div>
+<p>3つめが一番むずかしい。これを<strong>二重支払い問題</strong>という。<br>デジタルデータはコピーが自由なので、同じ1BTCを同時に2人へ送る取引を両方ばらまける。<br>中央の管理者がいれば「先に着いた方が勝ち」と決めればよいが、管理者がいないと<br><strong>「どちらが先か」を誰が決めるのか</strong>が決まらない。2008年のビットコインの論文は、ここに答えを出した点が新しかった。</p>
+<h2 id="s3">3. 合意形成 ── PoWとPoSは「嘘をつくと損をする」設計</h2>
+<p>答えの骨子は、<strong>台帳に書き込む権利を得るのにコストを払わせ、不正をするとそのコストが没収される</strong>ようにすること。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>方式</th>
+<th>書き込む権利の取り方</th>
+<th>不正のときに失うもの</th>
+<th>代表</th>
+<th>弱点</th>
+</tr></thead><tbody>
+<tr><td><strong>PoW</strong>（プルーフ・オブ・ワーク／仕事量の証明）</td><td>大量の計算を最初に解いた人</td><td>使った電気代と設備</td><td>ビットコイン</td><td>電力消費が大きい</td></tr>
+<tr><td><strong>PoS</strong>（プルーフ・オブ・ステーク／預け入れの証明）</td><td>通貨を担保として預けた人から抽選</td><td>預けた通貨（一部没収＝スラッシング）</td><td>イーサリアム（2022年9月移行）</td><td>富が集中しやすいという批判</td></tr>
+</tbody></table></div>
+<p>PoWでは、計算競争に勝った人（<strong>マイナー＝採掘者</strong>）が次のブロックを作り、報酬として新規発行分の通貨と手数料を受け取る。<br>不正なブロックを作っても他のノードに拒否され、投じた電気代だけが無駄になる。<br><strong>「正直にやった方が儲かる」から正直になる</strong>というのが核心で、道徳ではなく経済の設計である。</p>
+<blockquote><p>ポイント：合意形成は「安全のために電気やお金を燃やしている」。<br>これは無駄ではなく<strong>セキュリティの購入費</strong>にあたる。だからブロックチェーンは構造的に高コストになる。</p></blockquote>
+<h3 id="s4">51%攻撃と「確定しない」ファイナリティ</h3>
+<p>計算力（PoW）や預け入れ量（PoS）の過半を1者が握ると、台帳を書き換えられる。これが<strong>51%攻撃</strong>。<br>またPoWでは厳密には「絶対に確定」がなく、<strong>ブロックが何個か積み上がるほど覆りにくくなる</strong>という確率的な確定しかない。<br>取引所が入金反映に「6承認待ち」などを課すのはこのためである。<br>銀行送金のように「着金した＝終わり」ではない点が、決済インフラとして使うときの制約になる。</p>
+<h2 id="s5">4. ウォレットと秘密鍵 ── 「銀行口座」ではなく「印鑑そのもの」</h2>
+<p>一番誤解されやすい部分。<strong>ウォレットは財布ではなく、鍵束である</strong>。</p>
+<pre><code>【鍵の関係】
+
+   秘密鍵（誰にも見せない長い数字）
+      │  一方向の計算（戻せない）
+      ▼
+   公開鍵 ──▶ アドレス（1A1zP1... のような文字列。口座番号にあたる）
+
+   送金するとき = 秘密鍵で取引データに電子署名する
+   受け取る人・第三者 = 公開鍵で「確かにその鍵の持ち主が署名した」と検証できる
+
+   ※ コインはウォレットの中に入っていない。
+      ブロックチェーン上に「このアドレスの残高」として記録されているだけ。
+      ウォレットが持つのは秘密鍵だけ。</code></pre>
+<p>つまり<strong>秘密鍵を失う＝資産に永久に触れなくなる</strong>、<strong>秘密鍵が漏れる＝全部持ち去られる</strong>。<br>銀行のような「本人確認して再発行」も「不正送金の取り消し」も、管理者がいない以上できない。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>保管方法</th>
+<th>秘密鍵を持つ人</th>
+<th>長所</th>
+<th>短所</th>
+</tr></thead><tbody>
+<tr><td><strong>取引所に預ける（カストディ）</strong></td><td>取引所</td><td>楽。パスワード再発行できる</td><td>取引所が破綻・流出すると失う（→ <a href="03_規制と事故の歴史.html">規制と事故の歴史</a>）</td></tr>
+<tr><td><strong>ホットウォレット</strong>（ネット接続のアプリ）</td><td>本人</td><td>すぐ使える</td><td>端末のマルウェア・フィッシングに弱い</td></tr>
+<tr><td><strong>コールドウォレット</strong>（専用端末・紙）</td><td>本人</td><td>ネットから切り離せる</td><td>紛失・盗難・相続で詰む</td></tr>
+</tbody></table></div>
+<p>日本の規制が「<strong>顧客の暗号資産は原則コールドウォレットで分別管理</strong>」を求めるのは、<br>過去の流出事件がすべてホットウォレットから起きたからである。</p>
+<h2 id="s6">5. ビットコインとイーサリアム ── 設計思想がまるで違う</h2>
+<p>同じ「暗号資産」でも、この2つは目的が別物。混ぜて理解すると必ず混乱する。</p>
+<div class="table-wrap"><table><thead><tr>
+<th></th>
+<th>ビットコイン（2009年〜）</th>
+<th>イーサリアム（2015年〜）</th>
+</tr></thead><tbody>
+<tr><td>目的</td><td><strong>価値の保存・送金</strong>に絞る</td><td><strong>プログラムを動かす基盤</strong>（世界共有のコンピュータ）</td></tr>
+<tr><td>台帳が持つもの</td><td>誰がいくら持つか（UTXO方式）</td><td>残高＋任意のプログラムの状態</td></tr>
+<tr><td>発行量</td><td>上限2,100万枚。約4年ごとに新規発行が半減（<strong>半減期</strong>）</td><td>上限なし。手数料の一部を焼却（バーン）する設計</td></tr>
+<tr><td>合意形成</td><td>PoW</td><td>2022年9月にPoWからPoSへ移行（The Merge）</td></tr>
+<tr><td>思想</td><td>変えないことが価値。機能追加に極めて保守的</td><td>機能追加を続ける。アップグレード前提</td></tr>
+<tr><td>時価総額</td><td>約1.54兆ドル（2026年5月時点、報道・集計ベース）</td><td>約2,556億ドル（同時点）</td></tr>
+</tbody></table></div>
+<p>ビットコインは「<strong>書き換えられない金</strong>」を目指し、機能を削ぎ落とした。<br>イーサリアムは「<strong>その上でアプリが動く土台</strong>」を目指し、複雑さを引き受けた。<br>後述のDeFiもNFTも、ほぼイーサリアム系の発明である（→ <a href="02_事業としての暗号資産.html">事業としての暗号資産</a>）。</p>
+<h2 id="s7">6. スマートコントラクト ── 自動販売機のような契約</h2>
+<p><strong>スマートコントラクト</strong>とは、ブロックチェーン上に置かれた<strong>条件を満たすと自動で実行されるプログラム</strong>。<br>「契約書」という訳語から法律文書を連想しやすいが、実体は<strong>止められない自動販売機</strong>に近い。</p>
+<pre><code>【従来】                        【スマートコントラクト】
+
+ A ──契約書──▶ B                A ──送金──▶ ┌────────────┐
+      │                                      │ プログラム │──▶ Bへ自動送付
+      ▼ 履行しない                           │ (公開・不変)│
+   裁判所・銀行などの                        └────────────┘
+   第三者が強制執行                            ↑ 第三者不要。だが
+                                                バグも「仕様通り」に実行される</code></pre>
+<p>利点は<strong>仲介者への信頼が要らない</strong>こと。欠点は<strong>間違いを直せない</strong>こと。<br>バグを突いた資金流出（The DAO事件、2016年）や、DeFiの脆弱性を突いた盗難が繰り返されてきた。<br>「コードが法である」は、<strong>コードが間違っていても法である</strong>という意味でもある。</p>
+<h2 id="s8">7. レイヤー2 ── 「遅い・高い」をどう回避しているか</h2>
+<p>ブロックチェーンは全員が同じ処理を繰り返す構造なので、<strong>本質的に遅い</strong>。<br>ビットコインは毎秒7件程度、イーサリアムも十数件程度とされる（設計値ベース）。<br>クレジットカードの国際ブランドが毎秒数万件をさばくのと比べると3〜4桁違う。</p>
+<p>そこで、<strong>本体（レイヤー1）の外で取引をまとめ、結果だけを本体に書き戻す</strong>発想が生まれた。これがレイヤー2。</p>
+<pre><code> レイヤー2（Arbitrum, Optimism, Base, Lightning など）
+   ├ 1,000件の取引をここで処理
+   └ 「まとめた結果＋正しさの証拠」だけをレイヤー1へ1回書き込む
+        │
+        ▼
+ レイヤー1（イーサリアム／ビットコイン本体）＝ 最終的な決着の場</code></pre>
+<p>手数料は大幅に下がるが、<strong>レイヤー2ごとに前提が違う</strong>（誰が結果をまとめるか、不正をどう止めるか）。<br>「イーサリアムだから安全」とは言えず、L2運営者への信頼が部分的に戻ってくる点は押さえておきたい。</p>
+<h2 id="s9">8. 「ブロックチェーンなら何でも解決する」という誤解を潰す</h2>
+<p>2017〜2018年ごろ、サプライチェーン管理、投票、証明書、医療記録……あらゆる領域に<br>「ブロックチェーンで」という提案が出て、その多くが実証実験で終わった。理由は単純である。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>よくある期待</th>
+<th>実際</th>
+</tr></thead><tbody>
+<tr><td>「改ざんできないから記録が正しくなる」</td><td>正しいのは<strong>書かれた後</strong>だけ。<strong>嘘を書き込むこと自体は防げない</strong>（＝オラクル問題）。産地偽装は入力段階で起きる</td></tr>
+<tr><td>「仲介者がいなくなって安くなる」</td><td>合意形成のコストを全員で払うので、<strong>管理者1人の方が普通は安い</strong>。データベースで足りるなら DB が正解</td></tr>
+<tr><td>「分散しているから落ちない」</td><td>落ちにくいのは台帳だけ。取引所・ウォレット・ブリッジという<strong>周辺のシステムが弱点</strong>で、事故はほぼそこで起きる</td></tr>
+<tr><td>「匿名だからプライバシーが守れる」</td><td>逆。取引は<strong>全部公開</strong>で永久に残る。アドレスと本人が一度でも結びつくと過去が全部たどれる</td></tr>
+<tr><td>「スマートコントラクトで自動化すれば安心」</td><td>バグも自動実行される。修正できないことが弱点にもなる</td></tr>
+</tbody></table></div>
+<blockquote><p>判定の目安：<strong>「管理者を1人決められるか？」</strong> 決められるなら普通のデータベースが速くて安くて直せる。<br>決められない（国をまたぐ、参加者が互いに信用しない、検閲されたくない）場面ではじめてブロックチェーンが効く。</p></blockquote>
+<p>暗号資産がこの条件に当てはまるのは、<strong>「誰の許可も得ずに世界中へ価値を動かす」</strong>という用途だからである。<br>逆に言えば、その自由は<strong>取り消しができない・保証機関がいない</strong>という代償とセットになっている。</p>
+<h2 id="s10">9. リスクは技術の性質から出てくる</h2>
+<p>技術の話は、そのままリスクの話でもある。投資判断とは無関係に、<strong>事実として</strong>次が成り立つ。</p>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="誤送金・詐欺送金の巻き戻しは原則できない。振込の組戻しに相当する手段がない" aria-label="取り消せない：誤送金・詐欺送金の巻き戻しは原則できない。振込の組戻しに相当する手段がない"><strong>取り消せない</strong></span>：誤送金・詐欺送金の巻き戻しは原則できない。振込の組戻しに相当する手段がない</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="裏付け資産や利息のない通貨の価格は需給だけで決まり、短期間に数十%動いた例が繰り返しある" aria-label="価格が大きく動く：裏付け資産や利息のない通貨の価格は需給だけで決まり、短期間に数十%動いた例が繰り返しある"><strong>価格が大きく動く</strong></span>：裏付け資産や利息のない通貨の価格は需給だけで決まり、短期間に数十%動いた例が繰り返しある</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="忘却・故障・相続で到達不能になった残高が相当量あるとされる" aria-label="鍵を失えば終わり：忘却・故障・相続で到達不能になった残高が相当量あるとされる"><strong>鍵を失えば終わり</strong></span>：忘却・故障・相続で到達不能になった残高が相当量あるとされる</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="取引所・ブリッジ・個人の端末が主な攻撃面。2025年2月のBybit流出（約14〜15億ドル相当と報道）はその最大級の例" aria-label="周辺が狙われる：取引所・ブリッジ・個人の端末が主な攻撃面。2025年2月のBybit流出（約14〜15億ドル相当と報道）はその最大級の例"><strong>周辺が狙われる</strong></span>：取引所・ブリッジ・個人の端末が主な攻撃面。2025年2月のBybit流出（約14〜15億ドル相当と報道）はその最大級の例</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="高利回りをうたう案件、偽の取引所やサポート、SNS経由の勧誘が継続的に報告されている" aria-label="詐欺が発生しやすい：高利回りをうたう案件、偽の取引所やサポート、SNS経由の勧誘が継続的に報告されている"><strong>詐欺が発生しやすい</strong></span>：高利回りをうたう案件、偽の取引所やサポート、SNS経由の勧誘が継続的に報告されている</li>
+</ul>
+<hr>
+<h2 id="s11">用語メモ</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>用語</th>
+<th>意味</th>
+</tr></thead><tbody>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="取引をブロックにまとめ、前のブロックの要約でつないだ共有台帳。改ざんすると以降と整合しなくなる" aria-label="ブロックチェーン：取引をブロックにまとめ、前のブロックの要約でつないだ共有台帳。改ざんすると以降と整合しなくなる"><strong>ブロックチェーン</strong></span></td><td>取引をブロックにまとめ、前のブロックの要約でつないだ共有台帳。改ざんすると以降と整合しなくなる</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="任意のデータから固定長の値を作る一方向の計算。改ざん検知に使う" aria-label="ハッシュ関数：任意のデータから固定長の値を作る一方向の計算。改ざん検知に使う"><strong>ハッシュ関数</strong></span></td><td>任意のデータから固定長の値を作る一方向の計算。改ざん検知に使う</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="同じデジタル資産を2回使おうとする問題。合意形成で解く" aria-label="二重支払い問題：同じデジタル資産を2回使おうとする問題。合意形成で解く"><strong>二重支払い問題</strong></span></td><td>同じデジタル資産を2回使おうとする問題。合意形成で解く</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="書き込む権利を「計算量」／「預けた通貨」で割り当てる合意形成方式" aria-label="PoW／PoS：書き込む権利を「計算量」／「預けた通貨」で割り当てる合意形成方式"><strong>PoW／PoS</strong></span></td><td>書き込む権利を「計算量」／「預けた通貨」で割り当てる合意形成方式</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="PoWで計算競争に参加し、報酬を得る行為 → 事業としての暗号資産" aria-label="マイニング：PoWで計算競争に参加し、報酬を得る行為 → 事業としての暗号資産"><strong>マイニング</strong></span></td><td>PoWで計算競争に参加し、報酬を得る行為 → <a href="02_事業としての暗号資産.html">事業としての暗号資産</a></td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="ビットコインの新規発行量が約4年ごとに半分になる仕組み" aria-label="半減期：ビットコインの新規発行量が約4年ごとに半分になる仕組み"><strong>半減期</strong></span></td><td>ビットコインの新規発行量が約4年ごとに半分になる仕組み</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="署名する鍵／検証用の鍵／受取先の文字列。秘密鍵を失うと資産に触れられない" aria-label="秘密鍵／公開鍵／アドレス：署名する鍵／検証用の鍵／受取先の文字列。秘密鍵を失うと資産に触れられない"><strong>秘密鍵／公開鍵／アドレス</strong></span></td><td>署名する鍵／検証用の鍵／受取先の文字列。秘密鍵を失うと資産に触れられない</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="ネット接続あり／なしの鍵保管。規制上は顧客資産の原則コールド管理が求められる" aria-label="ホット／コールドウォレット：ネット接続あり／なしの鍵保管。規制上は顧客資産の原則コールド管理が求められる"><strong>ホット／コールドウォレット</strong></span></td><td>ネット接続あり／なしの鍵保管。規制上は顧客資産の原則コールド管理が求められる</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="取引が確定して覆らなくなること。PoWでは確率的にしか確定しない" aria-label="ファイナリティ：取引が確定して覆らなくなること。PoWでは確率的にしか確定しない"><strong>ファイナリティ</strong></span></td><td>取引が確定して覆らなくなること。PoWでは確率的にしか確定しない</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="計算力や預け入れの過半を握って台帳を書き換える攻撃" aria-label="51%攻撃：計算力や預け入れの過半を握って台帳を書き換える攻撃"><strong>51%攻撃</strong></span></td><td>計算力や預け入れの過半を握って台帳を書き換える攻撃</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="条件成立で自動実行される、ブロックチェーン上のプログラム" aria-label="スマートコントラクト：条件成立で自動実行される、ブロックチェーン上のプログラム"><strong>スマートコントラクト</strong></span></td><td>条件成立で自動実行される、ブロックチェーン上のプログラム</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="本体のチェーン／その外で処理して結果だけ書き戻す拡張層" aria-label="レイヤー1／レイヤー2：本体のチェーン／その外で処理して結果だけ書き戻す拡張層"><strong>レイヤー1／レイヤー2</strong></span></td><td>本体のチェーン／その外で処理して結果だけ書き戻す拡張層</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="現実世界の情報をチェーンに正しく入力できるかという問題。改ざん耐性では解けない" aria-label="オラクル問題：現実世界の情報をチェーンに正しく入力できるかという問題。改ざん耐性では解けない"><strong>オラクル問題</strong></span></td><td>現実世界の情報をチェーンに正しく入力できるかという問題。改ざん耐性では解けない</td></tr>
+<tr><td><span class="term-chip has-tip" tabindex="0" data-tooltip="イーサリアム系で取引・プログラム実行に払う手数料" aria-label="ガス代：イーサリアム系で取引・プログラム実行に払う手数料"><strong>ガス代</strong></span></td><td>イーサリアム系で取引・プログラム実行に払う手数料</td></tr>
+</tbody></table></div>
+<hr>
+<ul>
+<li>次に読む：<a href="02_事業としての暗号資産.html">② 事業としての暗号資産</a> — 誰がどこで儲けているか</li>
+<li><a href="03_規制と事故の歴史.html">③ 規制と事故の歴史</a> — 日本の制度は事故から作られた</li>
+<li><a href="04_直近トピック_2026.html">④ 直近トピック（2026年9月時点）</a></li>
+<li>戻る：<a href="README.html">暗号資産 README</a></li>
+</ul><section class="page-quiz" data-quiz-key="05_金融/14_暗号資産/01_技術の仕組み.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全10問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：暗号資産の土台であるブロックチェーン＝改ざんしにくい共有台帳が、 なぜ銀行のような「信頼できる第三者」なしで動くのか。そして何は解決していないのか。", "結論を先に：ブロックチェーンは「誰も管理者がいない状態で、台帳の中身について全員の意見を一致させ続ける」ための仕組み。 高速でも安くでも便利でもない。管理者を置けない／置きたくない場面でだけ、そのコストに見合う。"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「そもそも「お金を送る」とは台帳を書き換えることでしかない」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["銀行振込で実際に動いているのは、現金ではなく帳簿の数字である。", "この方式は極めて効率がよい。書き込む人が1人なので、順番でもめない。 ただし銀行が書き換えを拒否したり、記録を消したり、破綻したりすると終わる。 国境をまたぐと、この「1つの台帳」が存在せず、銀行同士のコルレス契約を数珠つなぎにするため遅く高くなる （→ 決済はどう流れ誰が取り分を得るか）。", "ブロックチェーンは、ここで「台帳を全員に配る」という逆の解き方をした。", "この「鎖」がブロックチェーンという名前の由来。 要約に使うのがハッシュ関数（どんなデータからも固定長の値を作る計算。元に戻せず、1文字変えると値が全く変わる）である。"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「「信頼できる第三者なし」を支える3つの部品」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["管理者を置かずに台帳を保つには、次の3つがそろう必要がある。どれが欠けても成立しない。", "本人確認：「その残高を動かす権利が本当にあるか」：公開鍵暗号（電子署名）", "改ざん検知：「過去の記録が書き換えられていないか」：ハッシュ関数による連鎖", "順番の合意：「同じコインを2回使う取引が2つ来たとき、どちらを正とするか」：合意形成（PoW／PoS）"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「合意形成 ── PoWとPoSは「嘘をつくと損をする」設計」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["答えの骨子は、台帳に書き込む権利を得るのにコストを払わせ、不正をするとそのコストが没収されるようにすること。", "PoW（プルーフ・オブ・ワーク／仕事量の証明）：大量の計算を最初に解いた人：使った電気代と設備", "PoS（プルーフ・オブ・ステーク／預け入れの証明）：通貨を担保として預けた人から抽選：預けた通貨（一部没収＝スラッシング）", "PoWでは、計算競争に勝った人（マイナー＝採掘者）が次のブロックを作り、報酬として新規発行分の通貨と手数料を受け取る。 不正なブロックを作っても他のノードに拒否され、投じた電気代だけが無駄になる。 「正直にやった方が儲かる」から正直になるというのが核心で、道徳ではなく経済の設計である。"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「ウォレットと秘密鍵 ── 「銀行口座」ではなく「印鑑そのもの」」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["一番誤解されやすい部分。ウォレットは財布ではなく、鍵束である。", "つまり秘密鍵を失う＝資産に永久に触れなくなる、秘密鍵が漏れる＝全部持ち去られる。 銀行のような「本人確認して再発行」も「不正送金の取り消し」も、管理者がいない以上できない。", "取引所に預ける（カストディ）：取引所：楽。パスワード再発行できる", "ホットウォレット（ネット接続のアプリ）：本人：すぐ使える"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「ビットコインとイーサリアム ── 設計思想がまるで違う」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["同じ「暗号資産」でも、この2つは目的が別物。混ぜて理解すると必ず混乱する。", "目的：価値の保存・送金に絞る：プログラムを動かす基盤（世界共有のコンピュータ）", "台帳が持つもの：誰がいくら持つか（UTXO方式）：残高＋任意のプログラムの状態", "発行量：上限2,100万枚。約4年ごとに新規発行が半減（半減期）：上限なし。手数料の一部を焼却（バーン）する設計"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「スマートコントラクト ── 自動販売機のような契約」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["スマートコントラクトとは、ブロックチェーン上に置かれた条件を満たすと自動で実行されるプログラム。 「契約書」という訳語から法律文書を連想しやすいが、実体は止められない自動販売機に近い。", "利点は仲介者への信頼が要らないこと。欠点は間違いを直せないこと。 バグを突いた資金流出（The DAO事件、2016年）や、DeFiの脆弱性を突いた盗難が繰り返されてきた。 「コードが法である」は、コードが間違っていても法であるという意味でもある。"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「レイヤー2 ── 「遅い・高い」をどう回避しているか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["ブロックチェーンは全員が同じ処理を繰り返す構造なので、本質的に遅い。 ビットコインは毎秒7件程度、イーサリアムも十数件程度とされる（設計値ベース）。 クレジットカードの国際ブランドが毎秒数万件をさばくのと比べると3〜4桁違う。", "そこで、本体（レイヤー1）の外で取引をまとめ、結果だけを本体に書き戻す発想が生まれた。これがレイヤー2。", "手数料は大幅に下がるが、レイヤー2ごとに前提が違う（誰が結果をまとめるか、不正をどう止めるか）。 「イーサリアムだから安全」とは言えず、L2運営者への信頼が部分的に戻ってくる点は押さえておきたい。"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「「ブロックチェーンなら何でも解決する」という誤解を潰す」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["2017〜2018年ごろ、サプライチェーン管理、投票、証明書、医療記録……あらゆる領域に 「ブロックチェーンで」という提案が出て、その多くが実証実験で終わった。理由は単純である。", "「改ざんできないから記録が正しくなる」：正しいのは書かれた後だけ。嘘を書き込むこと自体は防げない（＝オラクル問題）。産地偽装は入力段階で起きる", "「仲介者がいなくなって安くなる」：合意形成のコストを全員で払うので、管理者1人の方が普通は安い。データベースで足りるなら DB が正解", "「分散しているから落ちない」：落ちにくいのは台帳だけ。取引所・ウォレット・ブリッジという周辺のシステムが弱点で、事故はほぼそこで起きる"]}, {"question": "「① 技術の仕組み ── ブロックチェーンは何を解決した装置なのか」における「リスクは技術の性質から出てくる」は、どのようなリスクですか。問題が起きてから事業・業績へ波及する経路を説明してください。", "points": ["技術の話は、そのままリスクの話でもある。投資判断とは無関係に、事実として次が成り立つ。", "取り消せない：誤送金・詐欺送金の巻き戻しは原則できない。振込の組戻しに相当する手段がない", "価格が大きく動く：裏付け資産や利息のない通貨の価格は需給だけで決まり、短期間に数十%動いた例が繰り返しある", "鍵を失えば終わり：忘却・故障・相続で到達不能になった残高が相当量あるとされる"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../05_金融/14_暗号資産/README.html"><span class="lbl">← 前</span>暗号資産</a><a class="next" href="../../05_金融/14_暗号資産/02_事業としての暗号資産.html"><span class="lbl">次 →</span>② 事業としての暗号資産 ── 誰がどこで、いくら抜いているか</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. そもそも「お金を送る」とは台帳を書き換えることでしかない</a><a class="lv2" href="#s2">2. 「信頼できる第三者なし」を支える3つの部品</a><a class="lv2" href="#s3">3. 合意形成 ── PoWとPoSは「嘘をつくと損をする」設計</a><a class="lv3" href="#s4">51%攻撃と「確定しない」ファイナリティ</a><a class="lv2" href="#s5">4. ウォレットと秘密鍵 ── 「銀行口座」ではなく「印鑑そのもの」</a><a class="lv2" href="#s6">5. ビットコインとイーサリアム ── 設計思想がまるで違う</a><a class="lv2" href="#s7">6. スマートコントラクト ── 自動販売機のような契約</a><a class="lv2" href="#s8">7. レイヤー2 ── 「遅い・高い」をどう回避しているか</a><a class="lv2" href="#s9">8. 「ブロックチェーンなら何でも解決する」という誤解を潰す</a><a class="lv2" href="#s10">9. リスクは技術の性質から出てくる</a><a class="lv2" href="#s11">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

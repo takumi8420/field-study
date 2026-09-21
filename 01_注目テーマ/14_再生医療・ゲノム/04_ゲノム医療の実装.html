@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></span><span>›</span><span>ゲノム医療の実装</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></li><li><a class="" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></li><li><a class="" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="on" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="" href="01_技術の中身.html">技術の中身</a></li><li><a class="" href="02_作り方と値段.html">作り方と値段</a></li><li><a class="" href="03_制度と承認.html">制度と承認</a></li><li><a class="on" href="04_ゲノム医療の実装.html">ゲノム医療の実装</a></li><li><a class="" href="05_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></li><li><a class="" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">再生医療・ゲノム</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">15語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="希少疾患の患者は診断が付くまで平均で数年〜十数年かかるとされる。" aria-label="診断の旅（diagnostic odyssey）：希少疾患の患者は診断が付くまで平均で数年〜十数年かかるとされる。">診断の旅（diagnostic odyssey）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="その生物が持つ遺伝情報の全体。ヒトでは約30億塩基対" aria-label="ゲノム：その生物が持つ遺伝情報の全体。ヒトでは約30億塩基対">ゲノム</span><span class="term-chip has-tip" tabindex="0" data-tooltip="DNAを大量並列に読む装置。解読コスト崩壊の主因" aria-label="NGS（次世代シーケンサー）：DNAを大量並列に読む装置。解読コスト崩壊の主因">NGS（次世代シーケンサー）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="あらかじめ決めた遺伝子群だけを読む検査。がんゲノム医療の主力" aria-label="パネル検査：あらかじめ決めた遺伝子群だけを読む検査。がんゲノム医療の主力">パネル検査</span><span class="term-chip has-tip" tabindex="0" data-tooltip="ゲノムのうちタンパク質をコードする領域（全体の約1〜2%）" aria-label="エクソーム：ゲノムのうちタンパク質をコードする領域（全体の約1〜2%）">エクソーム</span><span class="term-chip has-tip" tabindex="0" data-tooltip="生まれつき持つ変異／後天的に生じた変異。前者は家族に共有される" aria-label="生殖細胞系列／体細胞：生まれつき持つ変異／後天的に生じた変異。前者は家族に共有される">生殖細胞系列／体細胞</span><span class="term-chip has-tip" tabindex="0" data-tooltip="Variant of Uncertain Significance。意味が確定していない変異。読む量が増えるほど増える" aria-label="VUS：Variant of Uncertain Significance。意味が確定していない変異。読む量が増えるほど増える">VUS</span><span class="term-chip has-tip" tabindex="0" data-tooltip="がんゲノム医療で結果を多職種で解釈する専門家会議" aria-label="エキスパートパネル：がんゲノム医療で結果を多職種で解釈する専門家会議">エキスパートパネル</span><span class="term-chip has-tip" tabindex="0" data-tooltip="国立がん研究センター がんゲノム情報管理センター。検査データを集約する国の基盤" aria-label="C-CAT：国立がん研究センター がんゲノム情報管理センター。検査データを集約する国の基盤">C-CAT</span><span class="term-chip has-tip" tabindex="0" data-tooltip="検査の主目的とは別に判明する、健康上重要な所見" aria-label="二次的所見：検査の主目的とは別に判明する、健康上重要な所見">二次的所見</span><span class="term-chip has-tip" tabindex="0" data-tooltip="遺伝情報の意味と選択肢を専門職が説明する支援" aria-label="遺伝カウンセリング：遺伝情報の意味と選択肢を専門職が説明する支援">遺伝カウンセリング</span><span class="term-chip has-tip" tabindex="0" data-tooltip="医療機関を介さず消費者に直接販売される遺伝子検査" aria-label="DTC遺伝子検査：医療機関を介さず消費者に直接販売される遺伝子検査">DTC遺伝子検査</span><span class="term-chip has-tip" tabindex="0" data-tooltip="医療情報を匿名加工して研究利用可能にする日本の法制度" aria-label="次世代医療基盤法：医療情報を匿名加工して研究利用可能にする日本の法制度">次世代医療基盤法</span><span class="term-chip has-tip" tabindex="0" data-tooltip="米国の遺伝情報差別禁止法（2008年）。保険・雇用での遺伝情報利用を禁じる" aria-label="GINA：米国の遺伝情報差別禁止法（2008年）。保険・雇用での遺伝情報利用を禁じる">GINA</span><span class="term-chip has-tip" tabindex="0" data-tooltip="質量分析で複数の代謝異常症を一度に調べる新生児スクリーニングの手法" aria-label="タンデムマス法：質量分析で複数の代謝異常症を一度に調べる新生児スクリーニングの手法">タンデムマス法</span></div></details><p><strong>このノートで分かること</strong>：ゲノム医療の大半は、遺伝子を<strong>治す</strong>のではなく<strong>読む</strong>話である。<br>解読コストが劇的に下がった結果、「読むこと」自体はもう商売にならず、<br><strong>どう読むかを設計し、結果をどう使い、データをどう蓄えるか</strong>に価値が移った。その構造を追う。</p>
+<blockquote><p>大原則：<strong>シーケンサー（解読装置）は儲かるが、解読受託は儲かりにくい</strong>。<br>検査で稼ぐには、①保険点数が付くか、②データが溜まって別の価値になるか、のどちらかが要る。</p></blockquote>
+<h2 id="s1">1. コストの崩壊が産業を作り替えた</h2>
+<pre><code>【ヒト1人分のゲノム解読費用（概算・報道および NHGRI 公表の推移ベース）】
+
+ 2003年 ヒトゲノム計画完了     数億ドル規模（13年がかりの国際プロジェクト）
+   │
+ 2007年頃                      約1,000万ドル
+   │      ← 次世代シーケンサー（NGS）の登場で「ムーアの法則より速い」下落
+ 2015年頃                      約1,000ドル
+   │
+ 2022年〜                      **100ドル台**が視野に（装置メーカー発表ベース）
+   ▼
+ 結論：読むこと自体はコモディティ。価値は「読んだ後」に移った</code></pre>
+<div class="table-wrap"><table><thead><tr>
+<th>時代</th>
+<th>何が希少だったか</th>
+<th>誰が稼いだか</th>
+</tr></thead><tbody>
+<tr><td>2000年代</td><td>解読能力そのもの</td><td>装置メーカー、大型解読センター</td></tr>
+<tr><td>2010年代</td><td>解読結果を臨床に翻訳する力</td><td>検査会社、パネル開発企業</td></tr>
+<tr><td>2020年代</td><td><strong>データの量と、それに紐づく臨床情報</strong></td><td>データベースを持つ側（公的機関を含む）</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>NGS（次世代シーケンサー）</strong>＝ DNAを短い断片に切って並列で大量に読み、計算で再構成する装置。<br>装置市場は Illumina（米）が長く支配的で、近年は Thermo Fisher、中国のMGI/Complete Genomicsなどが競合</li>
+<li>日本には有力な装置メーカーがおらず、<strong>川上（装置・試薬）は輸入依存</strong>。<br>国内勢が立つのは検査受託と解析・データの層になる<br>→ <a href="../../09_医薬・医療・ヘルスケア/06_臨床検査・検査受託/README.html">臨床検査・検査受託</a></li>
+</ul>
+<h2 id="s2">2. ゲノム医療の4つの出口</h2>
+<p>「ゲノムを読む」と一口に言っても、<strong>目的が4つに分かれ、それぞれ経済モデルが違う</strong>。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>出口</th>
+<th>何を読むか</th>
+<th>誰が払うか</th>
+<th>日本での状況</th>
+</tr></thead><tbody>
+<tr><td><strong>① がんゲノム医療</strong></td><td>がん組織・血液（腫瘍由来DNA）</td><td>公的保険</td><td>保険適用済み。中核・拠点・連携病院で実施</td></tr>
+<tr><td><strong>② 希少疾患・難病の診断</strong></td><td>患者と家族の生殖細胞系列</td><td>保険＋研究費</td><td>全ゲノム解析等実行計画で推進中</td></tr>
+<tr><td><strong>③ 新生児スクリーニング</strong></td><td>新生児の血液</td><td>公費・自治体</td><td>従来型は全国実施。<strong>遺伝子を使う拡大版は研究・任意検査段階</strong></td></tr>
+<tr><td><strong>④ 消費者向け遺伝子検査（DTC）</strong></td><td>唾液など</td><td><strong>本人の自費</strong></td><td>規制が緩く、医療との境界が曖昧</td></tr>
+</tbody></table></div>
+<pre><code>【同じ「遺伝子検査」でも別世界】
+
+  ①②③ 医療の中             ④ 医療の外
+   ├ 医師が指示             ├ 消費者が自分で買う
+   ├ 結果に責任が伴う       ├ 「傾向」を返すだけ
+   ├ 保険 or 公費           ├ 全額自費（数千〜数万円）
+   └ 遺伝カウンセリング付き └ 説明は原則なし</code></pre>
+<h2 id="s3">3. ① がんゲノム医療（保険で回っている唯一の柱）</h2>
+<p><strong>がん遺伝子パネル検査</strong>＝ がんに関係する100〜300程度の遺伝子をまとめて調べ、<br>効きそうな薬（分子標的薬）を探す検査。</p>
+<pre><code>【患者から見た流れ】
+
+ ①標準治療がない／終わる見込み
+      ↓
+ ②がんゲノム医療 中核拠点／拠点／連携病院を受診
+      ↓
+ ③検体（がん組織 または 血液）を提出
+      ↓
+ ④パネル検査（数週間）
+      ↓
+ ⑤エキスパートパネル（多職種の専門家会議）で解釈 ← ★ここが日本の制度の特徴
+      ↓
+ ⑥結果説明。使える薬が見つかれば治療へ（治験・適応外を含む）
+      ↓
+ ⑦データは C-CAT（がんゲノム情報管理センター）へ集約 ← ★国が持つ資産になる</code></pre>
+<div class="table-wrap"><table><thead><tr>
+<th>論点</th>
+<th>現状</th>
+</tr></thead><tbody>
+<tr><td>保険適用の対象</td><td>①標準治療がない・終了見込みの<strong>固形がん</strong>、②造血器腫瘍または類縁疾患</td></tr>
+<tr><td>実施施設</td><td>厚労省が指定する中核拠点／拠点／連携病院。2024年時点で全国200施設超</td></tr>
+<tr><td>実際に治療に到達する割合</td><td><strong>1〜2割程度</strong>とされることが多い（施設・時期により幅がある）</td></tr>
+<tr><td>2026年度の診療報酬改定</td><td>「より迅速に最適な抗がん剤にアクセスできる」よう要件を見直したと報じられる</td></tr>
+</tbody></table></div>
+<blockquote><p><strong>「到達率」が最大の論点</strong>。検査をしても、多くの患者で「使える薬がない」「あっても保険が効かない」<br>「治験の枠が遠方にしかない」「体力的に治療できる状態にない」で止まる。<br>検査のタイミングを早める（標準治療が尽きてからでは遅い）方向に制度が動いているのはこのため。<br><strong>技術ではなく、薬へのアクセスと実施体制がボトルネック</strong>になっている典型例。</p></blockquote>
+<ul>
+<li><strong>C-CAT</strong>（国立がん研究センター がんゲノム情報管理センター）は、検査結果と臨床情報を集約する。<br>保険適用の要件としてデータ提出が組み込まれているため、<strong>制度が自動的にデータベースを育てる設計</strong>になっている。<br>これは国際的にも珍しく、日本の数少ない構造的な強み</li>
+</ul>
+<h2 id="s4">4. ② 希少疾患・難病と全ゲノム解析</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="希少疾患の患者は診断が付くまで平均で数年〜十数年かかるとされる。" aria-label="診断の旅（diagnostic odyssey）：希少疾患の患者は診断が付くまで平均で数年〜十数年かかるとされる。"><strong>診断の旅（diagnostic odyssey）</strong></span>：希少疾患の患者は診断が付くまで平均で数年〜十数年かかるとされる。<br>全ゲノム／全エクソーム解析はこの期間を大幅に短縮しうる</li>
+<li>日本では厚生労働省の<strong>「全ゲノム解析等実行計画」</strong>（2019年に第一版、2022年に改定版）が<br>がんと難病の患者の全ゲノム解析を進め、解析基盤と実施組織の整備を図っている</li>
+<li><strong>エクソーム（全遺伝子の"たんぱく質をコードする部分"だけ、全体の約1〜2%）</strong>か<br><strong>全ゲノム（全部）</strong>かは、コストと解釈可能性のトレードオフ。読む量が増えるほど<br>「意味の分からない変異（<strong>VUS</strong>）」が増え、<strong>解釈のコストが上がる</strong></li>
+</ul>
+<pre><code>【読む範囲と「分からなさ」の関係】
+
+ パネル（100〜300遺伝子） ： 解釈しやすい / 見落としがある
+ エクソーム（約2万遺伝子） ： 中間
+ 全ゲノム（約30億塩基）   ： 見落としが少ない / **VUSの山**ができる
+                              ↑
+                     ここを減らすのがデータベースの仕事。
+                     「日本人に多い変異」の情報が足りないと解釈できない
+                     ＝ **人種・集団固有のデータが戦略資産になる理由**</code></pre>
+<h2 id="s5">5. ③ 新生児スクリーニング</h2>
+<ul>
+<li>日本では従来から<strong>タンデムマス法</strong>による新生児マススクリーニング（先天性代謝異常症など約20疾患）が<br>全国で公費により実施されており、実質的に全新生児が受けている</li>
+<li>近年は <strong>SMA（脊髄性筋萎縮症）や SCID（重症複合免疫不全症）</strong> を対象とする<br><strong>拡大新生児スクリーニング</strong>が自治体・研究事業ベースで広がっている。<br>これは<strong>遺伝子治療の登場と直結している</strong>：SMAはゾルゲンスマなど早期治療の効果が症状発現前に最も大きいため、<br>「治療法ができたから、検査する意味が生まれた」という順番になっている</li>
+</ul>
+<blockquote><p><strong>検査と治療は独立ではない</strong>。「治す手段がない病気を早期に見つける」ことの是非は長く議論されてきた。<br>遺伝子治療の実用化が、スクリーニング対象の拡大を正当化する側に働いている。<br>一方で<strong>費用は誰が負担するのか</strong>（公費か任意の自費か）が未整理で、自治体ごとに差が出ている</p></blockquote>
+<h2 id="s6">6. ④ 消費者向け遺伝子検査（DTC）と、23andMeの教訓</h2>
+<p><strong>DTC</strong>（Direct-to-Consumer）遺伝子検査は、体質・祖先・疾患リスクの「傾向」を返すサービス。<br>日本では数千〜数万円で購入でき、<strong>医療行為ではないため薬機法の規制がほぼかからない</strong>。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>論点</th>
+<th>状況</th>
+</tr></thead><tbody>
+<tr><td>精度・意味</td><td>多因子疾患のリスクは<strong>相対リスクの提示にとどまり、個人の将来は予測できない</strong></td></tr>
+<tr><td>規制</td><td>日本では業界団体の自主基準が中心。医療との線引きが曖昧</td></tr>
+<tr><td>収益モデル</td><td>検査キット販売は一度きり。<strong>継続課金が作れない</strong>のが構造的弱点</td></tr>
+<tr><td>本当の資産</td><td>集まった遺伝データ。製薬企業との共同研究に使われてきた</td></tr>
+</tbody></table></div>
+<p><strong>23andMe の破綻が示したもの（2025〜2026年）</strong></p>
+<pre><code>【何が起きたか】
+
+ 2006年〜  1,500万人超の遺伝データを集める（報道ベース）
+    │      キット販売は一度きり → リピートが作れない → 赤字が続く
+    │      データの創薬活用（GSKとの提携など）も、収益化に時間がかかる
+    ▼
+ 2025年3月  米ミズーリ州東部地区で連邦破産法の適用を申請
+    │
+    │  ここで問題が噴出：**遺伝データは破産財団の&quot;資産&quot;として売れるのか？**
+    │  28州の司法長官が、本人の明示的同意なしの移転を阻止すべく提訴したと報じられる
+    ▼
+ 2025年6月  創業者が設立した非営利 TTAM Research Institute が約3.05億ドルで取得（裁判所が承認）
+    ▼
+ 教訓：**「規約に同意した」ことが、事業が破綻した後まで有効な同意と言えるのか**
+       米国の破産法は個人識別情報に一定の保護を置くが、**遺伝データを明示していない**と指摘されている</code></pre>
+<blockquote><p><strong>産業的な含意は2つ。</strong><br>① <strong>遺伝データを溜めるビジネスは、溜めた側が潰れたときの出口が制度化されていない</strong>。<br>② <strong>「検査を売る」モデルは成立しにくい</strong>。医療の中（保険・公費）に入るか、<br>データを研究・創薬に接続して初めて事業になる。DTC単体で黒字を保つのは難しい。</p></blockquote>
+<h2 id="s7">7. データ利活用と倫理：日本のルール</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>制度・枠組み</th>
+<th>中身</th>
+</tr></thead><tbody>
+<tr><td><strong>ゲノム医療法</strong>（2023年6月成立）</td><td>正式名は「良質かつ適切なゲノム医療を国民が安心して受けられるようにするための施策の総合的かつ計画的な推進に関する法律」。<strong>遺伝情報による不当な差別の防止</strong>と適切な管理を国の責務として掲げる理念法</td></tr>
+<tr><td><strong>個人情報保護法</strong></td><td>遺伝情報は要配慮個人情報に該当しうる。取得には原則同意が必要</td></tr>
+<tr><td><strong>次世代医療基盤法</strong>（2018年施行、2023年改正）</td><td>認定事業者が医療情報を<strong>匿名加工・仮名加工</strong>して研究に使える枠組み。オプトアウト方式</td></tr>
+<tr><td><strong>全ゲノム解析等実行計画</strong></td><td>解析データの利活用を前提に、事業実施組織を通じて研究・産業利用へ橋渡し</td></tr>
+</tbody></table></div>
+<p><strong>倫理で必ず問われる4点</strong></p>
+<div class="table-wrap"><table><thead><tr>
+<th>論点</th>
+<th>中身</th>
+</tr></thead><tbody>
+<tr><td><strong>差別の禁止</strong></td><td>保険加入や就職で遺伝情報を使わせない。米国には GINA（2008年）という専用法があるが、<strong>日本にはまだ罰則付きの禁止規定がない</strong>。ゲノム医療法は理念にとどまる</td></tr>
+<tr><td><strong>二次的所見</strong></td><td>目的外で見つかる重大な情報（例：がん検査中に見つかった遺伝性疾患のリスク）。「知らせるべきか」「知りたくない権利」の扱い</td></tr>
+<tr><td><strong>血縁者への波及</strong></td><td>生殖細胞系列の変異は<strong>家族全員の情報</strong>になる。本人の同意だけで完結しない</td></tr>
+<tr><td><strong>同意の持続性</strong></td><td>20年後の研究にまで同意は及ぶのか。23andMe の破産が突きつけた問題</td></tr>
+</tbody></table></div>
+<blockquote><p><strong>この分野で医学的な判断は医師の領域</strong>。ここで扱えるのは、<br>「誰が費用を払い、誰がデータを持ち、どの制度が抜けているか」という産業・制度の構造だけである。</p></blockquote>
+<h2 id="s8">8. ビジネスとしてどこで稼げるか</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>層</th>
+<th>プレイヤー像</th>
+<th>収益性</th>
+</tr></thead><tbody>
+<tr><td>装置・試薬</td><td>Illumina、Thermo Fisher ほか。<strong>海外勢が中心</strong></td><td>高い。消耗品で継続課金が効く</td></tr>
+<tr><td>検査受託（ラボ）</td><td>大手臨床検査会社、専門ラボ</td><td><strong>点数次第</strong>。装置と試薬の原価を引くと薄い</td></tr>
+<tr><td>パネル・アッセイ開発</td><td>検査キットを設計・薬事承認まで通す企業</td><td>承認が取れれば強いが開発投資が重い</td></tr>
+<tr><td>解析・解釈（バイオインフォ）</td><td>変異の意味づけ、レポート生成</td><td><strong>人材依存。自動化が進むと単価が落ちる</strong></td></tr>
+<tr><td>データベース</td><td>C-CAT、バイオバンク、次世代医療基盤法の認定事業者</td><td>直接の収益は小さいが<strong>戦略資産</strong></td></tr>
+<tr><td>創薬への接続</td><td>製薬企業、創薬ベンチャー</td><td>最も大きいが最も遠い</td></tr>
+</tbody></table></div>
+<blockquote><p><strong>「読む」だけの層は、下から順に価格競争に飲まれる</strong>。<br>生き残るのは、①保険点数という公定価格に守られた層、②装置・試薬という消耗品で稼ぐ層、<br>③データを創薬という高付加価値に接続できた層の3つ。<br>→ <a href="../../09_医薬・医療・ヘルスケア/04_創薬ベンチャー・バイオ/README.html">創薬ベンチャー・バイオ</a></p></blockquote>
+<h2 id="s9">用語メモ</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="その生物が持つ遺伝情報の全体。ヒトでは約30億塩基対" aria-label="ゲノム：その生物が持つ遺伝情報の全体。ヒトでは約30億塩基対"><strong>ゲノム</strong></span>：その生物が持つ遺伝情報の全体。ヒトでは約30億塩基対</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="DNAを大量並列に読む装置。解読コスト崩壊の主因" aria-label="NGS（次世代シーケンサー）：DNAを大量並列に読む装置。解読コスト崩壊の主因"><strong>NGS（次世代シーケンサー）</strong></span>：DNAを大量並列に読む装置。解読コスト崩壊の主因</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="あらかじめ決めた遺伝子群だけを読む検査。がんゲノム医療の主力" aria-label="パネル検査：あらかじめ決めた遺伝子群だけを読む検査。がんゲノム医療の主力"><strong>パネル検査</strong></span>：あらかじめ決めた遺伝子群だけを読む検査。がんゲノム医療の主力</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="ゲノムのうちタンパク質をコードする領域（全体の約1〜2%）" aria-label="エクソーム：ゲノムのうちタンパク質をコードする領域（全体の約1〜2%）"><strong>エクソーム</strong></span>：ゲノムのうちタンパク質をコードする領域（全体の約1〜2%）</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="生まれつき持つ変異／後天的に生じた変異。前者は家族に共有される" aria-label="生殖細胞系列／体細胞：生まれつき持つ変異／後天的に生じた変異。前者は家族に共有される"><strong>生殖細胞系列／体細胞</strong></span>：生まれつき持つ変異／後天的に生じた変異。前者は家族に共有される</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="Variant of Uncertain Significance。意味が確定していない変異。読む量が増えるほど増える" aria-label="VUS：Variant of Uncertain Significance。意味が確定していない変異。読む量が増えるほど増える"><strong>VUS</strong></span>：Variant of Uncertain Significance。意味が確定していない変異。読む量が増えるほど増える</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="がんゲノム医療で結果を多職種で解釈する専門家会議" aria-label="エキスパートパネル：がんゲノム医療で結果を多職種で解釈する専門家会議"><strong>エキスパートパネル</strong></span>：がんゲノム医療で結果を多職種で解釈する専門家会議</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="国立がん研究センター がんゲノム情報管理センター。検査データを集約する国の基盤" aria-label="C-CAT：国立がん研究センター がんゲノム情報管理センター。検査データを集約する国の基盤"><strong>C-CAT</strong></span>：国立がん研究センター がんゲノム情報管理センター。検査データを集約する国の基盤</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="検査の主目的とは別に判明する、健康上重要な所見" aria-label="二次的所見：検査の主目的とは別に判明する、健康上重要な所見"><strong>二次的所見</strong></span>：検査の主目的とは別に判明する、健康上重要な所見</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="遺伝情報の意味と選択肢を専門職が説明する支援" aria-label="遺伝カウンセリング：遺伝情報の意味と選択肢を専門職が説明する支援"><strong>遺伝カウンセリング</strong></span>：遺伝情報の意味と選択肢を専門職が説明する支援</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="医療機関を介さず消費者に直接販売される遺伝子検査" aria-label="DTC遺伝子検査：医療機関を介さず消費者に直接販売される遺伝子検査"><strong>DTC遺伝子検査</strong></span>：医療機関を介さず消費者に直接販売される遺伝子検査</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="医療情報を匿名加工して研究利用可能にする日本の法制度" aria-label="次世代医療基盤法：医療情報を匿名加工して研究利用可能にする日本の法制度"><strong>次世代医療基盤法</strong></span>：医療情報を匿名加工して研究利用可能にする日本の法制度</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="米国の遺伝情報差別禁止法（2008年）。保険・雇用での遺伝情報利用を禁じる" aria-label="GINA：米国の遺伝情報差別禁止法（2008年）。保険・雇用での遺伝情報利用を禁じる"><strong>GINA</strong></span>：米国の遺伝情報差別禁止法（2008年）。保険・雇用での遺伝情報利用を禁じる</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="質量分析で複数の代謝異常症を一度に調べる新生児スクリーニングの手法" aria-label="タンデムマス法：質量分析で複数の代謝異常症を一度に調べる新生児スクリーニングの手法"><strong>タンデムマス法</strong></span>：質量分析で複数の代謝異常症を一度に調べる新生児スクリーニングの手法</li>
+</ul>
+<hr>
+<p>関連：<a href="01_技術の中身.html">01_技術の中身</a>｜<a href="03_制度と承認.html">03_制度と承認</a>｜<a href="05_直近トピック_2026.html">05_直近トピック_2026</a>｜<br><a href="../../09_医薬・医療・ヘルスケア/06_臨床検査・検査受託/README.html">臨床検査・検査受託</a>｜<br><a href="../../09_医薬・医療・ヘルスケア/04_創薬ベンチャー・バイオ/README.html">創薬ベンチャー・バイオ</a>｜<br><a href="../01_生成AI/README.html">生成AI</a></p><section class="page-quiz" data-quiz-key="01_注目テーマ/14_再生医療・ゲノム/04_ゲノム医療の実装.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全9問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：ゲノム医療の大半は、遺伝子を治すのではなく読む話である。 解読コストが劇的に下がった結果、「読むこと」自体はもう商売にならず、 どう読むかを設計し、結果をどう使い、データをどう蓄えるかに価値が移った。その構造を追う。", "大原則：シーケンサー（解読装置）は儲かるが、解読受託は儲かりにくい。 検査で稼ぐには、①保険点数が付くか、②データが溜まって別の価値になるか、のどちらかが要る。"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「コストの崩壊が産業を作り替えた」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["2000年代：解読能力そのもの：装置メーカー、大型解読センター", "2010年代：解読結果を臨床に翻訳する力：検査会社、パネル開発企業", "2020年代：データの量と、それに紐づく臨床情報：データベースを持つ側（公的機関を含む）", "NGS（次世代シーケンサー）＝ DNAを短い断片に切って並列で大量に読み、計算で再構成する装置。 装置市場は Illumina（米）が長く支配的で、近年は Thermo Fisher、中国のMGI/Complete Genomicsなどが競合"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「ゲノム医療の4つの出口」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["「ゲノムを読む」と一口に言っても、目的が4つに分かれ、それぞれ経済モデルが違う。", "① がんゲノム医療：がん組織・血液（腫瘍由来DNA）：公的保険", "② 希少疾患・難病の診断：患者と家族の生殖細胞系列：保険＋研究費", "③ 新生児スクリーニング：新生児の血液：公費・自治体"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「① がんゲノム医療（保険で回っている唯一の柱）」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["がん遺伝子パネル検査＝ がんに関係する100〜300程度の遺伝子をまとめて調べ、 効きそうな薬（分子標的薬）を探す検査。", "保険適用の対象：①標準治療がない・終了見込みの固形がん、②造血器腫瘍または類縁疾患", "実施施設：厚労省が指定する中核拠点／拠点／連携病院。2024年時点で全国200施設超", "実際に治療に到達する割合：1〜2割程度とされることが多い（施設・時期により幅がある）"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「② 希少疾患・難病と全ゲノム解析」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["診断の旅（diagnostic odyssey）：希少疾患の患者は診断が付くまで平均で数年〜十数年かかるとされる。 全ゲノム／全エクソーム解析はこの期間を大幅に短縮しうる", "日本では厚生労働省の「全ゲノム解析等実行計画」（2019年に第一版、2022年に改定版）が がんと難病の患者の全ゲノム解析を進め、解析基盤と実施組織の整備を図っている", "エクソーム（全遺伝子の\"たんぱく質をコードする部分\"だけ、全体の約1〜2%）か 全ゲノム（全部）かは、コストと解釈可能性のトレードオフ。読む量が増えるほど 「意味の分からない変異（VUS）」が増え、解釈のコストが上がる"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「③ 新生児スクリーニング」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["日本では従来からタンデムマス法による新生児マススクリーニング（先天性代謝異常症など約20疾患）が 全国で公費により実施されており、実質的に全新生児が受けている", "近年は SMA（脊髄性筋萎縮症）や SCID（重症複合免疫不全症） を対象とする 拡大新生児スクリーニングが自治体・研究事業ベースで広がっている。 これは遺伝子治療の登場と直結している：SMAはゾルゲンスマなど早期治療の効果が症状発現前に最も大きいため、 「治療法ができたから、検査する意味が生まれた」という順番になっている", "検査と治療は独立ではない。「治す手段がない病気を早期に見つける」ことの是非は長く議論されてきた。 遺伝子治療の実用化が、スクリーニング対象の拡大を正当化する側に働いている。 一方で費用は誰が負担するのか（公費か任意の自費か）が未整理で、自治体ごとに差が出ている"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「④ 消費者向け遺伝子検査（DTC）と、23andMeの教訓」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["DTC（Direct-to-Consumer）遺伝子検査は、体質・祖先・疾患リスクの「傾向」を返すサービス。 日本では数千〜数万円で購入でき、医療行為ではないため薬機法の規制がほぼかからない。", "精度・意味：多因子疾患のリスクは相対リスクの提示にとどまり、個人の将来は予測できない", "規制：日本では業界団体の自主基準が中心。医療との線引きが曖昧", "収益モデル：検査キット販売は一度きり。継続課金が作れないのが構造的弱点"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「データ利活用と倫理：日本のルール」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["ゲノム医療法（2023年6月成立）：正式名は「良質かつ適切なゲノム医療を国民が安心して受けられるようにするための施策の総合的かつ計画的な推進に関する法律」。遺伝情報による不当な差別の防止と適切な管理を国の責務として掲げる理念法", "個人情報保護法：遺伝情報は要配慮個人情報に該当しうる。取得には原則同意が必要", "次世代医療基盤法（2018年施行、2023年改正）：認定事業者が医療情報を匿名加工・仮名加工して研究に使える枠組み。オプトアウト方式", "差別の禁止：保険加入や就職で遺伝情報を使わせない。米国には GINA（2008年）という専用法があるが、日本にはまだ罰則付きの禁止規定がない。ゲノム医療法は理念にとどまる"]}, {"question": "「ゲノム医療の実装｜「読む」ビジネスはどこで成り立っているか」における「ビジネスとしてどこで稼げるか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["装置・試薬：Illumina、Thermo Fisher ほか。海外勢が中心：高い。消耗品で継続課金が効く", "検査受託（ラボ）：大手臨床検査会社、専門ラボ：点数次第。装置と試薬の原価を引くと薄い", "パネル・アッセイ開発：検査キットを設計・薬事承認まで通す企業：承認が取れれば強いが開発投資が重い", "「読む」だけの層は、下から順に価格競争に飲まれる。 生き残るのは、①保険点数という公定価格に守られた層、②装置・試薬という消耗品で稼ぐ層、 ③データを創薬という高付加価値に接続できた層の3つ。 → 創薬ベンチャー・バイオ"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/14_再生医療・ゲノム/03_制度と承認.html"><span class="lbl">← 前</span>制度と承認｜日本の「仮免許」制度は何を変え、何を突きつけたか</a><a class="next" href="../../01_注目テーマ/14_再生医療・ゲノム/05_直近トピック_2026.html"><span class="lbl">次 →</span>直近トピック（2026年9月時点）</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. コストの崩壊が産業を作り替えた</a><a class="lv2" href="#s2">2. ゲノム医療の4つの出口</a><a class="lv2" href="#s3">3. ① がんゲノム医療（保険で回っている唯一の柱）</a><a class="lv2" href="#s4">4. ② 希少疾患・難病と全ゲノム解析</a><a class="lv2" href="#s5">5. ③ 新生児スクリーニング</a><a class="lv2" href="#s6">6. ④ 消費者向け遺伝子検査（DTC）と、23andMeの教訓</a><a class="lv2" href="#s7">7. データ利活用と倫理：日本のルール</a><a class="lv2" href="#s8">8. ビジネスとしてどこで稼げるか</a><a class="lv2" href="#s9">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

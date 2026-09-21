@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自動運転｜技術の仕組み（認識・予測・計画・制御）</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></span><span>›</span><span>技術の仕組み</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></li><li><a class="" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></li><li><a class="" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></li><li><a class="on" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="on" href="01_技術の仕組み.html">技術の仕組み</a></li><li><a class="" href="02_レベルとODDの実際.html">レベルとODDの実際</a></li><li><a class="" href="03_事業としての自動運転.html">事業としての自動運転</a></li><li><a class="" href="04_規制と責任.html">規制と責任</a></li><li><a class="" href="05_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>自動運転｜技術の仕組み（認識・予測・計画・制御）</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">自動運転</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">14語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="先進運転支援システム。ACC・LKA・AEBなど、人間の運転を助ける機能の総称。運転者は人間のまま" aria-label="ADAS：先進運転支援システム。ACC・LKA・AEBなど、人間の運転を助ける機能の総称。運転者は人間のまま">ADAS</span><span class="term-chip has-tip" tabindex="0" data-tooltip="センサ入力から周囲の物体・車線・信号を把握する処理" aria-label="知覚 / 認識（Perception）：センサ入力から周囲の物体・車線・信号を把握する処理">知覚 / 認識（Perception）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="LiDARが返す、距離を持った点の集まり。3次元の形がそのまま得られる" aria-label="点群（Point Cloud）：LiDARが返す、距離を持った点の集まり。3次元の形がそのまま得られる">点群（Point Cloud）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="種類の違うセンサの出力を統合して、1つの世界モデルを作ること" aria-label="センサフュージョン：種類の違うセンサの出力を統合して、1つの世界モデルを作ること">センサフュージョン</span><span class="term-chip has-tip" tabindex="0" data-tooltip="車線・停止線・信号位置をcm級で持つ地図。自車位置の確定に使う" aria-label="HDマップ（高精度地図）：車線・停止線・信号位置をcm級で持つ地図。自車位置の確定に使う">HDマップ（高精度地図）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="衛星測位と、基準局の補正で誤差をcm級に縮める方式。トンネル・ビル街では単独では足りない" aria-label="GNSS / RTK：衛星測位と、基準局の補正で誤差をcm級に縮める方式。トンネル・ビル街では単独では足りない">GNSS / RTK</span><span class="term-chip has-tip" tabindex="0" data-tooltip="加速度とジャイロのセンサ。衛星が切れた区間の位置を推測航法でつなぐ" aria-label="IMU：加速度とジャイロのセンサ。衛星が切れた区間の位置を推測航法でつなぐ">IMU</span><span class="term-chip has-tip" tabindex="0" data-tooltip="走りながら地図を作り、同時に自車位置を求める技術" aria-label="SLAM：走りながら地図を作り、同時に自車位置を求める技術">SLAM</span><span class="term-chip has-tip" tabindex="0" data-tooltip="センサ入力から車両操作までを1つの学習モデルで扱う設計" aria-label="End-to-End：センサ入力から車両操作までを1つの学習モデルで扱う設計">End-to-End</span><span class="term-chip has-tip" tabindex="0" data-tooltip="めったに起きないが種類が無数にある場面。自動運転の最大の壁" aria-label="ロングテール／コーナーケース：めったに起きないが種類が無数にある場面。自動運転の最大の壁">ロングテール／コーナーケース</span><span class="term-chip has-tip" tabindex="0" data-tooltip="自動運転を解除して人間が操作を取り戻すこと。安全運転者がいる試験で計測される" aria-label="ディスエンゲージメント（介入）：自動運転を解除して人間が操作を取り戻すこと。安全運転者がいる試験で計測される">ディスエンゲージメント（介入）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="介入1回あたりの走行距離。開発の進捗指標として使われる" aria-label="MPI（Miles Per Intervention）：介入1回あたりの走行距離。開発の進捗指標として使われる">MPI（Miles Per Intervention）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="学習モデルの出力を検査し、危険なら止める人間が書いた安全層" aria-label="セーフティモニタ：学習モデルの出力を検査し、危険なら止める人間が書いた安全層">セーフティモニタ</span><span class="term-chip has-tip" tabindex="0" data-tooltip="運転席に人がいない状態での走行。Waymoが実績として公表している単位" aria-label="rider-only 走行：運転席に人がいない状態での走行。Waymoが実績として公表している単位">rider-only 走行</span></div></details><p><strong>このノートで分かること</strong>：自動運転車が「何を見て、どう考えて、どうハンドルを切っているか」の中身。<br>そして<strong>なぜ「9割できた」ところから10年進まないのか</strong>という、この産業最大の謎の正体。</p>
+<p>結論を先に言うと、自動運転は<strong>確率の商売</strong>である。<br>「だいたい走れる」システムは2010年代半ばにできあがった。そこから先は、<br><strong>1万kmに1回しか起きない事態を、1万回ぶんのデータで潰す</strong>という気の遠くなる作業であり、<br>技術論争（LiDARを積むか積まないか、地図を作るか作らないか）はすべて<br><strong>「その潰し込みを、どれだけ安く・速くやれるか」という一点</strong>に還元できる。</p>
+<h2 id="s1">1. 4段構えのパイプライン</h2>
+<p>自動運転ソフトは伝統的に4つのブロックに分かれる。まずこの並びを覚える。</p>
+<pre><code> 【センサ】      【1. 認識】       【2. 予測】        【3. 計画】        【4. 制御】
+ カメラ      ─┐  周りに何がある   その物体は次の    自車はこの先      その軌跡を
+ LiDAR       ─┼▶ か（物体・車線  数秒でどこへ    ▶ 数秒でどこを   ▶ 出すための
+ レーダー     ─┤  ・信号・標識）   動くか            通るか            ハンドル角・
+ GNSS/IMU    ─┘  ＋自車はどこに                     （軌跡の生成）     アクセル・
+ （＋高精度地図）  いるか（測位）                                        ブレーキ
+                    Perception      Prediction        Planning          Control
+                    「見る」        「読む」          「決める」        「動かす」</code></pre>
+<div class="table-wrap"><table><thead><tr>
+<th>ブロック</th>
+<th>やること</th>
+<th>難しさの正体</th>
+</tr></thead><tbody>
+<tr><td><strong>認識</strong>（Perception）</td><td>センサの生データから「車が3台、歩行者2人、赤信号」という世界のモデルを作る。同時に<strong>自車の位置</strong>をcm級で求める</td><td>珍しい見た目のものが出ると落ちる（横転したトラック、着ぐるみ、荷台の自転車）</td></tr>
+<tr><td><strong>予測</strong>（Prediction）</td><td>検出した他者が次の3〜8秒でどう動くかを確率つきで出す</td><td><strong>人間の意図が読めない</strong>。横断歩道前で足を止めた歩行者は渡るのか渡らないのか</td></tr>
+<tr><td><strong>計画</strong>（Planning）</td><td>自車の走る軌跡を決める。安全・法令・乗り心地・他車との駆け引きを同時に満たす</td><td><strong>譲り合いが数式にならない</strong>。強引すぎると危険、慎重すぎると永久に交差点を出られない</td></tr>
+<tr><td><strong>制御</strong>（Control）</td><td>軌跡どおりに動くよう操舵・駆動・制動を出す</td><td>ここは制御工学として枯れており、<strong>4段の中では一番易しい</strong></td></tr>
+</tbody></table></div>
+<blockquote><p>ポイント：世間が「自動運転が難しい」と言うとき、その実体はほぼ<strong>予測と計画</strong>にある。<br>「見えているのに、どう振る舞えばいいか分からない」場面が最後まで残る。</p></blockquote>
+<h2 id="s2">2. センサ構成の論争：カメラ vs LiDAR vs レーダー</h2>
+<p>自動運転の技術論争でいちばん有名なのがここ。3種類のセンサは<strong>測っている物理量が違う</strong>。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>センサ</th>
+<th>測っているもの</th>
+<th>得意</th>
+<th>苦手</th>
+<th>価格帯（2026年）</th>
+</tr></thead><tbody>
+<tr><td><strong>カメラ</strong>（可視光）</td><td>明るさと色。距離は「見え方から推定」する</td><td>色・文字・信号・標識。人間と同じ情報が取れる。<strong>圧倒的に安い</strong></td><td>逆光・夜間・濃霧。距離は原理的に推定値</td><td>数千円〜1万円台／個</td></tr>
+<tr><td><strong>LiDAR</strong>（ライダー）</td><td>レーザーを飛ばして<strong>往復時間から距離を直接測る</strong></td><td>暗闇でも形と距離が正確（cm級）。3次元の点の集まり（点群）が得られる</td><td>雨・雪・濃霧で乱反射。色や文字は読めない。<strong>高い</strong></td><td>中国Hesaiの新型ADAS向け「ATX」で約200ドル（約3万円）と報じられる。ロボタクシー用の高性能品は数十万円〜</td></tr>
+<tr><td><strong>ミリ波レーダー</strong></td><td>電波の反射。<strong>相手の速度がドップラー効果で直接取れる</strong></td><td>悪天候に強い。遠距離の車の速度が正確。安い</td><td>分解能が粗く「何か」は分かっても「何か」が分からない。金属に反応しやすい</td><td>数千円〜／個</td></tr>
+</tbody></table></div>
+<h3 id="s3">2つの流派</h3>
+<pre><code>【センサフュージョン派】                    【カメラのみ（ビジョン）派】
+ Waymo / 中国勢 / 多くの自動車メーカー        Tesla
+
+ カメラ + LiDAR + レーダー を重ねる            カメラだけ（レーダーも外した）
+   ↓                                            ↓
+ 1つが騙されても他が気づく（冗長性）           人間は目だけで運転できる、が論拠
+ 距離は「測った値」なので検証しやすい           センサ代が2桁安く、量産車に全数載る
+   ↓                                            ↓
+ 認証・保険・当局説明がしやすい                 全車から走行データが集まる
+   ↓                                            ↓
+ 【弱み】車両1台が高い。量産車に載せにくい      【弱み】距離が推定値なので
+        → ロボタクシー（台数が少ない）向き            誤検知の説明が難しい
+                                                → 量産車のADAS向き</code></pre>
+<p>この対立は<strong>思想の違いに見えて、実はビジネスモデルの違い</strong>である。</p>
+<ul>
+<li><strong>自社で車を保有して運行する</strong>（ロボタクシー）なら、1台500万円高くても、<strong>年中無休で稼働させれば回収できる</strong>。安全側に振って当局を説得するほうが重要。</li>
+<li><strong>1台売り切りの乗用車に載せる</strong>なら、部品代1万円の差が数百万台ぶん効く。載せられないセンサは存在しないのと同じ。</li>
+</ul>
+<p>近年は<strong>LiDARの値崩れで境界が動いている</strong>。中国Hesaiの2026年上半期のLiDAR出荷は約110万台（前年同期比＋100.8%）と発表されており、<br>うちADAS（運転支援）向けが約84万台。<strong>量産車にLiDARが載る時代がすでに中国では来ている</strong>。</p>
+<h2 id="s4">3. 高精度地図（HDマップ）を使うか使わないか</h2>
+<p><strong>高精度地図</strong>とは、車線の中心線・停止線・信号機や標識の3次元位置を<strong>cm級</strong>で持つ地図。<br>普通のカーナビの地図（道路を線で持つ）とは別物で、<strong>車が「自分がどの車線のどこにいるか」を知るための座標系</strong>である。</p>
+<pre><code>【地図あり方式】Waymo・中国勢・日本のレベル4バス
+  事前に専用車で走って地図を作る ──▶ 走行時はLiDARの点群を地図と照合して自車位置を確定
+                                      「見えなくても、そこに停止線があると知っている」
+  ✔ 安全マージンが取りやすい／当局に説明しやすい
+  ✘ 工事・線の引き直しで地図が古くなる ＝ 維持費が街ごとにかかる
+  ✘ 地図のない街へは行けない ＝ 展開が「都市単位」になる
+
+【地図なし方式】Tesla など
+  その場で見た車線をその場で解釈する
+  ✔ どこでも走れる（ように見える）／維持費ゼロ
+  ✘ 標示が消えた道・雪道で一気に不利／「知っていること」が使えない</code></pre>
+<blockquote><p>ここが<strong>展開速度の差</strong>として表に出る。Waymoが新都市に入るのに時間がかかるのは、<br>地図作成と現地検証、そして当局・消防・警察との調整を都市ごとにやり直すからである。<br>逆にTeslaはソフト更新で全米の車に同じ機能を配れる。<strong>「深さ」と「広さ」のトレードオフ</strong>。</p></blockquote>
+<h2 id="s5">4. End-to-End（一気通貫）学習への転換</h2>
+<p>2023年ごろから業界の作り方が大きく変わった。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>世代</th>
+<th>作り方</th>
+<th>長所</th>
+<th>短所</th>
+</tr></thead><tbody>
+<tr><td><strong>モジュール型</strong>（〜2022年が主流）</td><td>認識・予測・計画を別々のプログラムとして作り、人が書いたルールでつなぐ</td><td>どこが悪いか分かる。責任分界が明確。認証しやすい</td><td>ルールが増えすぎて破綻する。「雨の日、路駐の陰から自転車」のような場面ごとに人が書く必要がある</td></tr>
+<tr><td><strong>End-to-End</strong>（2023年〜）</td><td>センサ入力から操作出力までを<strong>1つの巨大なニューラルネットで学習</strong>する。人間の運転データを大量に見せる</td><td>人が書ききれない微妙な振る舞い（譲り合い、割り込みの間合い）が自然に出る。データを足せば良くなる</td><td><strong>なぜそう動いたか説明できない</strong>。少し直したいときに「どこを直すか」が分からない</td></tr>
+</tbody></table></div>
+<p>現実には<strong>完全なEnd-to-Endは使われていない</strong>。多くの実装は<br>「学習ベースの大きな塊」＋「その出力を検査して危険なら止める、人が書いた安全層（セーフティモニタ）」の<strong>二階建て</strong>になっている。<br>説明責任が求められる産業では、<strong>学習モデルの出力を最後に人間のルールが監視する構造</strong>から当分逃れられない。</p>
+<pre><code>  センサ入力 ──▶ 大きな学習モデル ──▶ 走行軌跡の候補
+                （人間の運転を模倣）        │
+                                            ▼
+                                  【安全層（ルールベース）】
+                                   衝突判定・速度上限・
+                                   ODD逸脱チェック
+                                            │
+                                   OK ──────┴────── NG
+                                    ▼                ▼
+                                  実行             減速停止／
+                                                   遠隔支援を呼ぶ</code></pre>
+<h2 id="s6">5. ロングテール問題：なぜ最後の1%に10年かかるのか</h2>
+<p>自動運転で最も重要な概念。<strong>走行場面の出現頻度は極端に偏っている</strong>。</p>
+<pre><code>出現
+頻度
+ ▲
+ │█
+ │█
+ │█▄
+ │█ ▀▄▄
+ │█     ▀▀▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ └──────────────────────────────────────────────────▶ 場面の種類
+   ↑                    ↑                    ↑
+ 直進・車線維持       交差点・合流          横転トラック／誘導員の手信号／
+ （9割）              （1割弱）              道路に落ちたソファ／逆走車
+                                            （ここが「ロングテール」）
+   数か月で作れる      数年かかる            ここが終わらない</code></pre>
+<ul>
+<li>「テール（尾）」は<strong>1事象あたりの発生率は低いが、種類が無数にある</strong>。合計すると無視できない頻度になる</li>
+<li>しかも<strong>テールの事象ほど危険度が高い</strong>（珍しい＝人間も慌てる状況）</li>
+<li>学習で潰すには<strong>その場面のデータが要る</strong>が、珍しいから集まらない。→ <strong>シミュレーションと合成データ</strong>で水増しする</li>
+<li>進捗は「<strong>介入（ディスエンゲージメント）までの平均走行距離（MPI）</strong>」で測るが、<br>MPIが10倍になっても、<strong>残った事象の危険度はむしろ上がる</strong>（簡単なものから先に潰れるため）</li>
+</ul>
+<blockquote><p>この構造のせいで、<strong>デモ（決められたコースを1回走る）と商用運行（不特定の客を毎日運ぶ）の間には桁違いの壁がある</strong>。<br>「自動運転車が走った」というニュースを読むときは、<strong>何台が・どの範囲で・何日間・監視者ありかなしで</strong>走ったかを必ず確認する。<br>ここを区別しないと業界の話は一切読めない。詳しくは <a href="02_レベルとODDの実際.html">02_レベルとODDの実際</a> へ。</p></blockquote>
+<p>参考として、Waymoは<strong>2026年3月までに運転者なし（rider-only）で累計約2億2,060万マイル</strong>を走行したと公表している（同社発表）。<br>「毎週約200万マイル」というペース（2026年初時点）で、ようやくテールを統計的に語れる規模に到達しつつある段階。</p>
+<h2 id="s7">6. 計算機と車載ハードウェア</h2>
+<p>学習モデルを車の中で毎秒何十回も動かす必要があるため、<strong>車載コンピュータそのものが競争軸</strong>になっている。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>項目</th>
+<th>実情（2026年時点）</th>
+</tr></thead><tbody>
+<tr><td>演算チップ</td><td>NVIDIA の車載SoC（Orin → Thor世代）が事実上の標準。Teslaは自社設計チップ、中国勢は地場SoCも採用</td></tr>
+<tr><td>消費電力</td><td>高性能構成で数百W。<strong>EVでは航続距離を削る</strong>ため、電費と冷却が設計制約になる</td></tr>
+<tr><td>冗長化</td><td>レベル4では操舵・制動・電源・演算を<strong>二重化</strong>する。ここが車両価格を押し上げる最大要因のひとつ</td></tr>
+<tr><td>データ量</td><td>ロボタクシー1台が1日にテラバイト級のログを出す。<strong>通信と保管のコストが運行費に乗る</strong></td></tr>
+</tbody></table></div>
+<p>演算チップ側の事情は <a href="../../03_電機・電子部品/02_半導体（ロジック・メモリ）/README.html">半導体（ロジック・メモリ）</a> と<br><a href="../02_半導体・先端半導体/README.html">AI半導体を含む注目テーマ</a> に、<br>学習モデルの一般論は <a href="../01_生成AI/README.html">生成AI</a> に詳しい。</p>
+<h2 id="s8">7. 「自動運転」と紛らわしい技術との境界</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>技術</th>
+<th>中身</th>
+<th>自動運転との関係</th>
+</tr></thead><tbody>
+<tr><td><strong>ACC</strong>（車間距離制御）</td><td>前走車に追従して速度を保つ</td><td>レベル1。前後方向だけの支援</td></tr>
+<tr><td><strong>LKA / LKAS</strong>（車線維持支援）</td><td>車線の中央を保つようハンドルを補助</td><td>レベル1。左右方向だけの支援</td></tr>
+<tr><td><strong>AEB</strong>（衝突被害軽減ブレーキ）</td><td>ぶつかりそうなら自動でブレーキ</td><td><strong>運転を代わる機能ではない</strong>。事故を減らす安全装置。日本では新型車に義務化済み</td></tr>
+<tr><td><strong>自動駐車</strong></td><td>駐車枠に自動で入れる</td><td>低速・限定空間なので難易度が別物。レベル2相当が多い</td></tr>
+<tr><td><strong>隊列走行</strong></td><td>先頭の有人トラックに後続が電子的に連結して追従</td><td>後続無人化を狙う運用。1台単独の自動運転とは別アプローチ</td></tr>
+</tbody></table></div>
+<p><strong>ADAS（先進運転支援システム）</strong>は上記の支援機能の総称で、<strong>運転の主体は人間のまま</strong>。<br>ADASと自動運転は連続しているようで、<strong>責任の所在が違うため制度的には断絶している</strong>。これが次のノートの主題。</p>
+<h2 id="s9">用語メモ</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="先進運転支援システム。ACC・LKA・AEBなど、人間の運転を助ける機能の総称。運転者は人間のまま" aria-label="ADAS：先進運転支援システム。ACC・LKA・AEBなど、人間の運転を助ける機能の総称。運転者は人間のまま"><strong>ADAS</strong></span>：先進運転支援システム。ACC・LKA・AEBなど、人間の運転を助ける機能の総称。運転者は人間のまま</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="センサ入力から周囲の物体・車線・信号を把握する処理" aria-label="知覚 / 認識（Perception）：センサ入力から周囲の物体・車線・信号を把握する処理"><strong>知覚 / 認識（Perception）</strong></span>：センサ入力から周囲の物体・車線・信号を把握する処理</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="LiDARが返す、距離を持った点の集まり。3次元の形がそのまま得られる" aria-label="点群（Point Cloud）：LiDARが返す、距離を持った点の集まり。3次元の形がそのまま得られる"><strong>点群（Point Cloud）</strong></span>：LiDARが返す、距離を持った点の集まり。3次元の形がそのまま得られる</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="種類の違うセンサの出力を統合して、1つの世界モデルを作ること" aria-label="センサフュージョン：種類の違うセンサの出力を統合して、1つの世界モデルを作ること"><strong>センサフュージョン</strong></span>：種類の違うセンサの出力を統合して、1つの世界モデルを作ること</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="車線・停止線・信号位置をcm級で持つ地図。自車位置の確定に使う" aria-label="HDマップ（高精度地図）：車線・停止線・信号位置をcm級で持つ地図。自車位置の確定に使う"><strong>HDマップ（高精度地図）</strong></span>：車線・停止線・信号位置をcm級で持つ地図。自車位置の確定に使う</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="衛星測位と、基準局の補正で誤差をcm級に縮める方式。トンネル・ビル街では単独では足りない" aria-label="GNSS / RTK：衛星測位と、基準局の補正で誤差をcm級に縮める方式。トンネル・ビル街では単独では足りない"><strong>GNSS / RTK</strong></span>：衛星測位と、基準局の補正で誤差をcm級に縮める方式。トンネル・ビル街では単独では足りない</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="加速度とジャイロのセンサ。衛星が切れた区間の位置を推測航法でつなぐ" aria-label="IMU：加速度とジャイロのセンサ。衛星が切れた区間の位置を推測航法でつなぐ"><strong>IMU</strong></span>：加速度とジャイロのセンサ。衛星が切れた区間の位置を推測航法でつなぐ</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="走りながら地図を作り、同時に自車位置を求める技術" aria-label="SLAM：走りながら地図を作り、同時に自車位置を求める技術"><strong>SLAM</strong></span>：走りながら地図を作り、同時に自車位置を求める技術</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="センサ入力から車両操作までを1つの学習モデルで扱う設計" aria-label="End-to-End：センサ入力から車両操作までを1つの学習モデルで扱う設計"><strong>End-to-End</strong></span>：センサ入力から車両操作までを1つの学習モデルで扱う設計</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="めったに起きないが種類が無数にある場面。自動運転の最大の壁" aria-label="ロングテール／コーナーケース：めったに起きないが種類が無数にある場面。自動運転の最大の壁"><strong>ロングテール／コーナーケース</strong></span>：めったに起きないが種類が無数にある場面。自動運転の最大の壁</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="自動運転を解除して人間が操作を取り戻すこと。安全運転者がいる試験で計測される" aria-label="ディスエンゲージメント（介入）：自動運転を解除して人間が操作を取り戻すこと。安全運転者がいる試験で計測される"><strong>ディスエンゲージメント（介入）</strong></span>：自動運転を解除して人間が操作を取り戻すこと。安全運転者がいる試験で計測される</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="介入1回あたりの走行距離。開発の進捗指標として使われる" aria-label="MPI（Miles Per Intervention）：介入1回あたりの走行距離。開発の進捗指標として使われる"><strong>MPI（Miles Per Intervention）</strong></span>：介入1回あたりの走行距離。開発の進捗指標として使われる</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="学習モデルの出力を検査し、危険なら止める人間が書いた安全層" aria-label="セーフティモニタ：学習モデルの出力を検査し、危険なら止める人間が書いた安全層"><strong>セーフティモニタ</strong></span>：学習モデルの出力を検査し、危険なら止める人間が書いた安全層</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="運転席に人がいない状態での走行。Waymoが実績として公表している単位" aria-label="rider-only 走行：運転席に人がいない状態での走行。Waymoが実績として公表している単位"><strong>rider-only 走行</strong></span>：運転席に人がいない状態での走行。Waymoが実績として公表している単位</li>
+</ul>
+<hr>
+<h3 id="s10">関連ノート</h3>
+<ul>
+<li><a href="02_レベルとODDの実際.html">02_レベルとODDの実際</a>：ここで作った技術が、制度上どう分類されるか</li>
+<li><a href="03_事業としての自動運転.html">03_事業としての自動運転</a>：この技術がいくらで売れ、いくらかかるか</li>
+<li><a href="04_規制と責任.html">04_規制と責任</a>：説明できないモデルをどう認証するか</li>
+<li><a href="../../02_自動車・機械/01_自動車（完成車）/README.html">自動車（完成車）</a>：この技術を載せる本体の産業</li>
+<li><a href="../../02_自動車・機械/02_自動車部品/README.html">自動車部品</a>：センサ・ECU・ブレーキの供給側</li>
+<li><a href="../09_ロボット/README.html">ロボット</a>：SLAM・経路計画・遠隔監視の考え方を共有する</li>
+<li><a href="../08_ドローン/README.html">ドローン</a>：測位と自律制御の課題がほぼ同じ</li>
+</ul><section class="page-quiz" data-quiz-key="01_注目テーマ/15_自動運転/01_技術の仕組み.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全8問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：自動運転車が「何を見て、どう考えて、どうハンドルを切っているか」の中身。 そしてなぜ「9割できた」ところから10年進まないのかという、この産業最大の謎の正体。", "結論を先に言うと、自動運転は確率の商売である。 「だいたい走れる」システムは2010年代半ばにできあがった。そこから先は、 1万kmに1回しか起きない事態を、1万回ぶんのデータで潰すという気の遠くなる作業であり、 技術論争（LiDARを積むか積まないか、地図を作るか作らないか）はすべて 「その潰し込みを、どれだけ安く・速くやれるか」という一点に還元できる。"]}, {"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」における「4段構えのパイプライン」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["自動運転ソフトは伝統的に4つのブロックに分かれる。まずこの並びを覚える。", "認識（Perception）：センサの生データから「車が3台、歩行者2人、赤信号」という世界のモデルを作る。同時に自車の位置をcm級で求める：珍しい見た目のものが出ると落ちる（横転したトラック、着ぐるみ、荷台の自転車）", "予測（Prediction）：検出した他者が次の3〜8秒でどう動くかを確率つきで出す：人間の意図が読めない。横断歩道前で足を止めた歩行者は渡るのか渡らないのか", "計画（Planning）：自車の走る軌跡を決める。安全・法令・乗り心地・他車との駆け引きを同時に満たす：譲り合いが数式にならない。強引すぎると危険、慎重すぎると永久に交差点を出られない"]}, {"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」における「センサ構成の論争：カメラ vs LiDAR vs レーダー」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["自動運転の技術論争でいちばん有名なのがここ。3種類のセンサは測っている物理量が違う。", "カメラ（可視光）：明るさと色。距離は「見え方から推定」する：色・文字・信号・標識。人間と同じ情報が取れる。圧倒的に安い", "LiDAR（ライダー）：レーザーを飛ばして往復時間から距離を直接測る：暗闇でも形と距離が正確（cm級）。3次元の点の集まり（点群）が得られる", "ミリ波レーダー：電波の反射。相手の速度がドップラー効果で直接取れる：悪天候に強い。遠距離の車の速度が正確。安い"]}, {"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」における「高精度地図（HDマップ）を使うか使わないか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["高精度地図とは、車線の中心線・停止線・信号機や標識の3次元位置をcm級で持つ地図。 普通のカーナビの地図（道路を線で持つ）とは別物で、車が「自分がどの車線のどこにいるか」を知るための座標系である。", "ここが展開速度の差として表に出る。Waymoが新都市に入るのに時間がかかるのは、 地図作成と現地検証、そして当局・消防・警察との調整を都市ごとにやり直すからである。 逆にTeslaはソフト更新で全米の車に同じ機能を配れる。「深さ」と「広さ」のトレードオフ。"]}, {"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」における「End-to-End（一気通貫）学習への転換」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["2023年ごろから業界の作り方が大きく変わった。", "モジュール型（〜2022年が主流）：認識・予測・計画を別々のプログラムとして作り、人が書いたルールでつなぐ：どこが悪いか分かる。責任分界が明確。認証しやすい", "End-to-End（2023年〜）：センサ入力から操作出力までを1つの巨大なニューラルネットで学習する。人間の運転データを大量に見せる：人が書ききれない微妙な振る舞い（譲り合い、割り込みの間合い）が自然に出る。データを足せば良くなる", "現実には完全なEnd-to-Endは使われていない。多くの実装は 「学習ベースの大きな塊」＋「その出力を検査して危険なら止める、人が書いた安全層（セーフティモニタ）」の二階建てになっている。 説明責任が求められる産業では、学習モデルの出力を最後に人間のルールが監視する構造から当分逃れられない。"]}, {"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」における「ロングテール問題：なぜ最後の1%に10年かかるのか」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["自動運転で最も重要な概念。走行場面の出現頻度は極端に偏っている。", "「テール（尾）」は1事象あたりの発生率は低いが、種類が無数にある。合計すると無視できない頻度になる", "しかもテールの事象ほど危険度が高い（珍しい＝人間も慌てる状況）", "学習で潰すにはその場面のデータが要るが、珍しいから集まらない。→ シミュレーションと合成データで水増しする"]}, {"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」における「計算機と車載ハードウェア」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["学習モデルを車の中で毎秒何十回も動かす必要があるため、車載コンピュータそのものが競争軸になっている。", "演算チップ：NVIDIA の車載SoC（Orin → Thor世代）が事実上の標準。Teslaは自社設計チップ、中国勢は地場SoCも採用", "消費電力：高性能構成で数百W。EVでは航続距離を削るため、電費と冷却が設計制約になる", "冗長化：レベル4では操舵・制動・電源・演算を二重化する。ここが車両価格を押し上げる最大要因のひとつ"]}, {"question": "「自動運転｜技術の仕組み（認識・予測・計画・制御）」における「「自動運転」と紛らわしい技術との境界」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["ACC（車間距離制御）：前走車に追従して速度を保つ：レベル1。前後方向だけの支援", "LKA / LKAS（車線維持支援）：車線の中央を保つようハンドルを補助：レベル1。左右方向だけの支援", "AEB（衝突被害軽減ブレーキ）：ぶつかりそうなら自動でブレーキ：運転を代わる機能ではない。事故を減らす安全装置。日本では新型車に義務化済み", "ADAS（先進運転支援システム）は上記の支援機能の総称で、運転の主体は人間のまま。 ADASと自動運転は連続しているようで、責任の所在が違うため制度的には断絶している。これが次のノートの主題。"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/15_自動運転/README.html"><span class="lbl">← 前</span>自動運転</a><a class="next" href="../../01_注目テーマ/15_自動運転/02_レベルとODDの実際.html"><span class="lbl">次 →</span>自動運転｜レベル0〜5とODDの実際</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. 4段構えのパイプライン</a><a class="lv2" href="#s2">2. センサ構成の論争：カメラ vs LiDAR vs レーダー</a><a class="lv3" href="#s3">2つの流派</a><a class="lv2" href="#s4">3. 高精度地図（HDマップ）を使うか使わないか</a><a class="lv2" href="#s5">4. End-to-End（一気通貫）学習への転換</a><a class="lv2" href="#s6">5. ロングテール問題：なぜ最後の1%に10年かかるのか</a><a class="lv2" href="#s7">6. 計算機と車載ハードウェア</a><a class="lv2" href="#s8">7. 「自動運転」と紛らわしい技術との境界</a><a class="lv2" href="#s9">用語メモ</a><a class="lv3" href="#s10">関連ノート</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

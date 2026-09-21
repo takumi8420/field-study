@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="">
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../../index.html">業界地図ノート</a>
+  <nav class="crumb"><span><a href="../../index.html">ホーム</a></span><span>›</span><span><a href="../../01_注目テーマ/index.html">注目テーマ</a></span><span>›</span><span><a href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a></span><span>›</span><span>攻撃側の経済学</span></nav>
+  <div class="bar-right">
+    <div class="search"><input type="search" id="q" placeholder="業界を検索  /" autocomplete="off"></div>
+    <button class="icon-btn" data-theme-toggle title="ライト / ダーク切替">◐</button>
+  </div>
+</div></div>
+<div class="layout">
+<nav class="side"><h3>大分類</h3><ul><li><a class="cat on" href="../../01_注目テーマ/index.html">注目テーマ</a><ul class="sub"><li><a class="" href="../../01_注目テーマ/01_生成AI/README.html">生成AI</a></li><li><a class="" href="../../01_注目テーマ/02_半導体・先端半導体/README.html">半導体・先端半導体</a></li><li><a class="" href="../../01_注目テーマ/03_EV・電動化/README.html">EV・電動化</a></li><li><a class="" href="../../01_注目テーマ/04_蓄電池/README.html">蓄電池</a></li><li><a class="" href="../../01_注目テーマ/05_脱炭素・GX/README.html">脱炭素・GX</a></li><li><a class="" href="../../01_注目テーマ/06_水素・アンモニア/README.html">水素・アンモニア</a></li><li><a class="" href="../../01_注目テーマ/07_宇宙・衛星/README.html">宇宙・衛星</a></li><li><a class="" href="../../01_注目テーマ/08_ドローン/README.html">ドローン</a></li><li><a class="" href="../../01_注目テーマ/09_ロボット/README.html">ロボット</a></li><li><a class="on" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html">サイバーセキュリティ</a><ul class="sub note-list"><li><a class="" href="README.html">概要</a></li><li><a class="on" href="01_攻撃側の経済学.html">攻撃側の経済学</a></li><li><a class="" href="02_防御の全体像.html">防御の全体像</a></li><li><a class="" href="03_サプライチェーンと組織の実務.html">サプライチェーンと組織の実務</a></li><li><a class="" href="04_規制と制度.html">規制と制度</a></li><li><a class="" href="05_直近トピック_2026.html">直近トピック_2026</a></li></ul></li><li><a class="" href="../../01_注目テーマ/11_量子コンピューティング/README.html">量子コンピューティング</a></li><li><a class="" href="../../01_注目テーマ/12_メタバース・XR/README.html">メタバース・XR</a></li><li><a class="" href="../../01_注目テーマ/13_フードテック/README.html">フードテック</a></li><li><a class="" href="../../01_注目テーマ/14_再生医療・ゲノム/README.html">再生医療・ゲノム</a></li><li><a class="" href="../../01_注目テーマ/15_自動運転/README.html">自動運転</a></li><li><a class="" href="../../01_注目テーマ/16_空飛ぶクルマ/README.html">空飛ぶクルマ</a></li></ul></li><li><a class="cat" href="../../02_自動車・機械/index.html">自動車・機械</a></li><li><a class="cat" href="../../03_電機・電子部品/index.html">電機・電子部品</a></li><li><a class="cat" href="../../04_情報通信・IT・ネット/index.html">情報通信・IT・ネット</a></li><li><a class="cat" href="../../05_金融/index.html">金融</a></li><li><a class="cat" href="../../06_商社・卸売/index.html">商社・卸売</a></li><li><a class="cat" href="../../07_小売・流通/index.html">小売・流通</a></li><li><a class="cat" href="../../08_食品・農水産・外食/index.html">食品・農水産・外食</a></li><li><a class="cat" href="../../09_医薬・医療・ヘルスケア/index.html">医薬・医療・ヘルスケア</a></li><li><a class="cat" href="../../10_素材・化学/index.html">素材・化学</a></li><li><a class="cat" href="../../11_資源・エネルギー・鉄鋼金属/index.html">資源・エネルギー・鉄鋼金属</a></li><li><a class="cat" href="../../12_建設・住宅・不動産/index.html">建設・住宅・不動産</a></li><li><a class="cat" href="../../13_運輸・物流/index.html">運輸・物流</a></li><li><a class="cat" href="../../14_メディア・広告・エンタメ/index.html">メディア・広告・エンタメ</a></li><li><a class="cat" href="../../15_サービス・生活関連/index.html">サービス・生活関連</a></li></ul></nav>
+<main class="doc">
+  <div class="doc-head"><h1>攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）</h1><div class="chips"><span class="chip">注目テーマ</span><span class="chip">サイバーセキュリティ</span></div></div>
+  <div class="prose"><details class="page-glossary"><summary><span class="page-glossary-summary-main"><span class="page-glossary-icon" aria-hidden="true">あ</span><span class="page-glossary-copy"><span class="page-glossary-label">このページの単語集</span><span class="page-glossary-hint">用語に触れると意味を確認できます</span></span></span><span class="page-glossary-count">10語</span></summary><div class="page-glossary-chips"><span class="term-chip has-tip" tabindex="0" data-tooltip="データを暗号化したり盗んだりして、復旧・非公開と引き換えに金銭を要求する不正プログラム" aria-label="ランサムウェア：データを暗号化したり盗んだりして、復旧・非公開と引き換えに金銭を要求する不正プログラム">ランサムウェア</span><span class="term-chip has-tip" tabindex="0" data-tooltip="Ransomware as a Service。開発グループがツールと管理基盤を提供し、実行犯が使って成果を分け合う仕組み" aria-label="RaaS：Ransomware as a Service。開発グループがツールと管理基盤を提供し、実行犯が使って成果を分け合う仕組み">RaaS</span><span class="term-chip has-tip" tabindex="0" data-tooltip="RaaSを借りて実際に攻撃を実行する側。成果報酬で動く" aria-label="アフィリエイト：RaaSを借りて実際に攻撃を実行する側。成果報酬で動く">アフィリエイト</span><span class="term-chip has-tip" tabindex="0" data-tooltip="侵入済みの足場を他の攻撃者に売る仲介業者" aria-label="IAB（初期アクセスブローカー）：侵入済みの足場を他の攻撃者に売る仲介業者">IAB（初期アクセスブローカー）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="暗号化に加えてデータ公開・関係者への連絡などを重ねて圧力をかける手法" aria-label="二重脅迫／多重脅迫：暗号化に加えてデータ公開・関係者への連絡などを重ねて圧力をかける手法">二重脅迫／多重脅迫</span><span class="term-chip has-tip" tabindex="0" data-tooltip="攻撃者が被害組織名や盗んだデータを晒すために運営する公開サイト" aria-label="リークサイト：攻撃者が被害組織名や盗んだデータを晒すために運営する公開サイト">リークサイト</span><span class="term-chip has-tip" tabindex="0" data-tooltip="Advanced Persistent Threat。長期間潜伏して情報を狙う、国家支援型が多い攻撃者類型" aria-label="APT：Advanced Persistent Threat。長期間潜伏して情報を狙う、国家支援型が多い攻撃者類型">APT</span><span class="term-chip has-tip" tabindex="0" data-tooltip="端末に保存されたIDとパスワード、クッキーを盗むマルウェア。IABの商品の仕入れ元になっている" aria-label="情報窃取マルウェア（インフォスティーラー）：端末に保存されたIDとパスワード、クッキーを盗むマルウェア。IABの商品の仕入れ元になっている">情報窃取マルウェア（インフォスティーラー）</span><span class="term-chip has-tip" tabindex="0" data-tooltip="暗号資産のブロックチェーン上の送金記録から被害額を推計する手法。現金・他手段の支払いは含まれないので過小評価になりうる" aria-label="オンチェーン集計：暗号資産のブロックチェーン上の送金記録から被害額を推計する手法。現金・他手段の支払いは含まれないので過小評価になりうる">オンチェーン集計</span><span class="term-chip has-tip" tabindex="0" data-tooltip="米国財務省の外国資産管理室。制裁対象への支払いを規制する" aria-label="OFAC：米国財務省の外国資産管理室。制裁対象への支払いを規制する">OFAC</span></div></details><p><strong>このノートで分かること</strong>：サイバー攻撃が「愉快犯」ではなく<strong>分業された産業</strong>になっていること、<br>その収支構造がどう変わってきたか、そして身代金を払うか払わないかの判断が何に左右されるか。</p>
+<blockquote><p>前提：本ノートは<strong>攻撃の手口の手順</strong>は扱わない。扱うのは<strong>構造とお金の流れ</strong>だけ。<br>防御側の打ち手は <a href="02_防御の全体像.html">02_防御の全体像</a> に分けてある。</p></blockquote>
+<h2 id="s1">1. 結論：攻撃は「犯罪」であると同時に「サービス業」になった</h2>
+<p>2010年代半ばまで、サイバー攻撃は技術者個人または小集団の営みだった。<br>いまは<strong>開発・販売・実行・交渉・資金洗浄が別々の事業者に分かれている</strong>。<br>半導体でいうファブレスとファウンドリの分業と同じことが、地下経済で起きている。</p>
+<pre><code>【開発】          【卸・仲介】            【実行】           【換金】
+ランサムウェア    初期アクセス            アフィリエイト     ミキサー／
+開発グループ ──▶ ブローカー（IAB） ──▶  （実行犯）   ──▶  交換所
+ 暗号化・管理     侵入済みの足場を売る     侵入〜暗号化      暗号資産の洗浄
+ 画面を提供       1件 数百ドル〜           身代金交渉
+   ＝RaaS                                     │
+                                              ▼
+                                      【周辺サービス】
+                                    交渉代行・翻訳・リークサイト運営
+                                    データ流出用のホスティング</code></pre>
+<p><strong>RaaS（Ransomware as a Service）</strong>＝ランサムウェア（データを暗号化して身代金を要求する<br>不正プログラム）を、開発グループが「使わせてあげる」形で提供する仕組み。<br>実行犯（アフィリエイト）は開発できなくても攻撃に参加でき、回収した身代金を<br>一定比率（報道ベースでは実行犯7〜8割・開発側2〜3割とされることが多い）で分け合う。</p>
+<blockquote><p>ポイント：<strong>RaaSの登場で、攻撃に必要な技術的ハードルが「ゼロ」に近づいた</strong>。<br>だから被害件数は、技術の進歩より「参加者の数」で決まるようになった。</p></blockquote>
+<h2 id="s2">2. 分業の各層が何を売っているか</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>層</th>
+<th>売っているもの</th>
+<th>価格の目安（年・出典）</th>
+<th>経済的な性格</th>
+</tr></thead><tbody>
+<tr><td>初期アクセスブローカー（IAB）</td><td>企業ネットワークへの侵入済みの足場</td><td>1件あたり平均 約439ドル（2026年Q1、Chainalysis／業界レポート）。2023年Q1は約1,427ドル</td><td>供給過剰で<strong>値崩れ</strong>中。情報窃取マルウェアのログが大量に出回ったため</td></tr>
+<tr><td>RaaS開発グループ</td><td>暗号化ツール＋管理画面＋リークサイト</td><td>身代金の2〜3割（分配率。報道ベース）</td><td>ソフトウェアのレベニューシェア型SaaSと同型</td></tr>
+<tr><td>アフィリエイト（実行犯）</td><td>実行の労働力</td><td>身代金の7〜8割（同上）</td><td>成果報酬。固定費ほぼゼロ</td></tr>
+<tr><td>交渉・洗浄の周辺業者</td><td>交渉代行、暗号資産の匿名化</td><td>案件ごと</td><td>手数料ビジネス</td></tr>
+</tbody></table></div>
+<p>IABの価格が3年で3分の1に下がった意味は大きい。<br><strong>「侵入」が安い商品になった</strong>ので、攻撃側は数を撃てるようになり、<br>狙う相手が大企業から中堅・中小・自治体・病院へ広がった。</p>
+<h2 id="s3">3. 収支の数字：2025年に何が起きたか</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>指標</th>
+<th>数値</th>
+<th>年・出典</th>
+</tr></thead><tbody>
+<tr><td>世界の身代金支払総額（オンチェーン集計）</td><td>約8.2億ドル（前年比 約▲8%）</td><td>2025年、Chainalysis</td></tr>
+<tr><td>同・前年</td><td>約8.92億ドル</td><td>2024年、Chainalysis</td></tr>
+<tr><td>支払率（被害企業のうち払った割合）</td><td>約28%（過去最低）</td><td>2025年、Chainalysis</td></tr>
+<tr><td>身代金の中央値</td><td>59,556ドル（前年12,738ドルから約3.7倍）</td><td>2025年、Chainalysis</td></tr>
+<tr><td>IABへの支払（オンチェーン確認分）</td><td>少なくとも約1,400万ドル</td><td>2025年、Chainalysis</td></tr>
+<tr><td>日本国内のランサムウェア被害報告件数</td><td>226件（過去2番目。最多は2022年の230件）</td><td>2025年、警察庁</td></tr>
+<tr><td>日本企業の身代金支払率</td><td>43.8%（2024年調査の57.0%から3年連続低下）</td><td>2026年1月調査、JIPDEC</td></tr>
+</tbody></table></div>
+<p>この4つの数字を並べると、攻撃側の経済がどう変質したかが見える。</p>
+<pre><code>              2023年頃                      2025年
+件数          多い                          さらに多い（過去最高水準）
+支払率        高い（4〜5割）        ──▶    低い（約28%）
+1件の要求額   低め（中央値 約1.3万ドル） ──▶ 高い（中央値 約6万ドル）
+総額          増加基調              ──▶    微減（約8.2億ドル）
+                                            ＝「広く薄く」から「狭く深く」へ</code></pre>
+<blockquote><p>ポイント：<strong>支払う企業が減ったので、攻撃側は1件あたりの要求額を上げた</strong>。<br>バックアップの整備とノーペイ方針の浸透が、価格転嫁として跳ね返っている構図。<br>総額が減っても件数は減らないので、<strong>防御コストはむしろ増える</strong>。</p></blockquote>
+<h2 id="s4">4. なぜ「二重脅迫」が主流になったのか</h2>
+<p>初期のランサムウェアは暗号化して復号鍵を売るだけだった。<br>バックアップが普及すると「払わなくても戻せる」企業が増え、この商売は成り立たなくなる。<br>そこで攻撃側は<strong>データを盗んでから暗号化し、「払わないと公開する」と脅す</strong>形に移った。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>世代</th>
+<th>脅しの中身</th>
+<th>防御側の対抗手段</th>
+<th>効きにくくなった理由</th>
+</tr></thead><tbody>
+<tr><td>第1世代（単純暗号化）</td><td>復号できなくなる</td><td>バックアップからの復旧</td><td>復旧できれば払う理由がない</td></tr>
+<tr><td>第2世代（二重脅迫）</td><td>＋盗んだデータを公開する</td><td>暗号化・アクセス制御・持ち出し監視</td><td>情報が出た事実は取り消せない</td></tr>
+<tr><td>第3世代（多重脅迫）</td><td>＋取引先や顧客に直接連絡、規制当局への通報、DDoS</td><td>対外説明の事前準備、当局への先行報告</td><td>「レピュテーション」を人質に取られる</td></tr>
+<tr><td>派生（暗号化しない）</td><td>盗むだけ。業務は止めず、公開だけ脅す</td><td>持ち出し検知（DLP）、権限の最小化</td><td>業務が止まらないので<strong>発覚が遅い</strong></td></tr>
+</tbody></table></div>
+<p>近年は<strong>暗号化しない窃取型</strong>が増えている。暗号化は目立つうえに復旧されると無価値だが、<br>盗むだけなら手間が少なく、被害側も「止まっていないから気づかない」。</p>
+<h2 id="s5">5. 身代金を払うべきか：判断が分かれる理由</h2>
+<p><strong>結論から言えば「払わない」が原則で、例外は極めて限定的</strong>。ただし実務では割り切れない。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>払う側の論理</th>
+<th>それでも払いにくい理由</th>
+</tr></thead><tbody>
+<tr><td>1日止まると売上が数億〜十数億円飛ぶ（大手EC・物流では現実的な規模）</td><td><strong>払っても戻るとは限らない</strong>。復号ツールが不完全／遅いことが多い</td></tr>
+<tr><td>復旧に数ヶ月かかるより安い</td><td>払えば「払う会社」としてリストに載り、<strong>再攻撃を招く</strong></td></tr>
+<tr><td>個人情報の公開を止めたい</td><td>公開停止の約束に履行を強制する手段がない</td></tr>
+<tr><td>上場企業として開示リスクを抑えたい</td><td>犯罪組織への資金提供になり、制裁対象への送金だと<strong>法令違反</strong>になりうる</td></tr>
+<tr><td>保険でカバーされる場合がある</td><td>保険が支払いを前提にすると、犯罪の資金源を保険が支えることになる</td></tr>
+</tbody></table></div>
+<p>日本では、支払い自体を直接禁じる一般法はないが、<br><strong>制裁対象（外為法の資産凍結対象など）への送金は違法</strong>となりうる点が実務上の壁になる。<br>米国財務省OFACも同様の警告を出しており、<strong>相手が誰かを特定できない限り送金リスクは消えない</strong>。</p>
+<p>現実に日本企業の支払率は下がり続けている（2026年1月調査で43.8%、JIPDEC）。<br>ただし同じ調査では、<strong>払わなかったせいで復旧できなかった割合が28.4%へ上昇</strong>している。<br>「払わない」を貫くには、事前のバックアップ設計がセットで要る、ということでもある。</p>
+<h2 id="s6">6. 国家支援型（APT）は経済学が違う</h2>
+<p>同じ「サイバー攻撃」でも、金銭目的の犯罪組織と、国家を背景にした集団では目的が違う。<br>混ぜて理解すると対策を間違える。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>類型</th>
+<th>目的</th>
+<th>時間軸</th>
+<th>標的</th>
+<th>見つかり方</th>
+</tr></thead><tbody>
+<tr><td>金銭目的（ランサム、詐欺）</td><td>現金</td><td>数日〜数週間で回収</td><td>払えそうな組織なら何でも</td><td>派手に止まるので<strong>すぐ分かる</strong></td></tr>
+<tr><td>国家支援・諜報型（いわゆるAPT）</td><td>情報・技術・政策</td><td><strong>数ヶ月〜数年潜伏</strong></td><td>防衛、先端製造、研究機関、政府、重要インフラ</td><td>気づかれないことが成功条件。<strong>発見が遅れる</strong></td></tr>
+<tr><td>国家支援・破壊型</td><td>インフラの妨害、威圧</td><td>有事に備えた事前配置</td><td>電力、通信、水道、港湾、交通</td><td>平時は「潜んでいるだけ」で動かない</td></tr>
+<tr><td>ハクティビズム</td><td>主張・示威</td><td>単発</td><td>象徴的な組織</td><td>Webサイト改ざん、DDoS</td></tr>
+<tr><td>国家×金銭（外貨獲得型）</td><td>制裁下の外貨</td><td>中期</td><td>暗号資産取引所、金融機関</td><td>大型の資金流出で判明</td></tr>
+</tbody></table></div>
+<p><strong>APT</strong>＝Advanced Persistent Threat。「高度で・持続的な・脅威」の略で、<br>要するに<strong>辛抱強く居座るタイプの攻撃者</strong>のこと。技術の高度さより「居座る」が本質。</p>
+<blockquote><p>ポイント：ランサムウェアは「業務が止まる」ことで気づける。<br>国家支援型は<strong>止まらないので気づけない</strong>。だから検知の仕組み（ログを取って見る）が要る。<br>詳しくは <a href="02_防御の全体像.html">02_防御の全体像</a> の「検知の考え方」へ。</p></blockquote>
+<h2 id="s7">7. 侵入の入口は、いつも同じ3つに集約される</h2>
+<p>手口の詳細は書かないが、<strong>どこから入られるかの内訳</strong>は防御の優先順位を決めるので押さえる。</p>
+<pre><code>          ┌── ① 人（なりすまし・認証情報の使い回し）
+侵入経路 ─┼── ② 境界の機器・サービスの脆弱性（VPN機器、公開サーバー、SaaSの設定ミス）
+          └── ③ 取引先・委託先（相手の環境を踏み台にされる）
+
+  ①と②で大半を占める。③は件数より「被害の広がり方」で効いてくる</code></pre>
+<p>日本の公表事例で繰り返し指摘されてきたのは②の<strong>VPN機器</strong>（社外から社内網へ入るための装置）<br>であり、警察庁の年次報告でも侵入経路として長く上位にある。<br>理由は単純で、<strong>24時間インターネットに露出していて、更新が止まりがちだから</strong>。</p>
+<p>③は <a href="03_サプライチェーンと組織の実務.html">03_サプライチェーンと組織の実務</a> で扱う。</p>
+<h2 id="s8">8. 「攻撃コストを上げる」という発想</h2>
+<p>防御の目的は攻撃を不可能にすることではない。<strong>割に合わなくすること</strong>である。</p>
+<div class="table-wrap"><table><thead><tr>
+<th>防御の打ち手</th>
+<th>攻撃側のコストをどう上げるか</th>
+</tr></thead><tbody>
+<tr><td>多要素認証（MFA）</td><td>盗んだIDとパスワードだけでは入れない。IABが売る商品の価値が下がる</td></tr>
+<tr><td>迅速な脆弱性対応</td><td>公開された弱点を使える「窓」が短くなる</td></tr>
+<tr><td>オフラインバックアップ</td><td>暗号化しても復旧されるので、暗号化の商品価値が消える</td></tr>
+<tr><td>検知と初動の速さ</td><td>潜伏期間が短くなり、盗める量が減る</td></tr>
+<tr><td>支払わない方針の徹底</td><td>業界全体の期待収益が下がる（自社1社では効かないが、総体としては効く）</td></tr>
+</tbody></table></div>
+<p>支払率が28%まで下がった（2025年、Chainalysis）のは、この最後の項目が<br><strong>業界全体で効き始めた証拠</strong>と読める。一方で要求額の中央値が跳ね上がったことは、<br>攻撃側が「減った成約数を単価で埋める」方向に適応したことを示す。</p>
+<h2 id="s9">用語メモ</h2>
+<ul>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="データを暗号化したり盗んだりして、復旧・非公開と引き換えに金銭を要求する不正プログラム" aria-label="ランサムウェア：データを暗号化したり盗んだりして、復旧・非公開と引き換えに金銭を要求する不正プログラム"><strong>ランサムウェア</strong></span>：データを暗号化したり盗んだりして、復旧・非公開と引き換えに金銭を要求する不正プログラム</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="Ransomware as a Service。開発グループがツールと管理基盤を提供し、実行犯が使って成果を分け合う仕組み" aria-label="RaaS：Ransomware as a Service。開発グループがツールと管理基盤を提供し、実行犯が使って成果を分け合う仕組み"><strong>RaaS</strong></span>：Ransomware as a Service。開発グループがツールと管理基盤を提供し、実行犯が使って成果を分け合う仕組み</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="RaaSを借りて実際に攻撃を実行する側。成果報酬で動く" aria-label="アフィリエイト：RaaSを借りて実際に攻撃を実行する側。成果報酬で動く"><strong>アフィリエイト</strong></span>：RaaSを借りて実際に攻撃を実行する側。成果報酬で動く</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="侵入済みの足場を他の攻撃者に売る仲介業者" aria-label="IAB（初期アクセスブローカー）：侵入済みの足場を他の攻撃者に売る仲介業者"><strong>IAB（初期アクセスブローカー）</strong></span>：侵入済みの足場を他の攻撃者に売る仲介業者</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="暗号化に加えてデータ公開・関係者への連絡などを重ねて圧力をかける手法" aria-label="二重脅迫／多重脅迫：暗号化に加えてデータ公開・関係者への連絡などを重ねて圧力をかける手法"><strong>二重脅迫／多重脅迫</strong></span>：暗号化に加えてデータ公開・関係者への連絡などを重ねて圧力をかける手法</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="攻撃者が被害組織名や盗んだデータを晒すために運営する公開サイト" aria-label="リークサイト：攻撃者が被害組織名や盗んだデータを晒すために運営する公開サイト"><strong>リークサイト</strong></span>：攻撃者が被害組織名や盗んだデータを晒すために運営する公開サイト</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="Advanced Persistent Threat。長期間潜伏して情報を狙う、国家支援型が多い攻撃者類型" aria-label="APT：Advanced Persistent Threat。長期間潜伏して情報を狙う、国家支援型が多い攻撃者類型"><strong>APT</strong></span>：Advanced Persistent Threat。長期間潜伏して情報を狙う、国家支援型が多い攻撃者類型</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="端末に保存されたIDとパスワード、クッキーを盗むマルウェア。IABの商品の仕入れ元になっている" aria-label="情報窃取マルウェア（インフォスティーラー）：端末に保存されたIDとパスワード、クッキーを盗むマルウェア。IABの商品の仕入れ元になっている"><strong>情報窃取マルウェア（インフォスティーラー）</strong></span>：端末に保存されたIDとパスワード、クッキーを盗むマルウェア。IABの商品の仕入れ元になっている</li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="暗号資産のブロックチェーン上の送金記録から被害額を推計する手法。現金・他手段の支払いは含まれないので過小評価になりうる" aria-label="オンチェーン集計：暗号資産のブロックチェーン上の送金記録から被害額を推計する手法。現金・他手段の支払いは含まれないので過小評価になりうる"><strong>オンチェーン集計</strong></span>：暗号資産のブロックチェーン上の送金記録から被害額を推計する手法。<strong>現金・他手段の支払いは含まれないので過小評価になりうる</strong></li>
+<li><span class="term-chip has-tip" tabindex="0" data-tooltip="米国財務省の外国資産管理室。制裁対象への支払いを規制する" aria-label="OFAC：米国財務省の外国資産管理室。制裁対象への支払いを規制する"><strong>OFAC</strong></span>：米国財務省の外国資産管理室。制裁対象への支払いを規制する</li>
+</ul>
+<hr>
+<ul>
+<li>次に読む：<a href="02_防御の全体像.html">02_防御の全体像</a></li>
+<li>戻る：<a href="README.html">README</a></li>
+</ul><section class="page-quiz" data-quiz-key="01_注目テーマ/10_サイバーセキュリティ/01_攻撃側の経済学.html"><div class="quiz-heading"><span class="quiz-icon" aria-hidden="true">?</span><div><span class="quiz-eyebrow">RETRIEVAL PRACTICE</span><h2>このページの理解度クイズ</h2></div><span class="quiz-count">全9問</span></div><div class="quiz-intro" data-quiz-intro><p>各章の背景・因果関係・ビジネス上の意味を、自分の言葉で説明する練習です。声に出して答えてから回答の観点を開いてください。</p><div class="quiz-intro-actions"><button class="quiz-button primary" type="button" data-quiz-start>クイズを始める</button><span class="quiz-best" data-quiz-best></span></div></div><div class="quiz-run" data-quiz-run hidden><div class="quiz-progress-row"><span data-quiz-progress-text></span><span data-quiz-score></span></div><div class="quiz-progress"><i data-quiz-progress-bar></i></div><span class="quiz-prompt-label">BUSINESS DISCUSSION</span><p class="quiz-question" data-quiz-question></p><button class="quiz-button quiz-reveal" type="button" data-quiz-reveal>回答の観点を見る</button><div class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"></div><div class="quiz-self-rating" data-quiz-rating hidden><span>自分の言葉で説明できましたか？</span><button class="quiz-button primary" type="button" data-quiz-known>説明できた</button><button class="quiz-button" type="button" data-quiz-review>復習する</button></div><button class="quiz-button primary quiz-next" type="button" data-quiz-next hidden>次の問題へ</button></div><div class="quiz-result" data-quiz-result hidden aria-live="polite"><span class="quiz-result-label">RESULT</span><strong data-quiz-result-score></strong><p data-quiz-result-message></p><div class="quiz-result-actions"><button class="quiz-button primary" type="button" data-quiz-retry-missed>復習する問題に再挑戦</button><button class="quiz-button" type="button" data-quiz-retry-all>全問もう一度</button></div></div><script class="quiz-data" type="application/json">[{"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」とは何か、ビジネス上なぜ重要なのかを30秒で説明してください。", "points": ["このノートで分かること：サイバー攻撃が「愉快犯」ではなく分業された産業になっていること、 その収支構造がどう変わってきたか、そして身代金を払うか払わないかの判断が何に左右されるか。", "前提：本ノートは攻撃の手口の手順は扱わない。扱うのは構造とお金の流れだけ。 防御側の打ち手は 02_防御の全体像 に分けてある。"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「結論：攻撃は「犯罪」であると同時に「サービス業」になった」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["2010年代半ばまで、サイバー攻撃は技術者個人または小集団の営みだった。 いまは開発・販売・実行・交渉・資金洗浄が別々の事業者に分かれている。 半導体でいうファブレスとファウンドリの分業と同じことが、地下経済で起きている。", "RaaS（Ransomware as a Service）＝ランサムウェア（データを暗号化して身代金を要求する 不正プログラム）を、開発グループが「使わせてあげる」形で提供する仕組み。 実行犯（アフィリエイト）は開発できなくても攻撃に参加でき、回収した身代金を 一定比率（報道ベースでは実行犯7〜8割・開発側2〜3割とされることが多い）で分け合う。", "ポイント：RaaSの登場で、攻撃に必要な技術的ハードルが「ゼロ」に近づいた。 だから被害件数は、技術の進歩より「参加者の数」で決まるようになった。"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「分業の各層が何を売っているか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["初期アクセスブローカー（IAB）：企業ネットワークへの侵入済みの足場：1件あたり平均 約439ドル（2026年Q1、Chainalysis／業界レポート）。2023年Q1は約1,427ドル", "RaaS開発グループ：暗号化ツール＋管理画面＋リークサイト：身代金の2〜3割（分配率。報道ベース）", "アフィリエイト（実行犯）：実行の労働力：身代金の7〜8割（同上）", "IABの価格が3年で3分の1に下がった意味は大きい。 「侵入」が安い商品になったので、攻撃側は数を撃てるようになり、 狙う相手が大企業から中堅・中小・自治体・病院へ広がった。"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「収支の数字：2025年に何が起きたか」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["世界の身代金支払総額（オンチェーン集計）：約8.2億ドル（前年比 約▲8%）：2025年、Chainalysis", "同・前年：約8.92億ドル：2024年、Chainalysis", "支払率（被害企業のうち払った割合）：約28%（過去最低）：2025年、Chainalysis", "この4つの数字を並べると、攻撃側の経済がどう変質したかが見える。"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「なぜ「二重脅迫」が主流になったのか」は、どのような仕組みですか。そうなる理由と、収益・競争上の意味を説明してください。", "points": ["初期のランサムウェアは暗号化して復号鍵を売るだけだった。 バックアップが普及すると「払わなくても戻せる」企業が増え、この商売は成り立たなくなる。 そこで攻撃側はデータを盗んでから暗号化し、「払わないと公開する」と脅す形に移った。", "第1世代（単純暗号化）：復号できなくなる：バックアップからの復旧", "第2世代（二重脅迫）：＋盗んだデータを公開する：暗号化・アクセス制御・持ち出し監視", "第3世代（多重脅迫）：＋取引先や顧客に直接連絡、規制当局への通報、DDoS：対外説明の事前準備、当局への先行報告"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「身代金を払うべきか：判断が分かれる理由」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["結論から言えば「払わない」が原則で、例外は極めて限定的。ただし実務では割り切れない。", "1日止まると売上が数億〜十数億円飛ぶ（大手EC・物流では現実的な規模）：払っても戻るとは限らない。復号ツールが不完全／遅いことが多い", "復旧に数ヶ月かかるより安い：払えば「払う会社」としてリストに載り、再攻撃を招く", "個人情報の公開を止めたい：公開停止の約束に履行を強制する手段がない"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「国家支援型（APT）は経済学が違う」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["同じ「サイバー攻撃」でも、金銭目的の犯罪組織と、国家を背景にした集団では目的が違う。 混ぜて理解すると対策を間違える。", "金銭目的（ランサム、詐欺）：現金：数日〜数週間で回収", "国家支援・諜報型（いわゆるAPT）：情報・技術・政策：数ヶ月〜数年潜伏", "国家支援・破壊型：インフラの妨害、威圧：有事に備えた事前配置"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「侵入の入口は、いつも同じ3つに集約される」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["手口の詳細は書かないが、どこから入られるかの内訳は防御の優先順位を決めるので押さえる。", "日本の公表事例で繰り返し指摘されてきたのは②のVPN機器（社外から社内網へ入るための装置） であり、警察庁の年次報告でも侵入経路として長く上位にある。 理由は単純で、24時間インターネットに露出していて、更新が止まりがちだから。", "③は 03_サプライチェーンと組織の実務 で扱う。"]}, {"question": "「攻撃側の経済学（ランサムウェア・RaaS・初期アクセスブローカー）」における「「攻撃コストを上げる」という発想」について、何が起きているか、なぜ起きるか、企業の収益や競争へどう影響するかを説明してください。", "points": ["防御の目的は攻撃を不可能にすることではない。割に合わなくすることである。", "多要素認証（MFA）：盗んだIDとパスワードだけでは入れない。IABが売る商品の価値が下がる", "迅速な脆弱性対応：公開された弱点を使える「窓」が短くなる", "オフラインバックアップ：暗号化しても復旧されるので、暗号化の商品価値が消える"]}]</script></section></div>
+  <div class="pager"><a class="prev" href="../../01_注目テーマ/10_サイバーセキュリティ/README.html"><span class="lbl">← 前</span>サイバーセキュリティ</a><a class="next" href="../../01_注目テーマ/10_サイバーセキュリティ/02_防御の全体像.html"><span class="lbl">次 →</span>防御の全体像（境界防御からゼロトラストへ、EDR／SIEM／SOC、インシデント対応）</a></div>
+</main>
+<aside class="toc"><h3>目次</h3><a class="lv2" href="#s1">1. 結論：攻撃は「犯罪」であると同時に「サービス業」になった</a><a class="lv2" href="#s2">2. 分業の各層が何を売っているか</a><a class="lv2" href="#s3">3. 収支の数字：2025年に何が起きたか</a><a class="lv2" href="#s4">4. なぜ「二重脅迫」が主流になったのか</a><a class="lv2" href="#s5">5. 身代金を払うべきか：判断が分かれる理由</a><a class="lv2" href="#s6">6. 国家支援型（APT）は経済学が違う</a><a class="lv2" href="#s7">7. 侵入の入口は、いつも同じ3つに集約される</a><a class="lv2" href="#s8">8. 「攻撃コストを上げる」という発想</a><a class="lv2" href="#s9">用語メモ</a></aside>
+</div>
+<script src="../../assets/nav.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>
